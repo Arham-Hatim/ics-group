@@ -21,15 +21,15 @@
                     <div class="carousel-caption-custom">
                         <div class="container">
                             <div class="row">
-                                <div class="col-lg-8" data-aos="fade-right">
-                                    <h1 class="hero-title" data-aos="zoom-in" data-aos-duration="1500">Building Tomorrow's
+                                <div class="col-lg-8">
+                                    <h1 class="hero-title">Building Tomorrow's
                                         <span class="text-primary">Solutions</span>
                                         Today
                                     </h1>
-                                    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="500">Leading the way in
+                                    <p class="hero-subtitle">Leading the way in
                                         innovative business solutions across
                                         engineering, construction, energy, and technology sectors.</p>
-                                    <div class="hero-buttons" data-aos="fade-up" data-aos-delay="800">
+                                    <div class="hero-buttons">
                                         <a href="{{ route('services') }}" class="btn btn-primary btn-lg">Our Services</a>
                                         <a href="{{ route('about') }}" class="btn btn-outline-light btn-lg">Learn More</a>
                                     </div>
@@ -47,14 +47,14 @@
                     <div class="carousel-caption-custom">
                         <div class="container">
                             <div class="row">
-                                <div class="col-lg-8" data-aos="fade-right">
-                                    <h1 class="hero-title" data-aos="zoom-in" data-aos-duration="1500">Innovation Meets
+                                <div class="col-lg-8">
+                                    <h1 class="hero-title">Innovation Meets
                                         <span class="text-primary">Excellence</span>
                                     </h1>
-                                    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="500">Delivering cutting-edge
+                                    <p class="hero-subtitle">Delivering cutting-edge
                                         solutions that transform businesses and
                                         drive sustainable growth.</p>
-                                    <div class="hero-buttons" data-aos="fade-up" data-aos-delay="800">
+                                    <div class="hero-buttons">
                                         <a href="{{ route('services') }}" class="btn btn-primary btn-lg">Explore
                                             Services</a>
                                         <a href="{{ route('contact') }}" class="btn btn-outline-light btn-lg">Get in
@@ -74,14 +74,13 @@
                     <div class="carousel-caption-custom">
                         <div class="container">
                             <div class="row">
-                                <div class="col-lg-8" data-aos="fade-right">
-                                    <h1 class="hero-title" data-aos="zoom-in" data-aos-duration="1500">Powering Your <span
-                                            class="text-primary">Digital Future</span>
+                                <div class="col-lg-8">
+                                    <h1 class="hero-title">Powering Your <span class="text-primary">Digital Future</span>
                                     </h1>
-                                    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="500">Advanced technology
+                                    <p class="hero-subtitle">Advanced technology
                                         solutions that drive digital transformation
                                         and operational excellence.</p>
-                                    <div class="hero-buttons" data-aos="fade-up" data-aos-delay="800">
+                                    <div class="hero-buttons">
                                         <a href="{{ route('services') }}" class="btn btn-primary btn-lg">View Solutions</a>
                                         <a href="{{ route('about') }}" class="btn btn-outline-light btn-lg">About Us</a>
                                     </div>
@@ -158,7 +157,8 @@
                             <div class="p-4 text-center">
                                 <h4 class="mb-3">{{ $brand['name'] }}</h4>
                                 <p class="text-muted mb-4">{{ $brand['description'] }}</p>
-                                <a href="{{ $brand['url'] }}" target="_blank" class="btn btn-outline-primary btn-sm">Visit Website</a>
+                                <a href="{{ $brand['url'] }}" target="_blank" class="btn btn-outline-primary btn-sm">Visit
+                                    Website</a>
                             </div>
                         </div>
                     </div>
@@ -204,8 +204,8 @@
                     <span class="reach-label">Global Employees</span>
                 </div>
                 <div class="col-md-3 reach-stat" data-aos="zoom-in" data-aos-delay="300">
-                    <span class="reach-number">$2B+</span>
-                    <span class="reach-label">Annual Revenue</span>
+                    <span class="reach-number">100%</span>
+                    <span class="reach-label">Client Satisfaction</span>
                 </div>
             </div>
         </div>

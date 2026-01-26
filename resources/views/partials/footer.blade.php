@@ -79,12 +79,15 @@
     <!-- Footer Bottom -->
     <div class="footer-bottom">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <p class="copyright">&copy; {{ date('Y') }} ICS Group. All rights reserved.</p>
+            <div class="row align-items-center text-center text-lg-start">
+                <div class="col-lg-6 mb-2 mb-lg-0">
+                    <p class="copyright mb-0">
+                        &copy; {{ date('Y') }} ICS Group. All rights reserved.
+                    </p>
                 </div>
-                <div class="col-md-6">
-                    <ul class="footer-bottom-links">
+
+                <div class="col-lg-6">
+                    <ul class="footer-bottom-links justify-content-center justify-content-lg-end">
                         <li><a href="{{ route('home') }}">Home</a></li>
                         <li><a href="{{ route('about') }}">About Us</a></li>
                         <li><a href="{{ route('newsroom') }}">Newsroom</a></li>

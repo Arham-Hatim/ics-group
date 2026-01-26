@@ -16,27 +16,27 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link {{ request()->routeIs('home') ? 'active' : '' }}"
+                        <a class="nav-link nav-btn {{ request()->routeIs('home') ? 'active' : '' }}"
                             href="{{ route('home') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ request()->routeIs('business-community') ? 'active' : '' }}"
+                        <a class="nav-link nav-btn {{ request()->routeIs('business-community') ? 'active' : '' }}"
                             href="{{ route('business-community') }}">Business Community</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ request()->routeIs('about') ? 'active' : '' }}"
+                        <a class="nav-link nav-btn {{ request()->routeIs('about') ? 'active' : '' }}"
                             href="{{ route('about') }}">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ request()->routeIs('newsroom') ? 'active' : '' }}"
+                        <a class="nav-link nav-btn {{ request()->routeIs('newsroom') ? 'active' : '' }}"
                             href="{{ route('newsroom') }}">Newsroom</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ request()->routeIs('careers') ? 'active' : '' }}"
+                        <a class="nav-link nav-btn {{ request()->routeIs('careers') ? 'active' : '' }}"
                             href="{{ route('careers') }}">Careers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ request()->routeIs('contact') ? 'active' : '' }}"
+                        <a class="nav-link nav-btn {{ request()->routeIs('contact') ? 'active' : '' }}"
                             href="{{ route('contact') }}">Contact</a>
                     </li>
                 </ul>

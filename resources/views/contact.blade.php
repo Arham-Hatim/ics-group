@@ -140,8 +140,18 @@
         <div class="container-fluid p-0">
             <div class="map-placeholder" data-aos="fade-up">
                 <iframe
-                    src="https://maps.google.com/maps?q=1st%20Floor%2C%20Shafi%20Court%2C%20Merewether%20Road%20Civil%20Line%2C%20Civil%20Lines%2C%20Karachi%2C%2074200&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    id="contact-map"
+                    src="https://www.google.com/maps?q=1st+Floor+Shafi+Court+Merewether+Road%2C+Civil+Lines%2C+Karachi%2C+Pakistan&z=15&output=embed"
+                    width="100%" height="450" style="border:0;" allowfullscreen aria-hidden="false" tabindex="0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <div class="map-overlay">
+                    <h6>Our Head Office</h6>
+                    <p>1st Floor, Shafi Court, Merewether Road, Civil Lines, Karachi</p>
+                    <div class="map-actions">
+                        <a class="btn btn-sm btn-primary" href="https://maps.google.com?q=1st+Floor+Shafi+Court+Merewether+Road%2C+Civil+Lines%2C+Karachi%2C+Pakistan" target="_blank" rel="noopener">Open in Maps</a>
+                        <a class="btn btn-sm btn-outline-secondary" href="tel:+922111565565">Call</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

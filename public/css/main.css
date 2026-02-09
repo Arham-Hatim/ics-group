@@ -813,6 +813,23 @@ img {
     padding: 120px 0;
 }
 
+.why-choose-premium .premium-card {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(5px);
+    padding: 3rem;
+    border-radius: 20px;
+    transition: all 0.4s ease;
+    height: 100%;
+    color: var(--color-white) !important;
+}
+
+.why-choose-premium .premium-card p,
+.why-choose-premium .premium-card .lead,
+.why-choose-premium .premium-card * {
+    color: var(--color-white) !important;
+}
+
 .premium-card {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -834,6 +851,7 @@ img {
     color: #ffffff;
     margin-bottom: 1.5rem;
     display: block;
+    margin: auto;
 }
 
 .global-reach-section {

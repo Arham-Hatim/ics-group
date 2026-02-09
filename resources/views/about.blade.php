@@ -21,8 +21,10 @@
         <div class="container">
             <div class="row align-items-center g-5">
                 <div class="col-lg-6" data-aos="fade-right">
-                    <img src="{{ asset('images/company-building.jpg') }}" alt="ICS Group Headquarters"
-                        class="img-fluid rounded">
+                    <div class="section-image-wrapper">
+                        <img src="{{ asset('images/company-building.jpg') }}" alt="ICS Group Headquarters"
+                            class="img-fluid">
+                    </div>
                 </div>
                 <div class="col-lg-6" data-aos="fade-left">
                     <h2 class="section-title">Who We Are</h2>
@@ -107,8 +109,10 @@
                     </p>
                 </div>
                 <div class="col-lg-6" data-aos="fade-left">
-                    <img src="{{ asset('images/about_leadership_1769149854566.png') }}" alt="Leadership Team"
-                        class="img-fluid rounded">
+                    <div class="section-image-wrapper">
+                        <img src="{{ asset('images/about_leadership_1769149854566.png') }}" alt="Leadership Team"
+                            class="img-fluid">
+                    </div>
                 </div>
             </div>
         </div>
@@ -152,8 +156,10 @@
         <div class="container">
             <div class="row align-items-center g-5">
                 <div class="col-lg-6" data-aos="fade-right">
-                    <img src="{{ asset('images/business_meeting_team_1769149751576.png') }}" alt="Team Collaboration"
-                        class="img-fluid rounded">
+                    <div class="section-image-wrapper">
+                        <img src="{{ asset('images/business_meeting_team_1769149751576.png') }}" alt="Team Collaboration"
+                            class="img-fluid">
+                    </div>
                 </div>
                 <div class="col-lg-6" data-aos="fade-left">
                     <h2 class="section-title">Collaboration & <span class="text-primary">Teamwork</span></h2>

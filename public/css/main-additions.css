@@ -1,0 +1,835 @@
+/* ===================================
+   CONSISTENT STYLING ADDITIONS FOR ICS GROUP
+   Additional classes for uniform theme across all pages
+   =================================== */
+
+/* ===================================
+   Icon Fixes & Consistency
+   =================================== */
+/* Fix icon vertical alignment in all contexts */
+.bi {
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 1;
+}
+
+/* Icon containers - proper centering */
+.card-icon,
+.icon-box-red,
+.service-card-icon,
+.service-icon,
+.value-icon,
+.feature-icon,
+.contact-info-icon {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* Icon in premium cards */
+.premium-card i,
+.glass-card i,
+.feature-box i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===================================
+   Icon Tilt/Rotate Animation on Hover
+   =================================== */
+/* All icon containers get smooth tilt animation when parent card is hovered */
+.card-icon,
+.icon-box-red,
+.service-card-icon,
+.service-icon,
+.value-icon,
+.feature-icon,
+.contact-info-icon,
+.pillar-icon,
+.premium-card .bi,
+.glass-card .bi,
+.feature-box .bi,
+.news-card .bi,
+.team-card .bi,
+.job-card .bi,
+.timeline-card .bi,
+.service-detail-card .bi {
+    transition: transform var(--transition-normal);
+}
+
+/* Tilt/rotate icons when parent card is hovered */
+.premium-card:hover .card-icon,
+.premium-card:hover .icon-box-red,
+.premium-card:hover .bi,
+.glass-card:hover .icon-box-red,
+.glass-card:hover .bi,
+.service-detail-card:hover .service-card-icon,
+.service-detail-card:hover .bi,
+.service-card:hover .service-icon,
+.service-card:hover .bi,
+.feature-box:hover .feature-icon,
+.feature-box:hover .bi,
+.news-card:hover .bi,
+.team-card:hover .bi,
+.job-card:hover .bi,
+.timeline-card:hover .bi,
+.value-card:hover .value-icon,
+.value-card:hover .bi,
+.mission-card:hover .card-icon,
+.mission-card:hover .bi,
+.vision-card:hover .card-icon,
+.vision-card:hover .bi {
+    transform: rotate(8deg) scale(1.1);
+}
+
+/* Special tilt for circular icon containers */
+.premium-card:hover .card-icon,
+.premium-card:hover .icon-box-red,
+.glass-card:hover .icon-box-red,
+.service-detail-card:hover .service-card-icon,
+.service-card:hover .service-icon,
+.feature-box:hover .feature-icon,
+.value-card:hover .value-icon,
+.mission-card:hover .card-icon,
+.vision-card:hover .card-icon {
+    transform: rotate(12deg) scale(1.15);
+}
+
+/* ===================================
+   Universal Card Hover Effects
+   =================================== */
+/* Standard lift and shadow for all cards to ensure consistency */
+.premium-card,
+.news-card,
+.team-card,
+.service-detail-card,
+.portfolio-card,
+.job-card,
+.timeline-card,
+.glass-card,
+.testimonial-premium-card,
+.stat-card {
+    transition: all var(--transition-normal) !important;
+}
+
+.premium-card:hover,
+.news-card:hover,
+.team-card:hover,
+.service-detail-card:hover,
+.portfolio-card:hover,
+.job-card:hover,
+.timeline-card:hover,
+.glass-card:hover,
+.testimonial-premium-card:hover,
+.stat-card:hover,
+.transition-hover:hover {
+    transform: translateY(-10px) !important;
+    box-shadow: var(--shadow-lg) !important;
+}
+
+/* Ensure icons in buttons don't break layout */
+.btn i,
+.news-link i,
+.service-link i {
+    vertical-align: middle;
+    margin-left: 4px;
+}
+
+/* ===================================
+   Universal Image Zoom Animations
+   =================================== */
+/* Standard container for zoom effect - ensures no overflow */
+.about-image,
+.news-image,
+.team-image,
+.member-image,
+.careers-image,
+.community-image,
+.strategy-image,
+.portfolio-card,
+.premium-card,
+.img-zoom-container,
+.section-image-wrapper {
+    overflow: hidden !important;
+    position: relative;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Base transition for all zoomable images */
+.about-image img,
+.news-image img,
+.team-image img,
+.member-image img,
+.careers-image img,
+.community-image img,
+.strategy-image img,
+.portfolio-card img,
+.premium-card img,
+.img-zoom-container img,
+.section-image-wrapper img,
+.img-zoom {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform var(--transition-slow) !important;
+}
+
+/* Zoom effect on hover */
+.about-image:hover img,
+.news-image:hover img,
+.team-image:hover img,
+.member-image:hover img,
+.group:hover .member-image img,
+.careers-image:hover img,
+.community-image:hover img,
+.strategy-image:hover img,
+.portfolio-card:hover img,
+.premium-card:hover img,
+.img-zoom-container:hover img,
+.section-image-wrapper:hover img,
+.img-zoom:hover {
+    transform: scale(1.1) !important;
+}
+
+/* Redundant but safe: Automatically target images in section columns */
+.section .col-lg-6 img.img-fluid {
+    border-radius: var(--radius-xl) !important;
+    transition: transform var(--transition-slow) !important;
+}
+
+.section .col-lg-6:hover img.img-fluid {
+    transform: scale(1.1);
+}
+
+/* Helper class for manually adding zoom to any image */
+.img-zoom-wrapper {
+    overflow: hidden;
+    display: block;
+}
+
+.img-zoom-wrapper:hover img {
+    transform: scale(1.1);
+}
+
+.img-zoom-wrapper img {
+    transition: transform var(--transition-slow);
+}
+
+/* ===================================
+   Border Utilities (Missing from Bootstrap)
+   =================================== */
+.border {
+    border: 1px solid var(--color-gray-light) !important;
+}
+
+.border-0 {
+    border: 0 !important;
+}
+
+.border-top {
+    border-top: 1px solid var(--color-gray-light) !important;
+}
+
+.border-bottom {
+    border-bottom: 1px solid var(--color-gray-light) !important;
+}
+
+.border-start {
+    border-left: 1px solid var(--color-gray-light) !important;
+}
+
+.border-end {
+    border-right: 1px solid var(--color-gray-light) !important;
+}
+
+.border-primary {
+    border-color: var(--color-primary) !important;
+}
+
+.border-white {
+    border-color: var(--color-white) !important;
+}
+
+.border-dark {
+    border-color: var(--color-dark) !important;
+}
+
+.border-light {
+    border-color: var(--color-gray-light) !important;
+}
+
+.border-2 {
+    border-width: 2px !important;
+}
+
+.border-3 {
+    border-width: 3px !important;
+}
+
+.border-4 {
+    border-width: 4px !important;
+}
+
+.border-5 {
+    border-width: 5px !important;
+}
+
+/* ===================================
+   Section Utilities
+   =================================== */
+.section {
+    padding: var(--section-padding) 0;
+}
+
+.section.bg-white {
+    background-color: var(--color-white);
+}
+
+.section.bg-dark {
+    background-color: var(--color-black);
+}
+
+.section.bg-light {
+    background-color: var(--color-off-white);
+}
+
+/* ===================================
+   Careers Page Specific Styles
+   =================================== */
+.careers-why-us {
+    background: var(--color-white);
+}
+
+.careers-image {
+    position: relative;
+}
+
+.careers-image img {
+    transition: var(--transition-slow);
+}
+
+.careers-image img:hover {
+    transform: scale(1.05);
+}
+
+.open-positions-section {
+    background: var(--color-off-white);
+}
+
+/* ===================================
+   Community & Business Pages
+   =================================== */
+.community-overview-section {
+    background: var(--color-white);
+}
+
+.community-image {
+    position: relative;
+}
+
+.community-image img {
+    transition: var(--transition-slow);
+}
+
+.community-image img:hover {
+    transform: scale(1.05);
+}
+
+.community-benefits-section {
+    background: var(--color-off-white);
+}
+
+/* ===================================
+   Timeline & Journey Pages
+   =================================== */
+.timeline-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: var(--color-gray-light);
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.timeline-card {
+    background: var(--color-off-white);
+    padding: 30px;
+    border-radius: var(--radius-lg);
+    transition: var(--transition-normal);
+    border: 2px solid transparent;
+}
+
+.timeline-card:hover {
+    background: var(--color-white);
+    border-color: var(--color-primary);
+    transform: scale(1.02);
+    box-shadow: var(--shadow-md);
+}
+
+.timeline-dot {
+    width: 24px;
+    height: 24px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    border: 4px solid var(--color-white);
+    box-shadow: var(--shadow-sm);
+    position: relative;
+    z-index: 5;
+    transition: all 0.3s ease;
+}
+
+.timeline-dot:hover {
+    transform: scale(1.5);
+    background: var(--color-primary-light);
+    box-shadow: 0 0 15px rgba(220, 0, 0, 0.5);
+}
+
+/* ===================================
+   Strategy & Values Pages
+   =================================== */
+.strategy-image {
+    position: relative;
+}
+
+.floating-badge {
+    background: var(--gradient-primary);
+    color: var(--color-white);
+    padding: 20px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.pillar-icon {
+    color: var(--color-primary);
+}
+
+/* ===================================
+   People & Team Pages
+   =================================== */
+.member-image {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-slow);
+}
+
+.group:hover .member-image img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-primary);
+    opacity: 0;
+    transition: var(--transition-normal);
+}
+
+.group:hover .overlay {
+    opacity: 0.2;
+}
+
+/* ===================================
+   Bootstrap-Style Utilities
+   =================================== */
+.text-light-emphasis {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.border-light-subtle {
+    border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.position-relative {
+    position: relative !important;
+}
+
+.position-absolute {
+    position: absolute !important;
+}
+
+.overflow-hidden {
+    overflow: hidden !important;
+}
+
+.inset-0 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.top-0 {
+    top: 0 !important;
+}
+
+.start-0 {
+    left: 0 !important;
+}
+
+.m-4 {
+    margin: 1.5rem !important;
+}
+
+.fs-1 {
+    font-size: 2.5rem !important;
+}
+
+.fs-2 {
+    font-size: 2rem !important
+}
+
+.border-start {
+    border-left: 1px solid;
+}
+
+.border-4 {
+    border-width: 4px !important;
+}
+
+.small {
+    font-size: 0.875rem;
+}
+
+.fw-bold {
+    font-weight: 700 !important;
+}
+
+/* ===================================
+   Helper Classes for Dark Backgrounds
+   =================================== */
+.bg-dark h1,
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark h4,
+.bg-dark h5,
+.bg-dark h6,
+.section.bg-dark h1,
+.section.bg-dark h2,
+.section.bg-dark h3,
+.section.bg-dark h4,
+.section.bg-dark h5,
+.section.bg-dark h6 {
+    color: var(--color-white) !important;
+}
+
+.bg-dark p,
+.section.bg-dark p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* ===================================
+   Premium Card Variations
+   =================================== */
+.premium-card.text-center {
+    text-align: center;
+}
+
+.premium-card.p-4 {
+    padding: 2rem !important;
+}
+
+.premium-card.p-5 {
+    padding: 3rem !important;
+}
+
+.premium-card i {
+    color: var(--color-primary);
+}
+
+/* ===================================
+   Responsive Utilities
+   =================================== */
+@media (max-width: 767px) {
+    .timeline-line {
+        display: none;
+    }
+
+    .timeline-item {
+        margin-bottom: 30px;
+    }
+
+    .timeline-dot {
+        display: none !important;
+    }
+
+    .floating-badge {
+        position: static !important;
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+
+    .careers-image,
+    .community-image {
+        margin-bottom: 30px;
+    }
+
+    .member-image {
+        height: 250px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .page-title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 575px) {
+    .section-title {
+        font-size: 28px;
+    }
+
+    .page-title {
+        font-size: 32px;
+    }
+
+    .timeline-card {
+        padding: 20px;
+    }
+
+    .member-image {
+        height: 200px;
+    }
+}
+
+/* ===================================
+   Animation Consistency
+   =================================== */
+/* Ensure all hover effects use consistent timing */
+.premium-card,
+.timeline-card,
+.job-card,
+.news-card,
+.service-detail-card,
+.team-card,
+.feature-box {
+    transition: all var(--transition-normal);
+}
+
+.premium-card:hover,
+.timeline-card:hover,
+.job-card:hover,
+.news-card:hover,
+.service-detail-card:hover,
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* ===================================
+   Icon Consistency
+   =================================== */
+.section-header .bi,
+.premium-card .bi,
+.feature-box .bi,
+.glass-card .bi {
+    color: var(--color-primary);
+}
+
+/* Fix: Icons inside colored containers must stay white for contrast */
+.icon-box-red .bi,
+.card-icon .bi,
+.service-icon .bi,
+.service-card-icon .bi,
+.feature-icon .bi {
+    color: var(--color-white) !important;
+}
+
+.bg-dark .bi {
+    color: var(--color-primary);
+}
+
+/* Testimonial Specifics */
+.testimonial-premium-card {
+    background: var(--color-white);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-normal);
+    border: 1px solid var(--color-off-white);
+    position: relative;
+}
+
+.testimonial-premium-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-primary);
+}
+
+.testimonial-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50% !important;
+    overflow: hidden;
+    position: relative;
+    border: 3px solid var(--color-white);
+    box-shadow: var(--shadow-sm);
+    flex-shrink: 0;
+}
+
+.testimonial-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.premium-card:hover .testimonial-avatar img {
+    transform: scale(1.15);
+}
+
+.testimonial-quote {
+    color: var(--color-primary);
+    opacity: 0.15;
+    line-height: 1;
+}
+
+/* ===================================
+   Text Color Utilities
+   =================================== */
+.text-dark {
+    color: var(--color-dark) !important;
+}
+
+.text-muted {
+    color: var(--color-gray) !important;
+}
+
+/* ===================================
+   Forms Consistent Styling
+   =================================== */
+.form-control:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 0.2rem rgba(220, 0, 0, 0.1);
+}
+
+/* ===================================
+   Consistent Spacing for Sections
+   =================================== */
+.section-header {
+    margin-bottom: 60px;
+}
+
+@media (max-width: 767px) {
+    .section-header {
+        margin-bottom: 40px;
+    }
+}
+
+/* AOS Animation Default Settings - Let the library handle these values */
+[data-aos] {
+    transition-duration: 800ms !important;
+}
+
+/* ===================================
+   Journey Page Specifics
+   =================================== */
+.journey-header {
+    background-attachment: fixed !important;
+}
+
+/* Ensure Journey Page Milestone Cards are Visible with App-Standard Hover */
+.timeline-item .premium-card,
+.section.bg-white .premium-card,
+.section.bg-light .premium-card {
+    background: #ffffff !important;
+    border: 1px solid #efefef !important;
+    box-shadow: var(--shadow-sm) !important;
+    opacity: 1 !important;
+}
+
+/* Explicitly re-apply the app-standard hover to these specific selectors to overcome specificity */
+.timeline-item .premium-card:hover,
+.section.bg-white .premium-card:hover,
+.section.bg-light .premium-card:hover {
+    transform: translateY(-10px) !important;
+    box-shadow: var(--shadow-lg) !important;
+    border-color: var(--color-primary) !important;
+    background-color: rgba(220, 0, 0, 0.08) !important;
+}
+
+.timeline-dot-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.timeline-dot::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: var(--color-primary);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: dotPulse 2.5s infinite;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+@keyframes dotPulse {
+    0% {
+        width: 16px;
+        height: 16px;
+        opacity: 0.5;
+    }
+
+    100% {
+        width: 50px;
+        height: 50px;
+        opacity: 0;
+    }
+}
+
+.bg-text-journey {
+    user-select: none;
+    z-index: -1;
+}
+
+.journey-nav-link h4 {
+    transition: color var(--transition-normal);
+}
+
+.journey-nav-link:hover h4 {
+    color: var(--color-primary) !important;
+}
+
+@media (max-width: 767px) {
+    .journey-header {
+        padding: 80px 0 !important;
+        background-attachment: scroll !important;
+    }
+}

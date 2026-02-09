@@ -98,17 +98,14 @@
             <div class="row g-4">
                 @foreach($team as $member)
                     <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="{{ $loop->index * 100 }}">
-                        <div class="premium-card h-100 overflow-hidden text-center group">
-                            <div class="member-image position-relative overflow-hidden" style="height: 300px;">
+                        <div class="team-card h-100">
+                            <div class="team-image">
                                 <img src="{{ asset('images/' . $member['image']) }}" alt="{{ $member['name'] }}"
-                                    class="img-fluid w-100 h-100 object-fit-cover transition-slow">
-                                <div
-                                    class="overlay bg-primary transition-normal opacity-0 group-hover:opacity-10 position-absolute inset-0">
-                                </div>
+                                    class="img-fluid">
                             </div>
-                            <div class="p-4 bg-white">
-                                <h4 class="mb-1">{{ $member['name'] }}</h4>
-                                <p class="text-primary small fw-bold mb-0">{{ $member['position'] }}</p>
+                            <div class="team-info">
+                                <h4 class="team-name">{{ $member['name'] }}</h4>
+                                <p class="team-position">{{ $member['position'] }}</p>
                             </div>
                         </div>
                     </div>

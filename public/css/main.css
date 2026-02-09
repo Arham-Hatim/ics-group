@@ -459,11 +459,11 @@ img {
     transform: translateY(-8px);
     display: none;
     will-change: max-height, opacity, transform;
-    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
-                opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
-                transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
-                padding 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
-                margin 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        padding 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        margin 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navbar-nav .dropdown-menu.show {
@@ -473,19 +473,19 @@ img {
     transform: translateY(0);
     padding: 0.5rem 0;
     margin-bottom: 10px;
-    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
-                opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
-                transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
-                padding 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
-                margin 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        padding 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        margin 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navbar-nav .dropdown-menu.collapsing {
-    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
-                opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
-                transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
-                padding 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
-                margin 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        padding 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        margin 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Animation classes for smooth dropdown transitions */
@@ -1237,7 +1237,7 @@ section {
 }
 
 .service-card:hover .service-icon {
-    transform: scale(1.1) rotate(5deg);
+    transform: rotate(12deg) scale(1.15);
 }
 
 .service-title {
@@ -1553,7 +1553,7 @@ section {
     background: var(--gradient-primary);
     border-radius: 50%;
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
     font-size: 32px;
     color: var(--color-white);
@@ -2358,10 +2358,10 @@ section {
         position: static;
         float: none;
         width: calc(100% - 2rem);
-        transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
-                    opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
-                    padding 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
-                    margin 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+            opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+            padding 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+            margin 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         max-height: 0;
         overflow: hidden;
         opacity: 0;
@@ -2378,10 +2378,10 @@ section {
     }
 
     .navbar-nav .dropdown-menu.collapsing {
-        transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
-                    opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
-                    padding 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
-                    margin 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+            opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+            padding 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+            margin 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .navbar-nav .dropdown-item {

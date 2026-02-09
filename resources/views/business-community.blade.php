@@ -4,7 +4,7 @@
 @section('description', 'Join the ICS Group business community and explore our network of partners and collaborators.')
 
 @section('content')
-        <!-- Page Header -->
+    <!-- Page Header -->
     <section class="page-header">
         <div class="container">
             <div class="row">
@@ -53,21 +53,21 @@
             </div>
             <div class="row g-4">
                 <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="premium-card text-center p-4">
+                    <div class="premium-card text-center p-4 transition-hover">
                         <i class="bi bi-people-fill mb-3" style="font-size: 3rem; color: var(--color-primary);"></i>
                         <h3>Global Network</h3>
                         <p>Access a vast network of international partners and industry leaders.</p>
                     </div>
                 </div>
                 <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="premium-card text-center p-4">
+                    <div class="premium-card text-center p-4 transition-hover">
                         <i class="bi bi-lightbulb-fill mb-3" style="font-size: 3rem; color: var(--color-primary);"></i>
                         <h3>Innovation Hub</h3>
                         <p>Collaborate on cutting-edge projects and drive digital transformation.</p>
                     </div>
                 </div>
                 <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="premium-card text-center p-4">
+                    <div class="premium-card text-center p-4 transition-hover">
                         <i class="bi bi-graph-up-arrow mb-3" style="font-size: 3rem; color: var(--color-primary);"></i>
                         <h3>Growth Opportunities</h3>
                         <p>Unlock new business avenues and scale your operations globally.</p>
@@ -77,7 +77,7 @@
         </div>
     </section>
 
-        <!-- CTA Section -->
+    <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
             <div class="cta-content text-center" data-aos="zoom-in">

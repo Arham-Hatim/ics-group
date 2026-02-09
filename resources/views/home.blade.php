@@ -173,13 +173,13 @@
     <section class="why-choose-premium">
         <div class="container">
             <div class="section-header text-center" data-aos="fade-up">
-                <h2 class="section-title">Business <span class="text-primary">Overview</span></h2>
-                <p class="section-subtitle">Our journey and commitment to excellence</p>
+                <h2 class="section-title text-white">Business <span class="text-primary">Overview</span></h2>
+                <p class="section-subtitle text-white">Our journey and commitment to excellence</p>
             </div>
 
             <div class="row justify-content-center">
                 <div class="col-lg-10" data-aos="fade-up">
-                    <div class="premium-card p-5">
+                    <div class="premium-card p-5 transition-hover">
                         <p class="lead text-center mb-0" style="font-size: 1.25rem; line-height: 2;">
                             {{ $overview }}
                         </p>
@@ -343,64 +343,69 @@
                 <p class="section-subtitle">Trusted by leading organizations worldwide</p>
             </div>
 
-            <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="testimonial-card">
-                            <div class="testimonial-content">
-                                <i class="bi bi-quote testimonial-quote"></i>
-                                <p class="testimonial-text">
+            <div data-aos="fade-up">
+                <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-pause="hover">
+                    <div class="carousel-inner pt-4 pb-5">
+                        <div class="carousel-item active">
+                            <div class="testimonial-premium-card p-5 mx-auto text-center" style="max-width: 800px;">
+                                <div class="testimonial-avatar mx-auto mb-4">
+                                    <img src="{{ asset('images/team-1.jpg') }}" alt="David Thompson" class="img-fluid">
+                                </div>
+                                <i class="bi bi-quote fs-1 text-primary-light opacity-50 mb-3 d-block"></i>
+                                <p class="text-muted fst-italic mb-4 fs-5">
                                     "ICS Group has been instrumental in transforming our business operations. Their
                                     expertise and dedication to excellence are unmatched. We've seen remarkable improvements
                                     in efficiency and growth."
                                 </p>
-                                <div class="testimonial-author">
-                                    <h5>David Thompson</h5>
-                                    <p>CEO, TechCorp Industries</p>
+                                <div>
+                                    <h5 class="mb-0">David Thompson</h5>
+                                    <p class="text-primary small mb-0 fw-bold">CEO, TechCorp Industries</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="testimonial-card">
-                            <div class="testimonial-content">
-                                <i class="bi bi-quote testimonial-quote"></i>
-                                <p class="testimonial-text">
+
+                        <div class="carousel-item">
+                            <div class="testimonial-premium-card p-5 mx-auto text-center" style="max-width: 800px;">
+                                <div class="testimonial-avatar mx-auto mb-4">
+                                    <img src="{{ asset('images/team-2.jpg') }}" alt="Sarah Johnson" class="img-fluid">
+                                </div>
+                                <i class="bi bi-quote fs-1 text-primary-light opacity-50 mb-3 d-block"></i>
+                                <p class="text-muted fst-italic mb-4 fs-5">
                                     "Working with ICS Group has been a game-changer for our organization. Their innovative
                                     solutions and professional approach have helped us achieve our strategic goals ahead of
                                     schedule."
                                 </p>
-                                <div class="testimonial-author">
-                                    <h5>Sarah Johnson</h5>
-                                    <p>Director of Operations, Global Enterprises</p>
+                                <div>
+                                    <h5 class="mb-0">Sarah Johnson</h5>
+                                    <p class="text-primary small mb-0 fw-bold">Director, Global Enterprises</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="testimonial-card">
-                            <div class="testimonial-content">
-                                <i class="bi bi-quote testimonial-quote"></i>
-                                <p class="testimonial-text">
+
+                        <div class="carousel-item">
+                            <div class="testimonial-premium-card p-5 mx-auto text-center" style="max-width: 800px;">
+                                <div class="testimonial-avatar mx-auto mb-4">
+                                    <img src="{{ asset('images/team-3.jpg') }}" alt="Michael Chen" class="img-fluid">
+                                </div>
+                                <i class="bi bi-quote fs-1 text-primary-light opacity-50 mb-3 d-block"></i>
+                                <p class="text-muted fst-italic mb-4 fs-5">
                                     "The team at ICS Group consistently delivers exceptional results. Their commitment to
                                     quality and customer satisfaction sets them apart in the industry. Highly recommended!"
                                 </p>
-                                <div class="testimonial-author">
-                                    <h5>Michael Chen</h5>
-                                    <p>Managing Partner, Innovation Ventures</p>
+                                <div>
+                                    <h5 class="mb-0">Michael Chen</h5>
+                                    <p class="text-primary small mb-0 fw-bold">Partner, Innovation Ventures</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="carousel-indicators testimonial-indicators">
-                    <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Testimonial 1"></button>
-                    <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="1"
-                        aria-label="Testimonial 2"></button>
-                    <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="2"
-                        aria-label="Testimonial 3"></button>
+                    <div class="carousel-indicators testimonial-indicators mt-0">
+                        <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true"></button>
+                        <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="2"></button>
+                    </div>
                 </div>
             </div>
         </div>

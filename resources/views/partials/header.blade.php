@@ -26,11 +26,11 @@
                                 Who we are
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownWho">
-                                <li><a class="dropdown-item" href="{{ route('about') }}">Overview</a></li>
-                                <li><a class="dropdown-item" href="{{ route('about.strategy') }}">Our strategy and
+                                <li><a class="dropdown-item {{ request()->routeIs('about') && !request()->routeIs('about.strategy') && !request()->routeIs('about.people') && !request()->routeIs('about.journey') ? 'active' : '' }}" href="{{ route('about') }}">Overview</a></li>
+                                <li><a class="dropdown-item {{ request()->routeIs('about.strategy') ? 'active' : '' }}" href="{{ route('about.strategy') }}">Our strategy and
                                         values</a></li>
-                                <li><a class="dropdown-item" href="{{ route('about.people') }}">Our people</a></li>
-                                <li><a class="dropdown-item" href="{{ route('about.journey') }}">Our journey</a></li>
+                                <li><a class="dropdown-item {{ request()->routeIs('about.people') ? 'active' : '' }}" href="{{ route('about.people') }}">Our people</a></li>
+                                <li><a class="dropdown-item {{ request()->routeIs('about.journey') ? 'active' : '' }}" href="{{ route('about.journey') }}">Our journey</a></li>
                             </ul>
                         </li>
 
@@ -42,11 +42,11 @@
                                 What we do
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownWhat">
-                                <li><a class="dropdown-item" href="{{ route('business-community') }}">Business
+                                <li><a class="dropdown-item {{ request()->routeIs('business-community') ? 'active' : '' }}" href="{{ route('business-community') }}">Business
                                         Overview</a></li>
-                                <li><a class="dropdown-item" href="{{ route('business.verticals') }}">Business
+                                <li><a class="dropdown-item {{ request()->routeIs('business.verticals') ? 'active' : '' }}" href="{{ route('business.verticals') }}">Business
                                         Verticals</a></li>
-                                <li><a class="dropdown-item" href="{{ route('business.operations') }}">Our
+                                <li><a class="dropdown-item {{ request()->routeIs('business.operations') ? 'active' : '' }}" href="{{ route('business.operations') }}">Our
                                         Operations</a></li>
                             </ul>
                         </li>

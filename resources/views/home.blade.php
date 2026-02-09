@@ -111,7 +111,21 @@
                 @foreach($stats as $stat)
                     <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="{{ $loop->index * 100 }}">
                         <div class="stat-card">
-                            <h3 class="stat-number">{{ $stat['number'] }}</h3>
+                            @php
+                                $number = $stat['number'];
+                                $numericValue = (int)preg_replace('/[^0-9]/', '', $number);
+                                $hasPlus = strpos($number, '+') !== false;
+                                $isNumeric = is_numeric(str_replace('+', '', $number));
+                            @endphp
+                            <h3 class="stat-number" 
+                                @if($isNumeric)
+                                    data-counter="true"
+                                    data-target="{{ $numericValue }}"
+                                    data-suffix="{{ $hasPlus ? '+' : '' }}"
+                                    data-prefix=""
+                                @endif>
+                                {{ $number }}
+                            </h3>
                             <p class="stat-label">{{ $stat['label'] }}</p>
                         </div>
                     </div>
@@ -194,19 +208,19 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-md-3 reach-stat" data-aos="zoom-in">
-                    <span class="reach-number">120+</span>
+                    <span class="reach-number" data-counter="true" data-target="120" data-suffix="+" data-prefix="">120+</span>
                     <span class="reach-label">Countries Served</span>
                 </div>
                 <div class="col-md-3 reach-stat" data-aos="zoom-in" data-aos-delay="100">
-                    <span class="reach-number">5K+</span>
+                    <span class="reach-number" data-counter="true" data-target="5" data-suffix="K+" data-prefix="">5K+</span>
                     <span class="reach-label">Projects Completed</span>
                 </div>
                 <div class="col-md-3 reach-stat" data-aos="zoom-in" data-aos-delay="200">
-                    <span class="reach-number">15K+</span>
+                    <span class="reach-number" data-counter="true" data-target="15" data-suffix="K+" data-prefix="">15K+</span>
                     <span class="reach-label">Global Employees</span>
                 </div>
                 <div class="col-md-3 reach-stat" data-aos="zoom-in" data-aos-delay="300">
-                    <span class="reach-number">100%</span>
+                    <span class="reach-number" data-counter="true" data-target="100" data-suffix="%" data-prefix="">100%</span>
                     <span class="reach-label">Client Satisfaction</span>
                 </div>
             </div>
@@ -222,7 +236,7 @@
                         <img src="{{ asset('images/about-preview.jpg') }}" alt="ICS Group"
                             class="img-fluid rounded shadow-lg">
                         <div class="about-badge">
-                            <span class="badge-number">25+</span>
+                            <span class="badge-number" data-counter="true" data-target="25" data-suffix="+" data-prefix="">25+</span>
                             <span class="badge-text">Years of Excellence</span>
                         </div>
                     </div>

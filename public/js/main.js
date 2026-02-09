@@ -247,3 +247,73 @@ forms.forEach(form => {
         form.classList.add('was-validated');
     }, false);
 });
+
+/**
+ * Counter Animation for Statistics
+ */
+function initStatsCounters() {
+    const counters = document.querySelectorAll('[data-counter="true"]');
+    
+    if (counters.length === 0) return;
+
+    // Create Intersection Observer to trigger counters when visible
+    const observerOptions = {
+        threshold: 0.5,
+        rootMargin: '0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !entry.target.classList.contains('counting-done')) {
+                animateCounter(entry.target);
+                entry.target.classList.add('counting-done');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    counters.forEach(counter => {
+        observer.observe(counter);
+    });
+}
+
+/**
+ * Animate a single counter
+ */
+function animateCounter(element) {
+    const target = parseInt(element.dataset.target);
+    const suffix = element.dataset.suffix || '';
+    const prefix = element.dataset.prefix || '';
+    const duration = 2000; // 2 seconds
+    const start = 0;
+    const startTime = Date.now();
+
+    function update() {
+        const elapsed = Date.now() - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        
+        // Easing function for smooth animation
+        const easeOutQuad = 1 - (1 - progress) * (1 - progress);
+        const current = Math.floor(start + (target - start) * easeOutQuad);
+        
+        element.textContent = prefix + current + suffix;
+        element.classList.add('counting');
+
+        if (progress < 1) {
+            requestAnimationFrame(update);
+        } else {
+            element.textContent = prefix + target + suffix;
+            element.classList.remove('counting');
+        }
+    }
+
+    update();
+}
+
+// Initialize counters when DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initStatsCounters);
+} else {
+    initStatsCounters();
+}
+

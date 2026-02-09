@@ -24,7 +24,7 @@
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
     --gradient-dark: linear-gradient(135deg, var(--color-black) 0%, var(--color-dark) 100%);
-    --gradient-overlay: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(220, 0, 0, 0.6) 100%);
+    --gradient-overlay: linear-gradient(135deg, rgb(122 121 121 / 80%) 0%, rgb(247 110 110 / 60%) 100%);
 
     /* Typography */
     --font-primary: 'Inter', sans-serif;
@@ -1478,13 +1478,14 @@ section {
 .feature-box {
     text-align: center;
     padding: 40px 20px;
+    border-radius: var(--radius-lg);
 }
 
 .feature-icon {
     width: 80px;
     height: 80px;
     margin: 0 auto 24px;
-    background: var(--color-off-white);
+    background: #d1cbcb;
     border-radius: 50%;
     display: flex;
     align-items: center;

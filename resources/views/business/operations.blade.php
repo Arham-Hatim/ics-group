@@ -29,11 +29,13 @@
                     </p>
                     <div class="row g-4 mt-2">
                         <div class="col-6">
-                            <h3 class="stat-number text-primary">120+</h3>
+                            <h3 class="stat-number text-primary" data-counter="true" data-target="120" data-suffix="+"
+                                data-prefix="">120+</h3>
                             <p class="text-dark fw-bold mb-0">Countries Served</p>
                         </div>
                         <div class="col-6">
-                            <h3 class="stat-number text-primary">500+</h3>
+                            <h3 class="stat-number text-primary" data-counter="true" data-target="500" data-suffix="+"
+                                data-prefix="">500+</h3>
                             <p class="text-dark fw-bold mb-0">Partner Hubs</p>
                         </div>
                     </div>
@@ -70,7 +72,7 @@
                 @foreach($standards as $std)
                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="{{ $loop->index * 100 }}">
                         <div
-                            class="p-5 border border-light-subtle rounded-lg text-center bg-white-5 hover:bg-white-10 transition-normal">
+                            class="p-5 border border-light-subtle rounded-lg text-center bg-white-5 hover:bg-white-10 transition-normal business-view">
                             <h4 class="text-white mb-3">{{ $std['title'] }}</h4>
                             <p class="text-light-emphasis small mb-0">{{ $std['desc'] }}</p>
                         </div>

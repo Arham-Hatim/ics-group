@@ -68,19 +68,19 @@
             </p>
             <div class="row g-4 mt-5">
                 <div class="col-md-4">
-                    <div class="p-4 border border-light-subtle rounded-lg">
-                        <h1 class="text-primary mb-2">40%</h1>
+                    <div class="p-4 border border-light-subtle rounded-lg business-view transition-normal">
+                        <h1 class="text-primary mb-2" data-counter="true" data-target="40" data-suffix="%" data-prefix="">40%</h1>
                         <p class="text-light-emphasis mb-0">Emissions Reduction</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="p-4 border border-light-subtle rounded-lg">
-                        <h1 class="text-primary mb-2">100%</h1>
+                    <div class="p-4 border border-light-subtle rounded-lg business-view transition-normal">
+                        <h1 class="text-primary mb-2" data-counter="true" data-target="100" data-suffix="%" data-prefix="">100%</h1>
                         <p class="text-light-emphasis mb-0">Solar Logistics Hubs</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="p-4 border border-light-subtle rounded-lg">
+                    <div class="p-4 border border-light-subtle rounded-lg business-view transition-normal">
                         <h1 class="text-primary mb-2">Zero</h1>
                         <p class="text-light-emphasis mb-0">Single-use Plastic Policy</p>
                     </div>

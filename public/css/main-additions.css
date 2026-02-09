@@ -839,3 +839,29 @@
         background-attachment: scroll !important;
     }
 }
+
+/* ===================================
+   Counter Animation Styles
+   =================================== */
+[data-counter="true"] {
+    transition: all var(--transition-normal);
+    display: block;
+    font-variant-numeric: tabular-nums;
+}
+
+/* Pulse animation during counting */
+[data-counter="true"].counting {
+    animation: counterPulse 0.3s ease-in-out;
+}
+
+@keyframes counterPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

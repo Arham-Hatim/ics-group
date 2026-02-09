@@ -5,13 +5,12 @@
 
 @section('content')
     <!-- Page Header -->
-    <section class="page-header journey-header"
-        style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('{{ asset('images/hero_business_background_1769149735660.png') }}'); background-size: cover; background-position: center; padding: 120px 0;">
+     <section class="page-header">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center" data-aos="fade-down">
-                    <h1 class="page-title text-white">Our <span class="text-primary">Journey</span></h1>
-                    <p class="page-subtitle text-light">A legacy of excellence, integrity, and innovation since 1983</p>
+                    <h1 class="page-title">Our <span class="text-primary">Journey</span></h1>
+                    <p class="page-subtitle">A legacy of excellence, integrity, and innovation since 1983</p>
                 </div>
             </div>
         </div>

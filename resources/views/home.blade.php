@@ -16,7 +16,7 @@
             <div class="carousel-inner">
                 <!-- Slide 1 -->
                 <div class="carousel-item active">
-                    <img src="{{ asset('images/hero-bg.jpg') }}" class="d-block w-100" alt="ICS Group">
+                    <img src="{{ asset('images/hero1.webp') }}" class="d-block w-100" alt="ICS Group">
                     <div class="carousel-overlay"></div>
                     <div class="carousel-caption-custom">
                         <div class="container">
@@ -42,7 +42,7 @@
 
                 <!-- Slide 2 -->
                 <div class="carousel-item">
-                    <img src="{{ asset('images/hero_business_background_1769149735660.png') }}" class="d-block w-100"
+                    <img src="{{ asset('images/hero2.jpg') }}" class="d-block w-100"
                         alt="Innovation">
                     <div class="carousel-overlay"></div>
                     <div class="carousel-caption-custom">
@@ -69,7 +69,7 @@
 
                 <!-- Slide 3 -->
                 <div class="carousel-item">
-                    <img src="{{ asset('images/technology_innovation_1769149771178.png') }}" class="d-block w-100"
+                    <img src="{{ asset('images/hero3.jpg') }}" class="d-block w-100"
                         alt="Technology">
                     <div class="carousel-overlay"></div>
                     <div class="carousel-caption-custom">
@@ -179,7 +179,7 @@
 
             <div class="row justify-content-center">
                 <div class="col-lg-10" data-aos="fade-up">
-                    <div class="premium-card p-5 transition-hover">
+                    <div class="premium-card p-5 business-view">
                         <p class="lead text-center mb-0" style="font-size: 1.25rem; line-height: 2;">
                             {{ $overview }}
                         </p>

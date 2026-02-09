@@ -13,7 +13,12 @@ class AboutController extends Controller
      */
     public function index()
     {
-        $data = [
+        return view('about', $this->getAboutData());
+    }
+
+    private function getAboutData()
+    {
+        return [
             'mission' => 'To deliver innovative solutions that drive sustainable growth and create lasting value for our clients and communities.',
             'vision' => 'To be a global leader in providing integrated business solutions that transform industries and improve lives.',
             'values' => [
@@ -61,7 +66,20 @@ class AboutController extends Controller
                 ]
             ]
         ];
+    }
 
-        return view('about', $data);
+    public function strategy()
+    {
+        return view('about.strategy', $this->getAboutData());
+    }
+
+    public function people()
+    {
+        return view('about.people', $this->getAboutData());
+    }
+
+    public function journey()
+    {
+        return view('about.journey', $this->getAboutData());
     }
 }

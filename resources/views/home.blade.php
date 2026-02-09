@@ -30,8 +30,9 @@
                                         innovative business solutions across
                                         engineering, construction, energy, and technology sectors.</p>
                                     <div class="hero-buttons">
-                                        <a href="{{ route('services') }}" class="btn btn-primary btn-lg">Our Services</a>
-                                        <a href="{{ route('about') }}" class="btn btn-outline-light btn-lg">Learn More</a>
+                                        <a href="{{ route('business.verticals') }}" class="btn btn-primary btn-lg">Our
+                                            Business</a>
+                                        <a href="{{ route('about') }}" class="btn btn-outline-light btn-lg">Who We Are</a>
                                     </div>
                                 </div>
                             </div>
@@ -55,8 +56,8 @@
                                         solutions that transform businesses and
                                         drive sustainable growth.</p>
                                     <div class="hero-buttons">
-                                        <a href="{{ route('services') }}" class="btn btn-primary btn-lg">Explore
-                                            Services</a>
+                                        <a href="{{ route('business.verticals') }}" class="btn btn-primary btn-lg">Explore
+                                            Verticals</a>
                                         <a href="{{ route('contact') }}" class="btn btn-outline-light btn-lg">Get in
                                             Touch</a>
                                     </div>
@@ -81,7 +82,8 @@
                                         solutions that drive digital transformation
                                         and operational excellence.</p>
                                     <div class="hero-buttons">
-                                        <a href="{{ route('services') }}" class="btn btn-primary btn-lg">View Solutions</a>
+                                        <a href="{{ route('business.operations') }}" class="btn btn-primary btn-lg">Our
+                                            Operations</a>
                                         <a href="{{ route('about') }}" class="btn btn-outline-light btn-lg">About Us</a>
                                     </div>
                                 </div>
@@ -129,12 +131,12 @@
             <div class="row g-4 justify-content-center">
                 @foreach($services as $service)
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="{{ $loop->index * 100 }}">
-                        <div class="service-card">
-                            <div class="service-icon">
+                        <div class="premium-card p-4 h-100 transition-hover">
+                            <div class="service-icon mb-3 fs-1 text-primary text-center">
                                 <i class="bi {{ $service['icon'] }}"></i>
                             </div>
-                            <h4 class="service-title">{{ $service['title'] }}</h4>
-                            <p class="service-description">{{ $service['description'] }}</p>
+                            <h4 class="service-title text-center mb-3">{{ $service['title'] }}</h4>
+                            <p class="service-description text-muted text-center small mb-0">{{ $service['description'] }}</p>
                         </div>
                     </div>
                 @endforeach
@@ -143,7 +145,7 @@
     </section>
 
     <!-- Our Brands Section -->
-    <section class="portfolio-carousel-section" id="brands">
+    {{--<section class="portfolio-carousel-section" id="brands">
         <div class="container">
             <div class="section-header text-center" data-aos="fade-up">
                 <h2 class="section-title">Our <span class="text-primary">Brands</span></h2>
@@ -152,20 +154,20 @@
 
             <div class="row g-4 justify-content-center">
                 @foreach($brands as $brand)
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="{{ $loop->index * 100 }}">
-                        <div class="portfolio-card">
-                            <div class="p-4 text-center">
-                                <h4 class="mb-3">{{ $brand['name'] }}</h4>
-                                <p class="text-muted mb-4">{{ $brand['description'] }}</p>
-                                <a href="{{ $brand['url'] }}" target="_blank" class="btn btn-outline-primary btn-sm">Visit
-                                    Website</a>
-                            </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="{{ $loop->index * 100 }}">
+                    <div class="portfolio-card">
+                        <div class="p-4 text-center">
+                            <h4 class="mb-3">{{ $brand['name'] }}</h4>
+                            <p class="text-muted mb-4">{{ $brand['description'] }}</p>
+                            <a href="{{ $brand['url'] }}" target="_blank" class="btn btn-outline-primary btn-sm">Visit
+                                Website</a>
                         </div>
                     </div>
+                </div>
                 @endforeach
             </div>
         </div>
-    </section>
+    </section>--}}
 
     <!-- Business Overview Section -->
     <section class="why-choose-premium">

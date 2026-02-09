@@ -41,25 +41,25 @@
     </section>
 
     <!-- Mission & Vision -->
-    <section class="mission-vision-section">
+    <section class="mission-vision-section py-5">
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-6" data-aos="fade-up">
-                    <div class="mission-card">
-                        <div class="card-icon">
+                    <div class="premium-card p-5 h-100 transition-hover">
+                        <div class="card-icon mb-4 fs-1 text-primary">
                             <i class="bi bi-bullseye"></i>
                         </div>
                         <h3 class="card-title">Our Mission</h3>
-                        <p class="card-text">{{ $mission }}</p>
+                        <p class="card-text text-muted">{{ $mission }}</p>
                     </div>
                 </div>
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="vision-card">
-                        <div class="card-icon">
+                    <div class="premium-card p-5 h-100 transition-hover border-primary">
+                        <div class="card-icon mb-4 fs-1 text-primary">
                             <i class="bi bi-eye-fill"></i>
                         </div>
                         <h3 class="card-title">Our Vision</h3>
-                        <p class="card-text">{{ $vision }}</p>
+                        <p class="card-text text-muted">{{ $vision }}</p>
                     </div>
                 </div>
             </div>
@@ -67,22 +67,22 @@
     </section>
 
     <!-- Core Values -->
-    <section class="values-section">
+    <section class="values-section py-5 bg-dark text-white">
         <div class="container">
-            <div class="section-header text-center" data-aos="fade-up">
-                <h2 class="section-title">Our Core <span class="text-primary">Values</span></h2>
-                <p class="section-subtitle">The principles that guide everything we do</p>
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title text-white">Our Core <span class="text-primary">Values</span></h2>
+                <p class="section-subtitle text-light">The principles that guide everything we do</p>
             </div>
 
             <div class="row g-4">
                 @foreach($values as $value)
                     <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="{{ $loop->index * 100 }}">
-                        <div class="value-card">
-                            <div class="value-icon">
-                                <i class="bi {{ $value['icon'] }}"></i>
+                        <div class="glass-card p-5 h-100 text-center border-light-subtle">
+                            <div class="icon-box-red mb-4">
+                                <i class="bi {{ $value['icon'] }} fs-2"></i>
                             </div>
-                            <h4 class="value-title">{{ $value['title'] }}</h4>
-                            <p class="value-description">{{ $value['description'] }}</p>
+                            <h4 class="value-title mb-3">{{ $value['title'] }}</h4>
+                            <p class="value-description text-light-emphasis small mb-0">{{ $value['description'] }}</p>
                         </div>
                     </div>
                 @endforeach

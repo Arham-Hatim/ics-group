@@ -15,4 +15,14 @@ class BusinessCommunityController extends Controller
     {
         return view('business-community');
     }
+
+    public function verticals()
+    {
+        return view('business.verticals');
+    }
+
+    public function operations()
+    {
+        return view('business.operations');
+    }
 }

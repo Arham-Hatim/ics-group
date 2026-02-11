@@ -8,18 +8,9 @@
    =================================== */
 :root {
     /* Primary Colors */
-    --color-primary: #666666;
-    --color-primary-dark: #4d4d4d;
-    --color-primary-light: #808080;
-
-    /* Accent Colors (for buttons and interactive elements) */
-    --color-accent: #DC0000;
-    --color-accent-dark: #B00000;
-    --color-accent-light: #FF1A1A;
-
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
-    --gradient-accent: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);
+    --color-primary: #DC0000;
+    --color-primary-dark: #B00000;
+    --color-primary-light: #FF1A1A;
 
     /* Neutral Colors */
     --color-black: #000000;
@@ -30,8 +21,10 @@
     --color-white: #ffffff;
     --color-off-white: #f8f8f8;
 
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
     --gradient-dark: linear-gradient(135deg, var(--color-black) 0%, var(--color-dark) 100%);
-    --gradient-overlay: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(40, 40, 40, 0.6) 100%);
+    --gradient-overlay: linear-gradient(135deg, rgb(122 121 121 / 80%) 0%, rgb(247 110 110 / 60%) 100%);
 
     /* Typography */
     --font-primary: 'Inter', sans-serif;
@@ -181,25 +174,25 @@ img {
 }
 
 .btn-primary {
-    background: var(--gradient-accent);
+    background: var(--gradient-primary);
     color: var(--color-white);
     box-shadow: var(--shadow-primary);
 }
 
 .btn-primary:hover {
-    background: var(--color-accent-dark);
+    background: var(--color-primary-dark);
     transform: translateY(-2px);
     box-shadow: 0 6px 24px rgba(220, 0, 0, 0.4);
 }
 
 .btn-outline-primary {
-    border: 2px solid var(--color-accent);
-    color: var(--color-accent);
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
     background: transparent;
 }
 
 .btn-outline-primary:hover {
-    background: var(--color-accent);
+    background: var(--color-primary);
     color: var(--color-white);
     transform: translateY(-2px);
     border-color: #000000;
@@ -213,12 +206,12 @@ img {
 
 .btn-outline-light:hover {
     background: var(--color-white);
-    color: var(--color-accent);
+    color: var(--color-primary);
 }
 
 .btn-light {
     background: var(--color-white);
-    color: var(--color-accent);
+    color: var(--color-primary);
 }
 
 .btn-light:hover {
@@ -345,7 +338,7 @@ img {
 .logo-text {
     font-size: 32px;
     font-weight: var(--font-weight-black);
-    color: var(--color-black);
+    color: var(--color-primary);
     letter-spacing: 2px;
 }
 
@@ -781,7 +774,7 @@ img {
 .floating-icon {
     animation: float 4s ease-in-out infinite;
     font-size: 5rem;
-    color: var(--color-gray);
+    color: var(--color-primary);
     margin-bottom: 2rem;
     display: block;
 }
@@ -822,17 +815,17 @@ img {
 }
 
 .stat-card {
-    background: var(--color-white);
-    padding: clamp(1.5rem, 3vw, 2.5rem);
+    background: transparent;
+    padding: 1.5rem;
     text-align: center;
     border-radius: var(--radius-lg);
-    border: 1px solid var(--color-gray-light);
+    border: 1px solid rgba(220, 0, 0, 0.1);
     transition: var(--transition-normal);
     height: 100%;
 }
 
 .stat-card:hover {
-    background: rgba(200, 200, 200, 0.1);
+    background: rgba(220, 0, 0, 0.05);
     border-color: var(--color-primary);
     transform: translateY(-5px);
 }
@@ -846,7 +839,7 @@ img {
 }
 
 .premium-card:hover {
-    background: rgba(200, 200, 200, 0.1);
+    background: rgba(220, 0, 0, 0.1);
     border-color: var(--color-primary);
     transform: translateY(-15px);
 }
@@ -886,7 +879,7 @@ img {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 700;
-    color: var(--color-gray);
+    color: var(--color-primary);
     font-size: clamp(12px, 1.5vw, 16px);
 }
 
@@ -1092,7 +1085,7 @@ img {
 
 .testimonial-quote {
     font-size: 64px;
-    color: var(--color-gray-light);
+    color: var(--color-primary);
     opacity: 0.2;
     position: absolute;
     top: 20px;
@@ -1124,7 +1117,7 @@ img {
 
 .testimonial-author p {
     font-size: 14px;
-    color: var(--color-gray);
+    color: var(--color-primary);
     font-weight: var(--font-weight-medium);
     margin: 0;
 }
@@ -1354,7 +1347,7 @@ section {
 }
 
 .feature-list i {
-    color: var(--color-gray);
+    color: var(--color-primary);
     font-size: 20px;
 }
 
@@ -1487,7 +1480,7 @@ section {
 }
 
 .service-features i {
-    color: var(--color-gray);
+    color: var(--color-primary);
     font-size: 18px;
 }
 
@@ -1518,13 +1511,8 @@ section {
     transition: var(--transition-normal);
 }
 
-.about-link i {
-    color: var(--color-gray-dark);
-    transition: var(--transition-normal);
-}
-
 .feature-box:hover .feature-icon {
-    background: var(--gradient-accent);
+    background: var(--gradient-primary);
     color: var(--color-white);
     transform: scale(1.1);
 }
@@ -1739,7 +1727,7 @@ section {
 
 .team-position {
     font-size: 14px;
-    color: var(--color-gray);
+    color: var(--color-primary);
     font-weight: var(--font-weight-medium);
     margin: 0;
 }
@@ -2031,7 +2019,7 @@ section {
 }
 
 .footer-contact i {
-    color: var(--color-gray-light);
+    color: var(--color-primary);
     font-size: 18px;
     flex-shrink: 0;
     margin-top: 2px;

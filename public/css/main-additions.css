@@ -432,7 +432,7 @@
 }
 
 .pillar-icon {
-    color: var(--color-gray);
+    color: var(--color-primary);
 }
 
 /* ===================================
@@ -575,7 +575,7 @@
 }
 
 .premium-card i {
-    color: var(--color-white);
+    color: var(--color-primary);
 }
 
 /* ===================================
@@ -671,7 +671,7 @@
 .premium-card .bi,
 .feature-box .bi,
 .glass-card .bi {
-    color: var(--color-gray);
+    color: var(--color-primary);
 }
 
 /* Fix: Icons inside colored containers must stay white for contrast */
@@ -684,7 +684,7 @@
 }
 
 .bg-dark .bi {
-    color: var(--color-gray-light);
+    color: var(--color-primary);
 }
 
 /* Testimonial Specifics */
@@ -726,7 +726,7 @@
 }
 
 .testimonial-quote {
-    color: var(--color-gray-light);
+    color: var(--color-primary);
     opacity: 0.15;
     line-height: 1;
 }

@@ -20,16 +20,15 @@
                     <div class="carousel-overlay"></div>
                     <div class="carousel-caption-custom">
                         <div class="container">
-                            <div class="row">
-                                <div class="col-lg-8">
-                                    <h1 class="hero-title">Building Tomorrow's
-                                        <span class="text-primary">Solutions</span>
-                                        Today
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10 text-center">
+                                    <h1 class="hero-title">Building Future
+                                        <span class="text-primary">Solutions Today</span>
                                     </h1>
-                                    <p class="hero-subtitle">Leading the way in
+                                    <p class="hero-subtitle mx-auto">Leading the way in
                                         innovative business solutions across
                                         engineering, construction, energy, and technology sectors.</p>
-                                    <div class="hero-buttons">
+                                    <div class="hero-buttons justify-content-center">
                                         <a href="{{ route('business.verticals') }}" class="btn btn-primary btn-lg">Our
                                             Business</a>
                                         <a href="{{ route('about') }}" class="btn btn-outline-light btn-lg">Who We Are</a>
@@ -42,20 +41,19 @@
 
                 <!-- Slide 2 -->
                 <div class="carousel-item">
-                    <img src="{{ asset('images/hero2.jpg') }}" class="d-block w-100"
-                        alt="Innovation">
+                    <img src="{{ asset('images/hero2.jpg') }}" class="d-block w-100" alt="Innovation">
                     <div class="carousel-overlay"></div>
                     <div class="carousel-caption-custom">
                         <div class="container">
-                            <div class="row">
-                                <div class="col-lg-8">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10 text-center">
                                     <h1 class="hero-title">Innovation Meets
                                         <span class="text-primary">Excellence</span>
                                     </h1>
-                                    <p class="hero-subtitle">Delivering cutting-edge
+                                    <p class="hero-subtitle mx-auto">Delivering cutting-edge
                                         solutions that transform businesses and
                                         drive sustainable growth.</p>
-                                    <div class="hero-buttons">
+                                    <div class="hero-buttons justify-content-center">
                                         <a href="{{ route('business.verticals') }}" class="btn btn-primary btn-lg">Explore
                                             Verticals</a>
                                         <a href="{{ route('contact') }}" class="btn btn-outline-light btn-lg">Get in
@@ -69,19 +67,18 @@
 
                 <!-- Slide 3 -->
                 <div class="carousel-item">
-                    <img src="{{ asset('images/hero3.jpg') }}" class="d-block w-100"
-                        alt="Technology">
+                    <img src="{{ asset('images/hero3.jpg') }}" class="d-block w-100" alt="Technology">
                     <div class="carousel-overlay"></div>
                     <div class="carousel-caption-custom">
                         <div class="container">
-                            <div class="row">
-                                <div class="col-lg-8">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10 text-center">
                                     <h1 class="hero-title">Powering Your <span class="text-primary">Digital Future</span>
                                     </h1>
-                                    <p class="hero-subtitle">Advanced technology
+                                    <p class="hero-subtitle mx-auto">Advanced technology
                                         solutions that drive digital transformation
                                         and operational excellence.</p>
-                                    <div class="hero-buttons">
+                                    <div class="hero-buttons justify-content-center">
                                         <a href="{{ route('business.operations') }}" class="btn btn-primary btn-lg">Our
                                             Operations</a>
                                         <a href="{{ route('about') }}" class="btn btn-outline-light btn-lg">About Us</a>
@@ -113,17 +110,12 @@
                         <div class="stat-card">
                             @php
                                 $number = $stat['number'];
-                                $numericValue = (int)preg_replace('/[^0-9]/', '', $number);
+                                $numericValue = (int) preg_replace('/[^0-9]/', '', $number);
                                 $hasPlus = strpos($number, '+') !== false;
                                 $isNumeric = is_numeric(str_replace('+', '', $number));
                             @endphp
-                            <h3 class="stat-number" 
-                                @if($isNumeric)
-                                    data-counter="true"
-                                    data-target="{{ $numericValue }}"
-                                    data-suffix="{{ $hasPlus ? '+' : '' }}"
-                                    data-prefix=""
-                                @endif>
+                            <h3 class="stat-number" @if($isNumeric) data-counter="true" data-target="{{ $numericValue }}"
+                            data-suffix="{{ $hasPlus ? '+' : '' }}" data-prefix="" @endif>
                                 {{ $number }}
                             </h3>
                             <p class="stat-label">{{ $stat['label'] }}</p>
@@ -194,7 +186,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-10" data-aos="fade-up">
                     <div class="premium-card p-5 business-view">
-                        <p class="lead text-center mb-0" style="font-size: 1.25rem; line-height: 2;">
+                        <p class="lead text-center mb-0">
                             {{ $overview }}
                         </p>
                     </div>
@@ -208,19 +200,23 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-md-3 reach-stat" data-aos="zoom-in">
-                    <span class="reach-number" data-counter="true" data-target="120" data-suffix="+" data-prefix="">120+</span>
+                    <span class="reach-number" data-counter="true" data-target="120" data-suffix="+"
+                        data-prefix="">120+</span>
                     <span class="reach-label">Countries Served</span>
                 </div>
                 <div class="col-md-3 reach-stat" data-aos="zoom-in" data-aos-delay="100">
-                    <span class="reach-number" data-counter="true" data-target="5" data-suffix="K+" data-prefix="">5K+</span>
+                    <span class="reach-number" data-counter="true" data-target="5" data-suffix="K+"
+                        data-prefix="">5K+</span>
                     <span class="reach-label">Projects Completed</span>
                 </div>
                 <div class="col-md-3 reach-stat" data-aos="zoom-in" data-aos-delay="200">
-                    <span class="reach-number" data-counter="true" data-target="15" data-suffix="K+" data-prefix="">15K+</span>
+                    <span class="reach-number" data-counter="true" data-target="15" data-suffix="K+"
+                        data-prefix="">15K+</span>
                     <span class="reach-label">Global Employees</span>
                 </div>
                 <div class="col-md-3 reach-stat" data-aos="zoom-in" data-aos-delay="300">
-                    <span class="reach-number" data-counter="true" data-target="100" data-suffix="%" data-prefix="">100%</span>
+                    <span class="reach-number" data-counter="true" data-target="100" data-suffix="%"
+                        data-prefix="">100%</span>
                     <span class="reach-label">Client Satisfaction</span>
                 </div>
             </div>
@@ -236,7 +232,8 @@
                         <img src="{{ asset('images/about-preview.jpg') }}" alt="ICS Group"
                             class="img-fluid rounded shadow-lg">
                         <div class="about-badge">
-                            <span class="badge-number" data-counter="true" data-target="25" data-suffix="+" data-prefix="">25+</span>
+                            <span class="badge-number" data-counter="true" data-target="25" data-suffix="+"
+                                data-prefix="">25+</span>
                             <span class="badge-text">Years of Excellence</span>
                         </div>
                     </div>

@@ -27,7 +27,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6" data-aos="fade-left">
-                    <h2 class="section-title">Who We Are</h2>
+                    <h2 class="section-title">Who <span class="text-primary">We Are</span></h2>
                     <p class="section-text">
                         ICS Group is a leading provider of integrated business solutions with over 25 years of experience
                         in engineering, construction, energy, and technology sectors. We pride ourselves on delivering

@@ -8,9 +8,18 @@
    =================================== */
 :root {
     /* Primary Colors */
-    --color-primary: #DC0000;
-    --color-primary-dark: #B00000;
-    --color-primary-light: #FF1A1A;
+    --color-primary: #666666;
+    --color-primary-dark: #4d4d4d;
+    --color-primary-light: #808080;
+
+    /* Accent Colors (for buttons and interactive elements) */
+    --color-accent: #DC0000;
+    --color-accent-dark: #B00000;
+    --color-accent-light: #FF1A1A;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    --gradient-accent: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);
 
     /* Neutral Colors */
     --color-black: #000000;
@@ -21,10 +30,8 @@
     --color-white: #ffffff;
     --color-off-white: #f8f8f8;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
     --gradient-dark: linear-gradient(135deg, var(--color-black) 0%, var(--color-dark) 100%);
-    --gradient-overlay: linear-gradient(135deg, rgb(122 121 121 / 80%) 0%, rgb(247 110 110 / 60%) 100%);
+    --gradient-overlay: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(40, 40, 40, 0.6) 100%);
 
     /* Typography */
     --font-primary: 'Inter', sans-serif;
@@ -102,6 +109,30 @@ h6 {
     color: var(--color-black);
 }
 
+@media (max-width: 991px) {
+    h1 {
+        font-size: calc(1.3rem + 1vw);
+    }
+
+    h2 {
+        font-size: calc(1.2rem + 0.7vw);
+    }
+
+    h3 {
+        font-size: calc(1.1rem + 0.5vw);
+    }
+
+    h4 {
+        font-size: calc(1.05rem + 0.3vw);
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+}
+
 .bg-dark h1,
 .bg-dark h2,
 .bg-dark h3,
@@ -142,26 +173,33 @@ img {
     font-size: 14px;
 }
 
+@media (max-width: 767px) {
+    .btn {
+        padding: 10px 24px;
+        font-size: 13px;
+    }
+}
+
 .btn-primary {
-    background: var(--gradient-primary);
+    background: var(--gradient-accent);
     color: var(--color-white);
     box-shadow: var(--shadow-primary);
 }
 
 .btn-primary:hover {
-    background: var(--color-primary-dark);
+    background: var(--color-accent-dark);
     transform: translateY(-2px);
     box-shadow: 0 6px 24px rgba(220, 0, 0, 0.4);
 }
 
 .btn-outline-primary {
-    border: 2px solid var(--color-primary);
-    color: var(--color-primary);
+    border: 2px solid var(--color-accent);
+    color: var(--color-accent);
     background: transparent;
 }
 
 .btn-outline-primary:hover {
-    background: var(--color-primary);
+    background: var(--color-accent);
     color: var(--color-white);
     transform: translateY(-2px);
     border-color: #000000;
@@ -175,12 +213,12 @@ img {
 
 .btn-outline-light:hover {
     background: var(--color-white);
-    color: var(--color-primary);
+    color: var(--color-accent);
 }
 
 .btn-light {
     background: var(--color-white);
-    color: var(--color-primary);
+    color: var(--color-accent);
 }
 
 .btn-light:hover {
@@ -191,6 +229,13 @@ img {
 .btn-lg {
     padding: 16px 40px;
     font-size: 16px;
+}
+
+@media (max-width: 767px) {
+    .btn-lg {
+        padding: 14px 32px;
+        font-size: 15px;
+    }
 }
 
 .text-primary {
@@ -241,7 +286,7 @@ img {
 /* Responsive Header Styles */
 @media (max-width: 1500px) {
     .navbar-nav .nav-link {
-        padding: 0.5rem 1rem !important;
+        padding: 0.5rem 0.8rem !important;
     }
 }
 
@@ -300,7 +345,7 @@ img {
 .logo-text {
     font-size: 32px;
     font-weight: var(--font-weight-black);
-    color: var(--color-primary);
+    color: var(--color-black);
     letter-spacing: 2px;
 }
 
@@ -313,7 +358,7 @@ img {
 }
 
 .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, 0.85);
+    color: rgba(255, 255, 255, 1);
     font-weight: var(--font-weight-semibold);
     padding: 0.5rem 1.2rem;
     position: relative;
@@ -509,7 +554,11 @@ img {
 }
 
 .header.scrolled .navbar-nav .nav-link {
-    padding: 0.3rem 1.2rem;
+    padding: 0.3rem 1.2rem
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0.3rem 1.2rem
 }
 
 .navbar-toggler {
@@ -562,15 +611,16 @@ img {
     color: var(--color-white);
 }
 
-.hero-title {
-    font-size: 64px;
+.hero-title,
+.carousel-caption-custom h1 {
+    font-size: clamp(22px, 5vw, 64px);
     font-weight: var(--font-weight-black);
     margin-bottom: 24px;
     line-height: 1.1;
 }
 
 .hero-subtitle {
-    font-size: 20px;
+    font-size: clamp(14px, 2vw, 18px);
     font-weight: var(--font-weight-regular);
     margin-bottom: 40px;
     max-width: 600px;
@@ -660,6 +710,7 @@ img {
     transform: translateY(-50%);
     z-index: 2;
     color: var(--color-white);
+    padding: 0 20px;
 }
 
 .hero-carousel-section .carousel-item.active img {
@@ -730,7 +781,7 @@ img {
 .floating-icon {
     animation: float 4s ease-in-out infinite;
     font-size: 5rem;
-    color: var(--color-primary);
+    color: var(--color-gray);
     margin-bottom: 2rem;
     display: block;
 }
@@ -770,8 +821,32 @@ img {
     height: 100%;
 }
 
+.stat-card {
+    background: var(--color-white);
+    padding: clamp(1.5rem, 3vw, 2.5rem);
+    text-align: center;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-gray-light);
+    transition: var(--transition-normal);
+    height: 100%;
+}
+
+.stat-card:hover {
+    background: rgba(200, 200, 200, 0.1);
+    border-color: var(--color-primary);
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
 .premium-card:hover {
-    background: rgba(220, 0, 0, 0.1);
+    background: rgba(200, 200, 200, 0.1);
     border-color: var(--color-primary);
     transform: translateY(-15px);
 }
@@ -800,7 +875,7 @@ img {
 }
 
 .reach-number {
-    font-size: 4rem;
+    font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 900;
     color: var(--color-black);
     display: block;
@@ -811,19 +886,31 @@ img {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 700;
-    color: var(--color-primary);
+    color: var(--color-gray);
+    font-size: clamp(12px, 1.5vw, 16px);
 }
 
 .hero-carousel-section .carousel-control-prev,
 .hero-carousel-section .carousel-control-next {
     width: 60px;
     height: 60px;
-    background: rgba(220, 0, 0, 0.8);
+    background: transparent !important;
     border-radius: 50%;
     top: 50%;
     transform: translateY(-50%);
     opacity: 0.8;
     transition: var(--transition-normal);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-carousel-section .carousel-control-prev-icon,
+.hero-carousel-section .carousel-control-next-icon {
+    width: 40px;
+    height: 40px;
+    background-size: 100% 100%;
 }
 
 .hero-carousel-section .carousel-control-prev {
@@ -837,7 +924,13 @@ img {
 .hero-carousel-section .carousel-control-prev:hover,
 .hero-carousel-section .carousel-control-next:hover {
     opacity: 1;
-    background: var(--color-primary);
+    background: transparent !important;
+}
+
+.hero-carousel-section .carousel-control-prev:hover .carousel-control-prev-icon,
+.hero-carousel-section .carousel-control-next:hover .carousel-control-next-icon {
+    /* Filter to change white to #DC0000 */
+    filter: invert(13%) sepia(94%) saturate(7466%) hue-rotate(358deg) brightness(92%) contrast(116%);
 }
 
 .hero-carousel-section .carousel-indicators {
@@ -846,9 +939,9 @@ img {
 }
 
 .hero-carousel-section .carousel-indicators button {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    border-radius: 15%;
     background: var(--color-white);
     opacity: 0.5;
     border: 2px solid var(--color-white);
@@ -999,7 +1092,7 @@ img {
 
 .testimonial-quote {
     font-size: 64px;
-    color: var(--color-primary);
+    color: var(--color-gray-light);
     opacity: 0.2;
     position: absolute;
     top: 20px;
@@ -1031,7 +1124,7 @@ img {
 
 .testimonial-author p {
     font-size: 14px;
-    color: var(--color-primary);
+    color: var(--color-gray);
     font-weight: var(--font-weight-medium);
     margin: 0;
 }
@@ -1110,13 +1203,13 @@ section {
 }
 
 .section-title {
-    font-size: 48px;
+    font-size: clamp(22px, 4vw, 48px);
     font-weight: var(--font-weight-black);
     margin-bottom: 16px;
 }
 
 .section-subtitle {
-    font-size: 18px;
+    font-size: clamp(14px, 1.5vw, 18px);
     color: var(--color-gray);
     max-width: 700px;
     margin: 0 auto;
@@ -1261,7 +1354,7 @@ section {
 }
 
 .feature-list i {
-    color: var(--color-primary);
+    color: var(--color-gray);
     font-size: 20px;
 }
 
@@ -1275,16 +1368,17 @@ section {
 }
 
 .cta-title {
-    font-size: 42px;
+    font-size: clamp(24px, 4vw, 42px);
     font-weight: var(--font-weight-black);
     margin-bottom: 16px;
     color: var(--color-white);
 }
 
 .cta-subtitle {
-    font-size: 18px;
-    margin-bottom: 32px;
+    font-size: clamp(14px, 1.5vw, 18px);
+    color: var(--color-white);
     opacity: 0.95;
+    margin-bottom: 32px;
 }
 
 /* ===================================
@@ -1309,7 +1403,7 @@ section {
 }
 
 .page-title {
-    font-size: 56px;
+    font-size: clamp(26px, 5vw, 56px);
     font-weight: var(--font-weight-black);
     color: var(--color-white);
     margin-bottom: 16px;
@@ -1393,7 +1487,7 @@ section {
 }
 
 .service-features i {
-    color: var(--color-primary);
+    color: var(--color-gray);
     font-size: 18px;
 }
 
@@ -1424,8 +1518,13 @@ section {
     transition: var(--transition-normal);
 }
 
+.about-link i {
+    color: var(--color-gray-dark);
+    transition: var(--transition-normal);
+}
+
 .feature-box:hover .feature-icon {
-    background: var(--gradient-primary);
+    background: var(--gradient-accent);
     color: var(--color-white);
     transform: scale(1.1);
 }
@@ -1640,7 +1739,7 @@ section {
 
 .team-position {
     font-size: 14px;
-    color: var(--color-primary);
+    color: var(--color-gray);
     font-weight: var(--font-weight-medium);
     margin: 0;
 }
@@ -1932,7 +2031,7 @@ section {
 }
 
 .footer-contact i {
-    color: var(--color-primary);
+    color: var(--color-gray-light);
     font-size: 18px;
     flex-shrink: 0;
     margin-top: 2px;
@@ -2100,97 +2199,6 @@ section {
     box-shadow: 0 8px 24px rgba(220, 0, 0, 0.4);
 }
 
-@media (max-width: 450px) {
-    .navbar-collapse {
-        width: 432px;
-        transform: translateX(-178px);
-    }
-}
-
-@media (max-width: 440px) {
-    .navbar-collapse {
-        width: 407px;
-        transform: translateX(-170px);
-    }
-}
-
-@media (max-width: 430px) {
-    .navbar-collapse {
-        width: 398px;
-        transform: translateX(-165px);
-    }
-}
-
-@media (max-width: 420px) {
-    .navbar-collapse {
-        width: 389px;
-        transform: translateX(-160px);
-    }
-}
-
-@media (max-width: 410px) {
-    .navbar-collapse {
-        width: 380px;
-        transform: translateX(-155px);
-    }
-}
-
-@media (max-width: 400px) {
-    .navbar-collapse {
-        width: 371px;
-        transform: translateX(-150px);
-    }
-}
-
-@media (max-width: 390px) {
-    .navbar-collapse {
-        width: 362px;
-        transform: translateX(-151px);
-    }
-}
-
-@media (max-width: 375px) {
-    .navbar-collapse {
-        width: 344px;
-        transform: translateX(-144px);
-    }
-}
-
-@media (max-width: 360px) {
-    .navbar-collapse {
-        width: 335px;
-        transform: translateX(-140px);
-    }
-}
-
-@media (max-width: 350px) {
-    .navbar-collapse {
-        width: 326px;
-        transform: translateX(-138px);
-    }
-}
-
-@media (max-width: 340px) {
-    .navbar-collapse {
-        width: 317px;
-        transform: translateX(-134px);
-    }
-}
-
-@media (max-width: 330px) {
-    .navbar-collapse {
-        width: 308px;
-        transform: translateX(-132px);
-    }
-}
-
-@media (max-width: 320px) {
-    .navbar-collapse {
-        width: 301px;
-        transform: translateX(-128px);
-    }
-}
-
 /* Prevent Header wrapping on medium screens */
 @media (min-width: 992px) and (max-width: 1200px) {
     .navbar-nav .nav-link {
@@ -2210,6 +2218,38 @@ section {
 }
 
 /* ===================================
+   Large/Medium Screen Responsiveness
+   =================================== */
+@media (max-width: 1400px) {
+
+    .hero-title,
+    .carousel-caption-custom h1 {
+        font-size: 56px;
+    }
+
+    .hero-subtitle {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .hero-title,
+    .carousel-caption-custom h1 {
+        font-size: 48px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .btn-lg {
+        padding: 10px 24px !important;
+        font-size: 14px !important;
+    }
+}
+
+/* ===================================
    Responsive Styles
    =================================== */
 @media (max-width: 991px) {
@@ -2219,35 +2259,13 @@ section {
 
     .hero-title,
     .carousel-caption-custom h1 {
-        font-size: 40px;
+        font-size: 40px !important;
     }
 
     .hero-subtitle {
-        font-size: 18px;
+        font-size: 16px !important;
     }
 
-    .hero-buttons .btn {
-        padding: 12px 24px;
-        font-size: 14px;
-    }
-
-    .btn {
-        padding: 10px 24px !important;
-        font-size: 13px !important;
-    }
-
-    .btn-lg {
-        padding: 14px 32px !important;
-        font-size: 15px !important;
-    }
-
-    .section-title {
-        font-size: 36px;
-    }
-
-    .page-title {
-        font-size: 42px;
-    }
 
     .navbar-collapse {
         background: var(--color-dark);
@@ -2353,7 +2371,7 @@ section {
 
 @media (max-width: 1350px) {
     .navbar-nav .nav-link {
-        padding: 0.5rem 0.3rem !important;
+        padding: 0.5rem 0.6rem !important;
         font-size: 12px !important;
     }
 }
@@ -2578,26 +2596,45 @@ section {
 
     .hero-title,
     .carousel-caption-custom h1 {
-        font-size: 32px;
+        font-size: 28px !important;
     }
 
     .hero-subtitle {
-        font-size: 15px;
+        font-size: 14px !important;
     }
 
+
     .hero-buttons .btn {
-        padding: 10px 20px;
-        font-size: 13px;
+        padding: 8px 16px;
+        font-size: 12px;
     }
 
     .btn {
-        padding: 8px 20px !important;
-        font-size: 12px !important;
+        padding: 6px 16px !important;
+        font-size: 11px !important;
     }
 
     .btn-lg {
-        padding: 12px 28px !important;
-        font-size: 14px !important;
+        padding: 10px 24px !important;
+        font-size: 13px !important;
+    }
+
+    /* Global Icon Scaling for Mobile */
+    .bi,
+    i {
+        transform: scale(0.85);
+        transform-origin: center;
+        display: inline-block;
+        /* Ensure transform works */
+    }
+
+    /* Adjust icon containers if needed */
+    .card-icon,
+    .feature-icon,
+    .service-icon,
+    .value-icon {
+        transform: scale(0.85);
+        transform-origin: center;
     }
 
     /* Hide carousel arrow controls on small screens to avoid overlap */
@@ -2606,24 +2643,20 @@ section {
         display: none;
     }
 
-    .section-title {
-        font-size: 32px;
-    }
-
-    .page-title {
-        font-size: 36px;
-    }
 
     .stat-number {
         font-size: 36px;
     }
 
+
     .hero-buttons {
         flex-direction: column;
+        gap: 12px;
     }
 
     .hero-buttons .btn {
         width: 100%;
+        margin-left: 0 !important;
     }
 
 
@@ -2667,6 +2700,11 @@ section {
     .copyright {
         font-size: 13px;
         text-align: center;
+    }
+
+    /* Stacking for tablet/mobile footer */
+    .footer-section .row {
+        gap: 30px;
     }
 }
 
@@ -2806,32 +2844,27 @@ section {
         font-size: 12px;
     }
 
-    .hero-title,
-    .carousel-caption-custom h1 {
-        font-size: 28px;
-    }
 
     .btn {
-        padding: 8px 16px !important;
-        font-size: 12px !important;
+        padding: 6px 14px !important;
+        font-size: 11px !important;
     }
 
     .btn-lg {
-        padding: 10px 24px !important;
+        padding: 8px 18px !important;
+        font-size: 12px !important;
+    }
+
+    .hero-title,
+    .carousel-caption-custom h1 {
+        font-size: 24px !important;
+    }
+
+    .hero-subtitle {
         font-size: 13px !important;
     }
 
-    .section-title {
-        font-size: 28px;
-    }
 
-    .page-title {
-        font-size: 32px;
-    }
-
-    .cta-title {
-        font-size: 32px;
-    }
 }
 
 /* Hide carousel arrows on tablet and small desktop to avoid overlap */
@@ -2872,7 +2905,7 @@ section {
 
     .hero-carousel-section .carousel-control-prev .carousel-control-prev-icon,
     .hero-carousel-section .carousel-control-next .carousel-control-next-icon {
-        background-size: 28px 28px;
+        background-size: 50px 50px;
     }
 
     /* Add horizontal padding to captions so arrows don't visually overlap text */

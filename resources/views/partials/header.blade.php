@@ -13,8 +13,9 @@
             </button>
 
             <!-- Navigation Menu -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-lg-center">
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <div></div> <!-- Spacer for equal distribution -->
+                <ul class="navbar-nav align-items-lg-center">
                     <!-- Who we are Dropdown -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle nav-btn {{ request()->routeIs('about*') ? 'active' : '' }}"
@@ -63,10 +64,10 @@
                         <a class="nav-link nav-btn {{ request()->routeIs('careers') ? 'active' : '' }}"
                             href="{{ route('careers') }}">Careers</a>
                     </li>
-                    <li class="nav-item ms-lg-3">
-                        <a href="{{ route('contact') }}" class="btn btn-primary">Get Started</a>
-                    </li>
                 </ul>
+                <div class="d-flex align-items-center">
+                    <a href="{{ route('contact') }}" class="btn btn-primary">Get Started</a>
+                </div>
             </div>
         </div>
     </nav>

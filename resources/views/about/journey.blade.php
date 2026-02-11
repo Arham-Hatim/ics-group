@@ -5,7 +5,7 @@
 
 @section('content')
     <!-- Page Header -->
-     <section class="page-header">
+    <section class="page-header">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center" data-aos="fade-down">
@@ -149,7 +149,7 @@
     </section>
 
     <!-- Legacy Quote -->
-    <section class="section bg-dark text-white py-5">
+    <section class="section bg-dark text-white py-5 legacy-quote-section">
         <div class="container py-4">
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center" data-aos="zoom-in">

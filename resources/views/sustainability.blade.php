@@ -27,25 +27,25 @@
                         We measure our success not just by financial metrics, but by our positive impact on the world.
                     </p>
                     <div class="mt-4">
-                        <div class="d-flex align-items-center mb-3 p-3 bg-light rounded-md">
-                            <i class="bi bi-tree-fill text-success fs-2 me-3"></i>
+                        <div class="d-flex align-items-center mb-3 p-3 bg-light rounded-md esg-item">
+                            <i class="bi bi-tree-fill text-success me-3"></i>
                             <div>
                                 <h5 class="mb-0 text-dark">Environmental</h5>
-                                <p class="small text-muted mb-0">Decarbonizing our logistics and energy solutions.</p>
+                                <p class="text-muted mb-0">Decarbonizing our logistics and energy solutions.</p>
                             </div>
                         </div>
-                        <div class="d-flex align-items-center mb-3 p-3 bg-light rounded-md">
-                            <i class="bi bi-heart-pulse-fill text-danger fs-2 me-3"></i>
+                        <div class="d-flex align-items-center mb-3 p-3 bg-light rounded-md esg-item">
+                            <i class="bi bi-heart-pulse-fill text-danger me-3"></i>
                             <div>
                                 <h5 class="mb-0 text-dark">Social</h5>
-                                <p class="small text-muted mb-0">Investing in community health and education.</p>
+                                <p class="text-muted mb-0">Investing in community health and education.</p>
                             </div>
                         </div>
-                        <div class="d-flex align-items-center p-3 bg-light rounded-md">
-                            <i class="bi bi-bank2 text-primary fs-2 me-3"></i>
+                        <div class="d-flex align-items-center p-3 bg-light rounded-md esg-item">
+                            <i class="bi bi-bank2 text-primary me-3"></i>
                             <div>
                                 <h5 class="mb-0 text-dark">Governance</h5>
-                                <p class="small text-muted mb-0">Highest transparency and ethical benchmarks.</p>
+                                <p class="text-muted mb-0">Highest transparency and ethical benchmarks.</p>
                             </div>
                         </div>
                     </div>
@@ -69,13 +69,15 @@
             <div class="row g-4 mt-5">
                 <div class="col-md-4">
                     <div class="p-4 border border-light-subtle rounded-lg business-view transition-normal">
-                        <h1 class="text-primary mb-2" data-counter="true" data-target="40" data-suffix="%" data-prefix="">40%</h1>
+                        <h1 class="text-primary mb-2" data-counter="true" data-target="40" data-suffix="%" data-prefix="">
+                            40%</h1>
                         <p class="text-light-emphasis mb-0">Emissions Reduction</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="p-4 border border-light-subtle rounded-lg business-view transition-normal">
-                        <h1 class="text-primary mb-2" data-counter="true" data-target="100" data-suffix="%" data-prefix="">100%</h1>
+                        <h1 class="text-primary mb-2" data-counter="true" data-target="100" data-suffix="%" data-prefix="">
+                            100%</h1>
                         <p class="text-light-emphasis mb-0">Solar Logistics Hubs</p>
                     </div>
                 </div>

@@ -71,8 +71,7 @@
 
                 @foreach($standards as $std)
                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="{{ $loop->index * 100 }}">
-                        <div
-                            class="p-5 border border-light-subtle rounded-lg text-center bg-white-5 hover:bg-white-10 transition-normal business-view">
+                        <div class="benchmark-card business-view">
                             <h4 class="text-white mb-3">{{ $std['title'] }}</h4>
                             <p class="text-light-emphasis small mb-0">{{ $std['desc'] }}</p>
                         </div>

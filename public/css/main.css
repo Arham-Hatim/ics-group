@@ -133,12 +133,16 @@ h6 {
 .bg-dark h5,
 .bg-dark h6,
 .section.bg-dark h1,
-.section.bg-dark h2,
-.section.bg-dark h3,
 .section.bg-dark h4,
 .section.bg-dark h5,
 .section.bg-dark h6 {
     color: var(--color-white) !important;
+}
+
+/* Fluid Typography for Sections */
+.section-text {
+    font-size: clamp(15px, 1.8vw, 18px) !important;
+    line-height: 1.6 !important;
 }
 
 a {
@@ -373,7 +377,7 @@ img {
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-    color: var(--color-white);
+    color: var(--color-primary);
 }
 
 .header.scrolled .navbar-nav .nav-link:hover,
@@ -1334,21 +1338,22 @@ section {
 .feature-list {
     list-style: none;
     padding: 0;
-    margin: 30px 0;
+    margin: clamp(20px, 3vw, 30px) 0;
 }
 
 .feature-list li {
-    padding: 12px 0;
-    font-size: 16px;
+    padding: clamp(8px, 1.2vw, 12px) 0;
+    font-size: clamp(14px, 1.6vw, 17px) !important;
     color: var(--color-gray-dark);
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: clamp(8px, 1.2vw, 14px);
+    line-height: 1.6 !important;
 }
 
 .feature-list i {
     color: var(--color-primary);
-    font-size: 20px;
+    font-size: clamp(18px, 2vw, 24px) !important;
 }
 
 /* ===================================
@@ -1405,7 +1410,7 @@ section {
 }
 
 .page-subtitle {
-    font-size: 18px;
+    font-size: clamp(14px, 2vw, 18px);
     color: var(--color-white);
     opacity: 0.9;
     position: relative;
@@ -1715,21 +1720,80 @@ section {
 }
 
 .team-info {
-    padding: 24px;
+    padding: clamp(16px, 2.5vw, 24px);
     text-align: center;
 }
 
 .team-name {
-    font-size: 20px;
+    font-size: clamp(16px, 2.2vw, 20px) !important;
     font-weight: var(--font-weight-bold);
     margin-bottom: 8px;
 }
 
 .team-position {
-    font-size: 14px;
+    font-size: clamp(12px, 1.5vw, 14px) !important;
     color: var(--color-primary);
     font-weight: var(--font-weight-medium);
     margin: 0;
+}
+
+/* Legacy Quote Fluid Typography */
+.legacy-quote-section h2 {
+    font-size: clamp(20px, 4vw, 48px) !important;
+    line-height: 1.3 !important;
+}
+
+.legacy-quote-section .lead {
+    font-size: clamp(16px, 1.8vw, 20px) !important;
+    line-height: 1.6 !important;
+}
+
+/* Operational Benchmark Cards */
+.benchmark-card {
+    padding: clamp(20px, 4vw, 48px);
+    border: 1px solid var(--color-light-subtle);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    transition: var(--transition-normal);
+}
+
+.benchmark-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.benchmark-card h4 {
+    font-size: clamp(18px, 2.2vw, 22px) !important;
+    color: var(--color-white);
+    margin-bottom: 12px;
+}
+
+.benchmark-card p {
+    font-size: clamp(13px, 1.5vw, 15px) !important;
+    color: var(--color-light-emphasis);
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* ESG Framework Responsiveness */
+.esg-item {
+    padding: clamp(12px, 2vw, 20px) !important;
+    transition: var(--transition-normal);
+}
+
+.esg-item i {
+    font-size: clamp(24px, 3.5vw, 32px) !important;
+    line-height: 1 !important;
+}
+
+.esg-item h5 {
+    font-size: clamp(16px, 2vw, 18px) !important;
+    margin-bottom: 4px !important;
+}
+
+.esg-item p {
+    font-size: clamp(12px, 1.4vw, 14px) !important;
+    line-height: 1.5 !important;
 }
 
 /* ===================================
@@ -1845,6 +1909,20 @@ section {
     border: 2px solid var(--color-gray-light);
     border-radius: var(--radius-md);
     transition: var(--transition-normal);
+    font-size: clamp(14px, 1.8vw, 16px) !important;
+}
+
+.form-control-lg {
+    padding: 14px 20px;
+    font-size: clamp(15px, 2vw, 18px) !important;
+}
+
+.form-control::placeholder {
+    font-size: clamp(13px, 1.6vw, 16px);
+}
+
+.form-control-lg::placeholder {
+    font-size: clamp(14px, 1.8vw, 17px);
 }
 
 .form-control:focus {
@@ -2616,6 +2694,15 @@ section {
         /* Ensure transform works */
     }
 
+    /* Targeted Upscaling for Non-Circular Icons (User Request) */
+    .pillar-icon .bi,
+    .pillar-icon i,
+    .feature-list .bi,
+    .feature-list i {
+        transform: scale(1.2) !important;
+        transform-origin: center;
+    }
+
     /* Adjust icon containers if needed */
     .card-icon,
     .feature-icon,
@@ -2944,13 +3031,13 @@ section {
 
 .news-category {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: clamp(12px, 2vw, 20px) !important;
+    right: clamp(12px, 2vw, 20px) !important;
     background: var(--color-primary);
     color: var(--color-white);
-    padding: 5px 15px;
+    padding: clamp(3px, 0.8vw, 5px) clamp(10px, 1.5vw, 15px) !important;
     border-radius: 20px;
-    font-size: 12px;
+    font-size: clamp(10px, 1.2vw, 12px) !important;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -2968,7 +3055,7 @@ section {
 }
 
 .news-title {
-    font-size: 20px;
+    font-size: clamp(18px, 2.5vw, 22px) !important;
     font-weight: 800;
     margin-bottom: 15px;
     line-height: 1.4;
@@ -2993,7 +3080,7 @@ section {
 .news-link {
     color: var(--color-black);
     font-weight: 700;
-    font-size: 14px;
+    font-size: clamp(13px, 1.5vw, 15px) !important;
     text-transform: uppercase;
     letter-spacing: 1px;
     display: inline-flex;
@@ -3109,9 +3196,21 @@ section {
     transform: translateY(-5px);
 }
 
+.glass-card h4 {
+    font-size: clamp(18px, 2.2vw, 22px) !important;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-white);
+}
+
+.glass-card p {
+    font-size: clamp(13px, 1.4vw, 15px) !important;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
 .icon-box-red {
-    width: 80px;
-    height: 80px;
+    width: clamp(60px, 8vw, 80px);
+    height: clamp(60px, 8vw, 80px);
     background: var(--color-primary);
     color: var(--color-white);
     border-radius: 50%;
@@ -3121,6 +3220,17 @@ section {
     margin: 0 auto;
     box-shadow: 0 0 20px rgba(220, 0, 0, 0.3);
     transition: var(--transition-normal);
+}
+
+/* Fluid Icon Sizing for Strategy Page */
+.icon-box-red .bi,
+.icon-box-red i {
+    font-size: clamp(24px, 3.5vw, 32px) !important;
+}
+
+.pillar-icon .bi,
+.pillar-icon i {
+    font-size: clamp(28px, 4vw, 40px) !important;
 }
 
 .glass-card:hover .icon-box-red {
@@ -3139,6 +3249,16 @@ section {
 
 .premium-card.border-primary {
     border: 2px solid var(--color-primary) !important;
+}
+
+.premium-card h3 {
+    font-size: clamp(20px, 2.5vw, 26px) !important;
+    font-weight: var(--font-weight-bold);
+}
+
+.premium-card p {
+    font-size: clamp(14px, 1.5vw, 16px) !important;
+    line-height: 1.6;
 }
 
 .transition-hover:hover {

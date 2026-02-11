@@ -695,12 +695,26 @@
     transition: all var(--transition-normal);
     border: 1px solid var(--color-off-white);
     position: relative;
+    padding: clamp(1.5rem, 5vw, 3rem) !important;
 }
 
 .testimonial-premium-card:hover {
     transform: translateY(-8px);
     box-shadow: var(--shadow-lg);
     border-color: var(--color-primary);
+}
+
+.testimonial-premium-card p.fs-5 {
+    font-size: clamp(1rem, 2.5vw, 1.25rem) !important;
+    line-height: 1.6 !important;
+}
+
+.testimonial-premium-card h5 {
+    font-size: clamp(16px, 4vw, 20px) !important;
+}
+
+.testimonial-premium-card p.small {
+    font-size: clamp(0.75rem, 1.6vw, 0.875rem) !important;
 }
 
 .testimonial-avatar {

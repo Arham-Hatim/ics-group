@@ -346,51 +346,76 @@
         </div>
     </section>
 
-    <!-- Puzzle Collage Section -->
-    <section class="puzzle-collage-section section">
+    <!-- Testimonials Carousel Section -->
+    <section class="testimonials-section">
         <div class="container">
             <div class="section-header text-center" data-aos="fade-up">
                 <h2 class="section-title">What Our <span class="text-primary">Clients</span> Say</h2>
                 <p class="section-subtitle">Trusted by leading organizations worldwide</p>
             </div>
 
-            <div class="puzzle-collage-container" data-aos="fade-up">
-                <div class="puzzle-collage">
-                    <div class="puzzle-item item-1" data-aos="zoom-in" data-aos-delay="100">
-                        <img src="{{ asset('images/business_meeting_team_1769149751576.png') }}" alt="Client Meeting">
-                        <div class="puzzle-overlay">
-                            <span class="puzzle-tag">Collaboration</span>
+            <div data-aos="fade-up">
+                <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-pause="hover">
+                    <div class="carousel-inner pt-4 pb-5">
+                        <div class="carousel-item active">
+                            <div class="testimonial-premium-card p-5 mx-auto text-center" style="max-width: 800px;">
+                                <div class="testimonial-avatar mx-auto mb-4">
+                                    <img src="{{ asset('images/team-1.jpg') }}" alt="David Thompson" class="img-fluid">
+                                </div>
+                                <i class="bi bi-quote fs-1 text-primary-light opacity-50 mb-3 d-block"></i>
+                                <p class="text-muted fst-italic mb-4 fs-5">
+                                    "ICS Group has been instrumental in transforming our business operations. Their
+                                    expertise and dedication to excellence are unmatched. We've seen remarkable improvements
+                                    in efficiency and growth."
+                                </p>
+                                <div>
+                                    <h5 class="mb-0">David Thompson</h5>
+                                    <p class="text-primary small mb-0 fw-bold">CEO, TechCorp Industries</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="testimonial-premium-card p-5 mx-auto text-center" style="max-width: 800px;">
+                                <div class="testimonial-avatar mx-auto mb-4">
+                                    <img src="{{ asset('images/team-2.jpg') }}" alt="Sarah Johnson" class="img-fluid">
+                                </div>
+                                <i class="bi bi-quote fs-1 text-primary-light opacity-50 mb-3 d-block"></i>
+                                <p class="text-muted fst-italic mb-4 fs-5">
+                                    "Working with ICS Group has been a game-changer for our organization. Their innovative
+                                    solutions and professional approach have helped us achieve our strategic goals ahead of
+                                    schedule."
+                                </p>
+                                <div>
+                                    <h5 class="mb-0">Sarah Johnson</h5>
+                                    <p class="text-primary small mb-0 fw-bold">Director, Global Enterprises</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="testimonial-premium-card p-5 mx-auto text-center" style="max-width: 800px;">
+                                <div class="testimonial-avatar mx-auto mb-4">
+                                    <img src="{{ asset('images/team-3.jpg') }}" alt="Michael Chen" class="img-fluid">
+                                </div>
+                                <i class="bi bi-quote fs-1 text-primary-light opacity-50 mb-3 d-block"></i>
+                                <p class="text-muted fst-italic mb-4 fs-5">
+                                    "The team at ICS Group consistently delivers exceptional results. Their commitment to
+                                    quality and customer satisfaction sets them apart in the industry. Highly recommended!"
+                                </p>
+                                <div>
+                                    <h5 class="mb-0">Michael Chen</h5>
+                                    <p class="text-primary small mb-0 fw-bold">Partner, Innovation Ventures</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="puzzle-item item-2" data-aos="zoom-in" data-aos-delay="200">
-                        <img src="{{ asset('images/about_leadership_1769149854566.png') }}" alt="Leadership">
-                        <div class="puzzle-overlay">
-                            <span class="puzzle-tag">Trust</span>
-                        </div>
-                    </div>
-                    <div class="puzzle-item item-3" data-aos="zoom-in" data-aos-delay="300">
-                        <img src="{{ asset('images/technology_innovation_1769149771178.png') }}" alt="Innovation">
-                        <div class="puzzle-overlay">
-                            <span class="puzzle-tag">Excellence</span>
-                        </div>
-                    </div>
-                    <div class="puzzle-item item-4" data-aos="zoom-in" data-aos-delay="400">
-                        <img src="{{ asset('images/services_consulting_1769149808861.png') }}" alt="Consulting">
-                        <div class="puzzle-overlay">
-                            <span class="puzzle-tag">Success</span>
-                        </div>
-                    </div>
-                    <div class="puzzle-item item-5" data-aos="zoom-in" data-aos-delay="500">
-                        <img src="{{ asset('images/solutions_software_1769149838299.png') }}" alt="Software Solutions">
-                        <div class="puzzle-overlay">
-                            <span class="puzzle-tag">Innovation</span>
-                        </div>
-                    </div>
-                    <div class="puzzle-item item-6" data-aos="zoom-in" data-aos-delay="600">
-                        <img src="{{ asset('images/about-preview.jpg') }}" alt="Partnership">
-                        <div class="puzzle-overlay">
-                            <span class="puzzle-tag">Partnership</span>
-                        </div>
+
+                    <div class="carousel-indicators testimonial-indicators mt-0">
+                        <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true"></button>
+                        <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="2"></button>
                     </div>
                 </div>
             </div>

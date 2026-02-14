@@ -1,5 +1,5 @@
 @extends('web.layouts.master')
-@section('title', 'Our People - ICS Group')
+@section('title', 'Our People | ICS Group')
 @section('meta_description', 'Meet the dedicated team behind ICS Group. Our experienced professionals drive innovation, collaboration, and excellence, delivering trusted solutions and sustainable growth across every project.')
 
 @section('content')

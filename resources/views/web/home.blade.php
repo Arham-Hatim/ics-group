@@ -1,5 +1,5 @@
 @extends('web.layouts.master')
-@section('title', 'ICS Home')
+@section('title', 'Home | ICS Group')
 @section('meta_description', 'Welcome to ICS Group')
 
 @section('content')

@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('web.home');
 })->name('home');
 
 Route::get('overview', function () {
@@ -24,4 +24,43 @@ Route::get('overview', function () {
 Route::get('our/people', function () {
     return view('web.who_we_are.team')->with('innerHeader', true);
 })->name('our-people');
-    
+
+Route::get('our/people/{id}', function ($id) {
+    return view('web.who_we_are.team-single')->with('innerHeader', true);
+})->name('our-people.single');
+
+Route::get('contact/us', function () {
+    return view('web.contact')->with('innerHeader', true);
+})->name('contact');
+
+Route::get('careers', function () {
+    return view('web.career')->with('innerHeader', true);
+})->name('careers');
+
+Route::get('news/views', function () {
+    return view('web.news_views.news')->with('innerHeader', true);
+})->name('news.views');
+
+Route::get('news/views/{id}', function ($id) {
+    return view('web.news_views.news-single')->with('innerHeader', true);
+})->name('news.views.single');
+
+Route::get('news/views/{id}', function ($id) {
+    return view('web.news_views.news-single')->with('innerHeader', true);
+})->name('news.views.single');
+
+Route::get('gallery', function () {
+    return view('web.project_gallery.gallery')->with('innerHeader', true);
+})->name('gallery');
+
+Route::get('gallery/{id}', function ($id) {
+    return view('web.project_gallery.gallery-single')->with('innerHeader', true);
+})->name('gallery.single');
+
+Route::get('business/verticals', function () {
+    return view('web.what_we_do.business-verticals')->with('innerHeader', true);
+})->name('business-verticals');
+
+Route::get('business/overview', function () {
+    return view('web.what_we_do.business-overview')->with('innerHeader', true);
+})->name('business-overview');

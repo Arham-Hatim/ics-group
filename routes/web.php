@@ -16,3 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 })->name('home');
+
+Route::get('overview', function () {
+    return view('web.who_we_are.overview')->with('innerHeader', true);
+})->name('overview');
+
+Route::get('our/people', function () {
+    return view('web.who_we_are.team')->with('innerHeader', true);
+})->name('our-people');
+    

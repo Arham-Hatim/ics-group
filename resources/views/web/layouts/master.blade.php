@@ -30,8 +30,13 @@
 
     <!-- Header 
     ============================================= -->
-    @include('web.layouts.partials.header')
+    @if(!empty($innerHeader))
+        @include('web.layouts.partials.inner-header')
+    @else
+        @include('web.layouts.partials.header')
+    @endif
     <!-- End Header -->
+
 
     @yield('content')
 

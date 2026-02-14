@@ -4065,6 +4065,7 @@ body,
 .team-area {
 	position: relative;
 	z-index: 1;
+	overflow: hidden;
 }
 
 .team-area .single-item {

@@ -11,10 +11,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
-                    <h1>About Us</h1>
+                    <h1>Our Journey</h1>
                     <ul class="breadcrumb">
                         <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-                        <li class="active">About</li>
+                        <li class="active">Our Journey</li>
                     </ul>
                 </div>
             </div>

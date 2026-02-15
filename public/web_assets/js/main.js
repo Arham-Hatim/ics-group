@@ -6,7 +6,7 @@
     
 * ================================================================= */
 
-(function($) {
+(function ($) {
     "use strict";
 
     $(document).ready(function () {
@@ -23,13 +23,13 @@
             live: true // act on asynchronously loaded content (default is true)
         });
         wow.init();
-        
+
 
         /* ==================================================
             # Tooltip Init
         ===============================================*/
-        $('[data-toggle="tooltip"]').tooltip(); 
-        
+        $('[data-toggle="tooltip"]').tooltip();
+
 
 
         /* ==================================================
@@ -39,7 +39,7 @@
             target: ".navbar-collapse",
             offset: 200
         });
-        $('a.smooth-menu').on('click', function(event) {
+        $('a.smooth-menu').on('click', function (event) {
             var $anchor = $(this);
             var headerH = '75';
             $('html, body').stop().animate({
@@ -55,10 +55,10 @@
         function doAnimations(elems) {
             //Cache the animationend event in a variable
             var animEndEv = 'webkitAnimationEnd animationend';
-            elems.each(function() {
+            elems.each(function () {
                 var $this = $(this),
                     $animationType = $this.data('animation');
-                $this.addClass($animationType).one(animEndEv, function() {
+                $this.addClass($animationType).one(animEndEv, function () {
                     $this.removeClass($animationType);
                 });
             });
@@ -72,7 +72,7 @@
         //Animate captions in first slide on page load
         doAnimations($firstAnimatingElems);
         //Other slides to be animated on carousel slide event
-        $immortalCarousel.on('slide.bs.carousel', function(e) {
+        $immortalCarousel.on('slide.bs.carousel', function (e) {
             var $animatingElems = $(e.relatedTarget).find("[data-animation ^= 'animated']");
             doAnimations($animatingElems);
         });
@@ -87,10 +87,10 @@
         /* ==================================================
             # imagesLoaded active
         ===============================================*/
-        $('#portfolio-grid,.blog-masonry').imagesLoaded(function() {
+        $('#portfolio-grid,.blog-masonry').imagesLoaded(function () {
 
             /* Filter menu */
-            $('.mix-item-menu').on('click', 'button', function() {
+            $('.mix-item-menu').on('click', 'button', function () {
                 var filterValue = $(this).attr('data-filter');
                 $grid.isotope({
                     filter: filterValue
@@ -98,7 +98,7 @@
             });
 
             /* filter menu active class  */
-            $('.mix-item-menu button').on('click', function(event) {
+            $('.mix-item-menu button').on('click', function (event) {
                 $(this).siblings('.active').removeClass('active');
                 $(this).addClass('active');
                 event.preventDefault();
@@ -125,11 +125,11 @@
         });
 
 
-         /* ==================================================
-            # Fun Factor Init
-        ===============================================*/
+        /* ==================================================
+           # Fun Factor Init
+       ===============================================*/
         $('.timer').countTo();
-        $('.fun-fact').appear(function() {
+        $('.fun-fact').appear(function () {
             $('.timer').countTo();
         }, {
             accY: -100
@@ -160,12 +160,12 @@
             fixedContentPos: false
         });
 
-        $('.magnific-mix-gallery').each(function() {
+        $('.magnific-mix-gallery').each(function () {
             var $container = $(this);
             var $imageLinks = $container.find('.item');
 
             var items = [];
-            $imageLinks.each(function() {
+            $imageLinks.each(function () {
                 var $item = $(this);
                 var type = 'image';
                 if ($item.hasClass('magnific-iframe')) {
@@ -189,7 +189,7 @@
                 },
                 type: 'image',
                 callbacks: {
-                    beforeOpen: function() {
+                    beforeOpen: function () {
                         var index = $imageLinks.index(this.st.el);
                         if (-1 !== index) {
                             this.goTo(index);
@@ -206,7 +206,7 @@
         $('.testimonials-carousel').owlCarousel({
             loop: false,
             nav: true,
-            margin:30,
+            margin: 30,
             dots: false,
             autoplay: false,
             items: 1,
@@ -216,8 +216,8 @@
             ]
         });
 
-        
-        
+
+
         /* ==================================================
             # Projects Carousel
          ===============================================*/
@@ -279,7 +279,7 @@
             # Partner Carousel
          ===============================================*/
         $('.partner-carousel').owlCarousel({
-            loop: false,
+            loop: true,
             margin: 30,
             nav: false,
             navText: [
@@ -332,10 +332,10 @@
         /* ==================================================
             # Company Owner Carousel Carousel
          ===============================================*/
-         $('.compnay-owner-carousel-carousel').owlCarousel({
+        $('.compnay-owner-carousel-carousel').owlCarousel({
             loop: false,
             nav: true,
-            margin:30,
+            margin: 30,
             dots: false,
             autoplay: false,
             items: 1,
@@ -347,47 +347,47 @@
 
 
         /* ==================================================
-		    _Progressbar Init
-		 ===============================================*/
-		function animateElements() {
-			$('.progressbar').each(function() {
-				var elementPos = $(this).offset().top;
-				var topOfWindow = $(window).scrollTop();
-				var percent = $(this).find('.circle').attr('data-percent');
-				var animate = $(this).data('animate');
-				if (elementPos < topOfWindow + $(window).height() - 30 && !animate) {
-					$(this).data('animate', true);
-					$(this).find('.circle').circleProgress({
-						// startAngle: -Math.PI / 2,
-						value: percent / 100,
-						size: 110,
-						thickness: 10,
-						lineCap: 'round',
-						emptyFill: '#f1f1f1',
-						fill: {
-							gradient: ['#1273eb', '#ee2852 ']
-						}
-					}).on('circle-animation-progress', function(event, progress, stepValue) {
-						$(this).find('strong').text((stepValue * 100).toFixed(0) + "%");
-					}).stop();
-				}
-			});
+            _Progressbar Init
+         ===============================================*/
+        function animateElements() {
+            $('.progressbar').each(function () {
+                var elementPos = $(this).offset().top;
+                var topOfWindow = $(window).scrollTop();
+                var percent = $(this).find('.circle').attr('data-percent');
+                var animate = $(this).data('animate');
+                if (elementPos < topOfWindow + $(window).height() - 30 && !animate) {
+                    $(this).data('animate', true);
+                    $(this).find('.circle').circleProgress({
+                        // startAngle: -Math.PI / 2,
+                        value: percent / 100,
+                        size: 110,
+                        thickness: 10,
+                        lineCap: 'round',
+                        emptyFill: '#f1f1f1',
+                        fill: {
+                            gradient: ['#1273eb', '#ee2852 ']
+                        }
+                    }).on('circle-animation-progress', function (event, progress, stepValue) {
+                        $(this).find('strong').text((stepValue * 100).toFixed(0) + "%");
+                    }).stop();
+                }
+            });
         }
 
-		animateElements();
-		$(window).scroll(animateElements);
+        animateElements();
+        $(window).scroll(animateElements);
 
 
         /* ==================================================
             Contact Form Validations
         ================================================== */
-        $('.contact-form').each(function() {
+        $('.contact-form').each(function () {
             var formInstance = $(this);
-            formInstance.submit(function() {
+            formInstance.submit(function () {
 
                 var action = $(this).attr('action');
 
-                $("#message").slideUp(750, function() {
+                $("#message").slideUp(750, function () {
                     $('#message').hide();
 
                     $('#submit')
@@ -395,15 +395,15 @@
                         .attr('disabled', 'disabled');
 
                     $.post(action, {
-                            name: $('#name').val(),
-                            email: $('#email').val(),
-                            phone: $('#phone').val(),
-                            comments: $('#comments').val()
-                        },
-                        function(data) {
+                        name: $('#name').val(),
+                        email: $('#email').val(),
+                        phone: $('#phone').val(),
+                        comments: $('#comments').val()
+                    },
+                        function (data) {
                             document.getElementById('message').innerHTML = data;
                             $('#message').slideDown('slow');
-                            $('.contact-form img.loader').fadeOut('slow', function() {
+                            $('.contact-form img.loader').fadeOut('slow', function () {
                                 $(this).remove()
                             });
                             $('#submit').removeAttr('disabled');

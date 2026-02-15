@@ -940,7 +940,7 @@ ul.cart-list > li.total > span {
 }
 
 .top-search {
-  background-color: #111d30;
+  background-color: #1b1b1b;
   padding: 10px 0;
   display: none;
 }
@@ -1288,7 +1288,7 @@ nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle::after {
 }
 
 .torch-red .side .widget ul.link li a {
-  color: #ee2852;
+  color: #ED1C24;
 }
 
 .side .widget ul.link li a:focus,

@@ -5,7 +5,7 @@
 @section('content')
 
     <!-- Start Breadcrumb 
-        ============================================= -->
+            ============================================= -->
     <div class="breadcrumb-area text-center shadow dark text-light bg-cover"
         style="background-image: url({{ asset('web_assets/img/2440x1578.png') }});">
         <div class="container">
@@ -23,7 +23,7 @@
     <!-- End Breadcrumb -->
 
     <!-- Start Team Single Area
-        ============================================= -->
+            ============================================= -->
     <div class="team-single-area default-padding">
         <div class="container">
             <div class="team-content-top">
@@ -53,7 +53,7 @@
                             </li>
                         </ul>
                         <div class="social">
-                            <a class="btn btn-theme effect btn-sm" href="#">Contact me</a>
+                            <a class="btn custom-torch-btn btn-sm" href="#">Contact me</a>
                             <div class="share-link">
                                 <i class="fas fa-share-alt"></i>
                                 <ul>

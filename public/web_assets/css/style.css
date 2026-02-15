@@ -3138,10 +3138,10 @@ body,
 
 .services-area .services-heading h4 {
 	text-transform: uppercase;
-	color: #1273eb;
+	color: #ED1C24;
 	font-weight: 600;
 	display: inline-block;
-	background: linear-gradient(90deg, rgba(18, 115, 235, 1) 30%, rgba(4, 215, 242, 1) 100%);
+	background: linear-gradient(90deg, #ED1C24 0%, rgb(171 57 167) 100%);
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
 	background-clip: text;
@@ -3210,8 +3210,8 @@ body,
 	font-size: 50px;
 	margin-bottom: 30px;
 	margin-top: 25px;
-	color: #1273eb;
-	background: linear-gradient(to right, #1273eb, #1273eb, #1273eb, #9a009c, #9a009c);
+	color: #707070;
+	background: linear-gradient(to right, #707070, #707070, #707070, #707070, #707070);
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
 	background-clip: text;
@@ -3226,7 +3226,7 @@ body,
 	content: "";
 	height: 80px;
 	width: 81px;
-	background: linear-gradient(-62.5deg, transparent, rgba(237, 245, 255, 0.9));
+	background: linear-gradient(-62.5deg, transparent, rgba(90, 90, 90, 0.09));
 	z-index: -1;
 	border-radius: 50%;
 	transform: rotate(65deg);
@@ -4288,7 +4288,7 @@ body,
 }
 
 .team-single-area .right-info ul li a:hover {
-	color: #1273eb;
+	color: #ED1C24;
 }
 
 .team-single-area .right-info .social {
@@ -6851,8 +6851,8 @@ ul.pagination {
 	width: 70px;
 	text-align: center;
 	line-height: 70px;
-	background: rgba(18, 115, 235, 0.1);
-	color: rgba(18, 115, 235, 1);
+	background: rgba(90, 90, 90, 0.1);
+	color: rgba(90, 90, 90, 1);
 	border-radius: 8px;
 	margin-right: 20px;
 }
@@ -8482,6 +8482,67 @@ nav.navbar.bootsnav {
 	text-shadow: -5px 5px 0px #eceefe;
 }
 
+
+/*============================================
+custom button css
+============================================*/
+.custom-torch-btn {
+	position: relative;
+	display: inline-block;
+	padding: 12px 30px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #ffffff;
+	/* initial text color */
+	background: #ED1C24;
+	/* initial background */
+	border: 2px solid #ED1C24;
+	/* border */
+	overflow: hidden;
+	cursor: pointer;
+	transition: color 0.35s ease, border-color 0.35s ease;
+	border-radius: 5px;
+	/* optional rounded corners */
+}
+
+/* The animated pseudo-element */
+.custom-torch-btn::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -100%;
+	/* start offscreen left */
+	width: 200%;
+	/* enough width to slide fully */
+	height: 100%;
+	background: #ffffff;
+	/* hover background color */
+	z-index: 0;
+	transition: left 0.35s ease-in-out;
+}
+
+/* Keep the text above the pseudo-element */
+.custom-torch-btn span {
+	position: relative;
+	z-index: 1;
+	transition: color 0.35s ease;
+}
+
+/* Hover effect */
+.custom-torch-btn:hover::before {
+	left: 0;
+	/* slide the white background fully */
+}
+
+.custom-torch-btn:hover span {
+	color: #ED1C24;
+	/* text becomes red */
+}
+
+.custom-torch-btn:hover {
+	border-color: #ED1C24;
+	/* optional: keep border red */
+}
 
 
 /* ============================================================== 

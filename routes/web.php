@@ -37,10 +37,6 @@ Route::get('journey', function () {
     return view('web.who_we_are.journey')->with('innerHeader', true);
 })->name('journey');
 
-Route::get('strategy/values', function () {
-    return view('web.who_we_are.strategy-values')->with('innerHeader', true);
-})->name('strategy-values');
-
 Route::get('contact/us', function () {
     return view('web.contact')->with('innerHeader', true);
 })->name('contact');

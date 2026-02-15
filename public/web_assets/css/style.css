@@ -794,7 +794,7 @@ a:active {
 	content: "";
 	height: 100%;
 	width: 0;
-	background: #1273eb;
+	background: #ffffff;
 	z-index: -1;
 	transition: all 0.35s ease-in-out;
 }
@@ -812,8 +812,8 @@ a:active {
 }
 
 .torch-red .btn.btn-theme.effect:hover {
-	border: 2px solid #1273eb;
-	color: #ffffff;
+	border: 2px solid #ffffff;
+	color: #ED1C24;
 	background: transparent;
 }
 
@@ -2528,7 +2528,7 @@ body,
 
 .about-us-area .about-items .thumb h2 strong {
 	font-size: 62px;
-	color: #1273eb;
+	color: #707070;
 }
 
 .about-us-area .about-items .thumb::after {
@@ -2538,7 +2538,7 @@ body,
 	content: "";
 	height: 50%;
 	width: 25px;
-	background: #1273eb;
+	background: #707070;
 	z-index: -1;
 	border-radius: 8px;
 }
@@ -2600,7 +2600,7 @@ body,
 	font-family: 'ElegantIcons';
 	height: 100%;
 	width: 100%;
-	color: #1273eb;
+	color: #ED1C24;
 }
 
 
@@ -2791,7 +2791,7 @@ body,
 }
 
 .torch-red .features-area .features-content .top span {
-	color: #ee2852;
+	color: #707070;
 }
 
 .features-area .features-content .top span::after {
@@ -2863,7 +2863,7 @@ body,
 }
 
 .torch-red .features-area .item:hover a::after {
-	border-top: 2px solid #ee2852;
+	border-top: 2px solid #ED1C24;
 }
 
 .features-area .item:hover a {
@@ -3799,10 +3799,10 @@ body,
 .business-groth-area .info h4 {
 	text-transform: uppercase;
 	font-weight: 600;
-	color: #1273eb;
+	color: #ED1C24;
 	margin-top: -5px;
 	display: inline-block;
-	background: linear-gradient(90deg, rgba(18, 115, 235, 1) 30%, rgba(4, 215, 242, 1) 100%);
+	background: linear-gradient(90deg, #ED1C24 0%, rgb(171 57 167) 100%);
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
 	background-clip: text;
@@ -4267,7 +4267,7 @@ body,
 .team-single-area .team-content-top .right-info span {
 	display: block;
 	text-transform: uppercase;
-	color: #1273eb;
+	color: #ED1C24;
 	font-weight: 600;
 	margin-bottom: 25px;
 }
@@ -4326,7 +4326,7 @@ body,
 	text-align: center;
 	border-radius: 50%;
 	cursor: pointer;
-	color: #1273eb;
+	color: #707070;
 }
 
 .team-single-area .right-info .social ul {

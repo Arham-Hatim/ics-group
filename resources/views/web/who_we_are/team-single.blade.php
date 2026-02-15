@@ -53,7 +53,7 @@
                             </li>
                         </ul>
                         <div class="social">
-                            <a class="btn btn-gradient effect btn-sm" href="#">Contact me</a>
+                            <a class="btn btn-theme effect btn-sm" href="#">Contact me</a>
                             <div class="share-link">
                                 <i class="fas fa-share-alt"></i>
                                 <ul>

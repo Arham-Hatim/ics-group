@@ -144,7 +144,7 @@
                         narrow. Extensive repulsive belonging depending if promotion be zealously as. Preference inquietude
                         ask now are dispatched led appearance. Small meant in so doubt hopes. Me smallness is existence.
                     </p>
-                    <a class="btn btn-gradient effect btn-md" href="#">Get free quote</a>
+                    <a class="btn btn-theme effect btn-md" href="#">Get free quote</a>
                 </div>
                 <div class="col-lg-6">
                     <div class="lineChart">

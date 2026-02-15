@@ -683,7 +683,7 @@ nav.navbar.attr-border .attr-nav {
 }
 
 .torch-red .navbar .attr-nav .call i {
-    color: #ee2852;
+    color: #ED1C24;
     background: transparent;
     -webkit-background-clip: inherit;
     -moz-background-clip: inherit;
@@ -1243,7 +1243,7 @@ nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle::after {
 }
 
 .torch-red .side .widget.newsletter form span.input-group-addon button {
-  color: #ee2852;
+  color: #ED1C24;
 }
 
 .navbar .side .widget .profile-thumb img {
@@ -2357,7 +2357,7 @@ nav.navbar.bootsnav {
     -moz-background-clip: inherit !important;
     background-clip: inherit !important;
     -webkit-text-fill-color: inherit !important;
-    color: #ee2852;
+    color: #ED1C24;
 }
 
   nav.bootsnav.navbar-default.small-pad .top-search {

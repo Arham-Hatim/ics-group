@@ -3,20 +3,29 @@
         <div class="animation-preloader">
             <div class="spinner"></div>
             <div class="txt-loading">
-                <span data-text-preloader="E" class="letters-loading">
-                    E
+                <span data-text-preloader="I" class="letters-loading">
+                    I
                 </span>
-                <span data-text-preloader="A" class="letters-loading">
-                    A
+                <span data-text-preloader="C" class="letters-loading">
+                    C
+                </span>
+                <span data-text-preloader="S" class="letters-loading">
+                    S
+                </span>
+                <span data-text-preloader="G" class="letters-loading">
+                    G
                 </span>
                 <span data-text-preloader="R" class="letters-loading">
                     R
                 </span>
-                <span data-text-preloader="N" class="letters-loading">
-                    N
+                <span data-text-preloader="O" class="letters-loading">
+                    O
                 </span>
-                <span data-text-preloader="A" class="letters-loading">
-                    A
+                <span data-text-preloader="U" class="letters-loading">
+                    U
+                </span>
+                <span data-text-preloader="P" class="letters-loading">
+                    P
                 </span>
             </div>
         </div>

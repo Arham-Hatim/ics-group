@@ -5553,7 +5553,7 @@ body,
 	display: inline-block;
 	font-size: 40px;
 	margin-right: 9px;
-	color: #1273eb;
+	color: #707070;
 }
 
 .earna-career .job-lists .item .info .top i.fa-wordpress {
@@ -6655,8 +6655,8 @@ ul.pagination {
 }
 
 .pagination li.page-item.active a {
-	background: #1273eb;
-	border-color: #1273eb;
+	background: #707070;
+	border-color: #707070;
 }
 
 /* ============================================================== 

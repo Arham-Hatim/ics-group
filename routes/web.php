@@ -49,9 +49,7 @@ Route::get('news/views', function () {
     return view('web.news_views.news')->with('innerHeader', true);
 })->name('news.views');
 
-Route::get('news/views/{id}', function ($id) {
-    return view('web.news_views.news-single')->with('innerHeader', true);
-})->name('news.views.single');
+// =============================================
 
 Route::get('news/views/{id}', function ($id) {
     return view('web.news_views.news-single')->with('innerHeader', true);

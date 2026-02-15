@@ -1,6 +1,6 @@
 @extends('web.layouts.master')
 @section('title', 'Home | ICS Group')
-@section('meta_description', 'Welcome to ICS Group')
+@section('meta_description', 'ICS Group is a diversified business enterprise delivering innovative solutions, operational excellence, and sustainable growth across multiple industries. Discover our expertise, values, and commitment to long-term success.')
 
 @section('content')
 

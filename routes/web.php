@@ -29,6 +29,18 @@ Route::get('our/people/{id}', function ($id) {
     return view('web.who_we_are.team-single')->with('innerHeader', true);
 })->name('our-people.single');
 
+Route::get('strategy/values', function () {
+    return view('web.who_we_are.strategy-values')->with('innerHeader', true);
+})->name('strategy-values');
+
+Route::get('journey', function () {
+    return view('web.who_we_are.journey')->with('innerHeader', true);
+})->name('journey');
+
+Route::get('strategy/values', function () {
+    return view('web.who_we_are.strategy-values')->with('innerHeader', true);
+})->name('strategy-values');
+
 Route::get('contact/us', function () {
     return view('web.contact')->with('innerHeader', true);
 })->name('contact');
@@ -64,3 +76,15 @@ Route::get('business/verticals', function () {
 Route::get('business/overview', function () {
     return view('web.what_we_do.business-overview')->with('innerHeader', true);
 })->name('business-overview');
+
+Route::get('operations', function () {
+    return view('web.what_we_do.operations')->with('innerHeader', true);
+})->name('operations');
+
+Route::get('services/{id}', function ($id) {
+    return view('web.service-single')->with('innerHeader', true);
+})->name('service.single');
+
+Route::get('sustainability', function () {
+    return view('web.sustainability')->with('innerHeader', true);
+})->name('sustainability');

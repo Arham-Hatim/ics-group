@@ -6,7 +6,8 @@
 
     <!-- Start Banner 
         ============================================= -->
-    <div class="banner-area inc-video video-bg-live bg-cover" style="background-image: url({{ asset('web_assets/img/2440x1578.png') }});">
+    {{-- <div class="banner-area inc-video video-bg-live bg-cover" style="background-image: url({{ asset('web_assets/img/2440x1578.png') }});"> --}}
+    <div class="banner-area inc-video video-bg-live bg-cover" style="background-image: url({{ asset('web_assets/ics-images/home/hero1.jpg') }});">
         <div class="player"
             data-property="{videoURL:'gOqlwlQjVis',containment:'.video-bg-live', showControls:false, autoPlay:true, zoom:0, loop:true, mute:true, startAt:3, opacity:1, quality:'default'}">
         </div>
@@ -196,7 +197,8 @@
         <div class="container">
             <div class="about-items">
                 <div class="row">
-                    <div class="col-lg-6 thumb order-lg-last" style="background-image: url({{ asset('web_assets/img/2440x1578.png') }});">
+                    {{--<div class="col-lg-6 thumb order-lg-last" style="background-image: url({{ asset('web_assets/img/2440x1578.png') }});"> --}}
+                    <div class="col-lg-6 thumb order-lg-last" style="background-image: url({{ asset('web_assets/ics-images/home/who-we-are.jpg') }});">
                         <div class="successr-ate">
                             <div class="icon">
                                 <i class="flaticon-target"></i>
@@ -285,7 +287,8 @@
             <!-- End Item Heading -->
 
             <!-- Expertise Content -->
-            <div class="expertise-content text-light" style="background-image: url({{ asset('web_assets/img/2440x1578.png') }});">
+            {{-- <div class="expertise-content text-light" style="background-image: url({{ asset('web_assets/img/2440x1578.png') }});"> --}}
+            <div class="expertise-content text-light" style="background-image: url({{ asset('web_assets/ics-images/home/our-expertise.jpg') }});">
                 <div class="row">
                     <!-- Single Item -->
                     <div class="col-lg-4 single-item">
@@ -350,19 +353,20 @@
                     <div class="col-lg-6 clients">
                         <div class="partner-carousel owl-carousel owl-theme text-center">
                             <div class="single-item">
-                                <a href="#"><img src="{{ asset('web_assets/img/150x80.png') }}" alt="Clients"></a>
+                                {{--<a href="#"><img src="{{ asset('web_assets/img/150x80.png') }}" alt="Clients"></a>--}}
+                                <a href="#"><img src="{{ asset('web_assets/ics-images/home/partner1.png') }}" alt="Clients"></a>
                             </div>
                             <div class="single-item">
-                                <a href="#"><img src="{{ asset('web_assets/img/150x80.png') }}" alt="Clients"></a>
+                                {{--<a href="#"><img src="{{ asset('web_assets/img/150x80.png') }}" alt="Clients"></a>--}}
+                                <a href="#"><img src="{{ asset('web_assets/ics-images/home/partner2.png') }}" alt="Clients"></a>
                             </div>
                             <div class="single-item">
-                                <a href="#"><img src="{{ asset('web_assets/img/150x80.png') }}" alt="Clients"></a>
+                                {{--<a href="#"><img src="{{ asset('web_assets/img/150x80.png') }}" alt="Clients"></a>--}}
+                                <a href="#"><img src="{{ asset('web_assets/ics-images/home/partner3.png') }}" alt="Clients"></a>
                             </div>
                             <div class="single-item">
-                                <a href="#"><img src="{{ asset('web_assets/img/150x80.png') }}" alt="Clients"></a>
-                            </div>
-                            <div class="single-item">
-                                <a href="#"><img src="{{ asset('web_assets/img/150x80.png') }}" alt="Clients"></a>
+                                {{--<a href="#"><img src="{{ asset('web_assets/img/150x80.png') }}" alt="Clients"></a>--}}
+                                <a href="#"><img src="{{ asset('web_assets/ics-images/home/partner4.png') }}" alt="Clients"></a>
                             </div>
                         </div>
                     </div>
@@ -395,7 +399,8 @@
                         <div class="single-item col-lg-4 col-md-6">
                             <div class="item">
                                 <div class="thumb">
-                                    <img src="{{ asset('web_assets/img/800x900.png') }}" alt="Thumb">
+                                    {{--<img src="{{ asset('web_assets/img/800x900.png') }}" alt="Thumb">--}}
+                                    <img src="{{ asset('web_assets/ics-images/home/team1.jpg') }}" alt="Thumb">
                                     <div class="social">
                                         <a href="#" class="share-icon facebook">
                                             <i class="fab fa-facebook-f"></i>
@@ -424,7 +429,8 @@
                         <div class="single-item col-lg-4 col-md-6">
                             <div class="item">
                                 <div class="thumb">
-                                    <img src="{{ asset('web_assets/img/800x900.png') }}" alt="Thumb">
+                                    {{--<img src="{{ asset('web_assets/img/800x900.png') }}" alt="Thumb">--}}
+                                    <img src="{{ asset('web_assets/ics-images/home/team2.jpg') }}" alt="Thumb">
                                     <div class="social">
                                         <a href="#" class="share-icon facebook">
                                             <i class="fab fa-facebook-f"></i>
@@ -453,7 +459,8 @@
                         <div class="single-item col-lg-4 col-md-6">
                             <div class="item">
                                 <div class="thumb">
-                                    <img src="{{ asset('web_assets/img/800x900.png') }}" alt="Thumb">
+                                    {{--<img src="{{ asset('web_assets/img/800x900.png') }}" alt="Thumb">--}}
+                                    <img src="{{ asset('web_assets/ics-images/home/team3.jpg') }}" alt="Thumb">
                                     <div class="social">
                                         <a href="#" class="share-icon facebook">
                                             <i class="fab fa-facebook-f"></i>
@@ -505,7 +512,8 @@
                                         </p>
                                         <div class="provider">
                                             <div class="thumb">
-                                                <img src="{{ asset('web_assets/img/100x100.png') }}" alt="Author">
+                                                {{--<img src="{{ asset('web_assets/img/100x100.png') }}" alt="Author">--}}
+                                                <img src="{{ asset('web_assets/ics-images/home/testimonial1.jpg') }}" alt="Author">
                                             </div>
                                             <div class="content">
                                                 <h4>Ahel Natasha</h4>
@@ -525,7 +533,8 @@
                                         </p>
                                         <div class="provider">
                                             <div class="thumb">
-                                                <img src="{{ asset('web_assets/img/100x100.png') }}" alt="Author">
+                                                {{--<img src="{{ asset('web_assets/img/100x100.png') }}" alt="Author">--}}
+                                                <img src="{{ asset('web_assets/ics-images/home/testimonial2.jpg') }}" alt="Author">
                                             </div>
                                             <div class="content">
                                                 <h4>Ahel Natasha</h4>
@@ -574,7 +583,8 @@
                         <div class="pf-item">
                             <div class="item">
                                 <div class="thumb">
-                                    <img src="{{ asset('web_assets/img/800x600.png') }}" alt="Thumb">
+                                    {{--<img src="{{ asset('web_assets/img/800x600.png') }}" alt="Thumb">--}}
+                                    <img src="{{ asset('web_assets/ics-images/home/gallery1.jpg') }}" alt="Thumb">
                                 </div>
                                 <div class="content">
                                     <div class="info">
@@ -582,7 +592,8 @@
                                         <span>Finance, Assets</span>
                                     </div>
                                     <div class="button">
-                                        <a href="{{ asset('web_assets/img/800x800.png') }}" class="item popup-gallery">
+                                        {{--<a href="{{ asset('web_assets/img/800x800.png') }}" class="item popup-gallery">--}}
+                                        <a href="{{ asset('web_assets/ics-images/home/gallery1.jpg') }}" class="item popup-gallery">
                                             <i class="fas fa-plus"></i>
                                         </a>
                                     </div>
@@ -595,7 +606,8 @@
                         <div class="pf-item">
                             <div class="item">
                                 <div class="thumb">
-                                    <img src="{{ asset('web_assets/img/800x800.png') }}" alt="Thumb">
+                                    {{--<img src="{{ asset('web_assets/img/800x800.png') }}" alt="Thumb">--}}
+                                    <img src="{{ asset('web_assets/ics-images/home/gallery2.jpg') }}" alt="Thumb">
                                 </div>
                                 <div class="content">
                                     <div class="info">
@@ -603,7 +615,8 @@
                                         <span>Creative, Minimal</span>
                                     </div>
                                     <div class="button">
-                                        <a href="{{ asset('web_assets/img/800x800.png') }}" class="item popup-gallery">
+                                        {{--<a href="{{ asset('web_assets/img/800x800.png') }}" class="item popup-gallery">--}}
+                                        <a href="{{ asset('web_assets/ics-images/home/gallery2.jpg') }}" class="item popup-gallery">
                                             <i class="fas fa-plus"></i>
                                         </a>
                                     </div>
@@ -616,7 +629,8 @@
                         <div class="pf-item">
                             <div class="item">
                                 <div class="thumb">
-                                    <img src="{{ asset('web_assets/img/800x800.png') }}" alt="Thumb">
+                                    {{--<img src="{{ asset('web_assets/img/800x800.png') }}" alt="Thumb">--}}
+                                    <img src="{{ asset('web_assets/ics-images/home/gallery3.jpg') }}" alt="Thumb">
                                 </div>
                                 <div class="content">
                                     <div class="info">
@@ -624,7 +638,8 @@
                                         <span>Benifits, Business</span>
                                     </div>
                                     <div class="button">
-                                        <a href="{{ asset('web_assets/img/800x800.png') }}" class="item popup-gallery">
+                                        {{--<a href="{{ asset('web_assets/img/800x800.png') }}" class="item popup-gallery">--}}
+                                        <a href="{{ asset('web_assets/ics-images/home/gallery3.jpg') }}" class="item popup-gallery">
                                             <i class="fas fa-plus"></i>
                                         </a>
                                     </div>
@@ -637,7 +652,8 @@
                         <div class="pf-item">
                             <div class="item">
                                 <div class="thumb">
-                                    <img src="{{ asset('web_assets/img/800x800.png') }}" alt="Thumb">
+                                    {{--<img src="{{ asset('web_assets/img/800x800.png') }}" alt="Thumb">--}}
+                                    <img src="{{ asset('web_assets/ics-images/home/gallery4.jpg') }}" alt="Thumb">
                                 </div>
                                 <div class="content">
                                     <div class="info">
@@ -645,7 +661,8 @@
                                         <span>Invest, Earning</span>
                                     </div>
                                     <div class="button">
-                                        <a href="{{ asset('web_assets/img/800x800.png') }}" class="item popup-gallery">
+                                        {{--<a href="{{ asset('web_assets/img/800x800.png') }}" class="item popup-gallery">--}}
+                                        <a href="{{ asset('web_assets/ics-images/home/gallery4.jpg') }}" class="item popup-gallery">
                                             <i class="fas fa-plus"></i>
                                         </a>
                                     </div>
@@ -658,7 +675,8 @@
                         <div class="pf-item">
                             <div class="item">
                                 <div class="thumb">
-                                    <img src="{{ asset('web_assets/img/800x600.png') }}" alt="Thumb">
+                                    {{--<img src="{{ asset('web_assets/img/800x600.png') }}" alt="Thumb">--}}
+                                    <img src="{{ asset('web_assets/ics-images/home/gallery5.jpg') }}" alt="Thumb">
                                 </div>
                                 <div class="content">
                                     <div class="info">
@@ -666,7 +684,8 @@
                                         <span>Finance, Assets</span>
                                     </div>
                                     <div class="button">
-                                        <a href="{{ asset('web_assets/img/800x800.png') }}" class="item popup-gallery">
+                                        {{--<a href="{{ asset('web_assets/img/800x800.png') }}" class="item popup-gallery">--}}
+                                        <a href="{{ asset('web_assets/ics-images/home/gallery5.jpg') }}" class="item popup-gallery">
                                             <i class="fas fa-plus"></i>
                                         </a>
                                     </div>
@@ -679,7 +698,8 @@
                         <div class="pf-item">
                             <div class="item">
                                 <div class="thumb">
-                                    <img src="{{ asset('web_assets/img/800x600.png') }}" alt="Thumb">
+                                    {{--<img src="{{ asset('web_assets/img/800x600.png') }}" alt="Thumb">--}}
+                                    <img src="{{ asset('web_assets/ics-images/home/gallery6.jpg') }}" alt="Thumb">
                                 </div>
                                 <div class="content">
                                     <div class="info">
@@ -687,7 +707,8 @@
                                         <span>Finance, Assets</span>
                                     </div>
                                     <div class="button">
-                                        <a href="{{ asset('web_assets/img/800x800.png') }}" class="item popup-gallery">
+                                        {{--<a href="{{ asset('web_assets/img/800x800.png') }}" class="item popup-gallery">--}}
+                                        <a href="{{ asset('web_assets/ics-images/home/gallery6.jpg') }}" class="item popup-gallery">
                                             <i class="fas fa-plus"></i>
                                         </a>
                                     </div>
@@ -723,7 +744,8 @@
                     <div class="single-item col-lg-4 col-md-6">
                         <div class="item">
                             <div class="thumb">
-                                <img src="{{ asset('web_assets/img/800x600.png') }}" alt="Thumb">
+                                {{--<img src="{{ asset('web_assets/img/800x600.png') }}" alt="Thumb">--}}
+                                <img src="{{ asset('web_assets/ics-images/home/news1.jpg') }}" alt="Thumb">
                                 <div class="date">January 25, 2021</div>
                             </div>
 
@@ -731,7 +753,8 @@
                                 <div class="meta">
                                     <ul>
                                         <li>
-                                            <img src="{{ asset('web_assets/img/100x100.png') }}" alt="Author">
+                                            {{--<img src="{{ asset('web_assets/img/100x100.png') }}" alt="Author">--}}
+                                            <img src="{{ asset('web_assets/ics-images/home/team1.jpg') }}" alt="Author">
                                             <span>By </span>
                                             <a href="#">John Baus</a>
                                         </li>
@@ -756,14 +779,16 @@
                     <div class="single-item col-lg-4 col-md-6">
                         <div class="item">
                             <div class="thumb">
-                                <img src="{{ asset('web_assets/img/800x600.png') }}" alt="Thumb">
+                                {{--<img src="{{ asset('web_assets/img/800x600.png') }}" alt="Thumb">--}}
+                                <img src="{{ asset('web_assets/ics-images/home/news2.jpg') }}" alt="Thumb">
                                 <div class="date">February 12, 2021</div>
                             </div>
                             <div class="info">
                                 <div class="meta">
                                     <ul>
                                         <li>
-                                            <img src="{{ asset('web_assets/img/100x100.png') }}" alt="Author">
+                                            {{--<img src="{{ asset('web_assets/img/100x100.png') }}" alt="Author">--}}
+                                            <img src="{{ asset('web_assets/ics-images/home/team2.jpg') }}" alt="Author">
                                             <span>By </span>
                                             <a href="#">Mohon Mark</a>
                                         </li>
@@ -788,14 +813,16 @@
                     <div class="single-item col-lg-4 col-md-6">
                         <div class="item">
                             <div class="thumb">
-                                <img src="{{ asset('web_assets/img/800x600.png') }}" alt="Thumb">
+                                {{--<img src="{{ asset('web_assets/img/800x600.png') }}" alt="Thumb">--}}
+                                <img src="{{ asset('web_assets/ics-images/home/news3.jpg') }}" alt="Thumb">
                                 <div class="date">March 18, 2021</div>
                             </div>
                             <div class="info">
                                 <div class="meta">
                                     <ul>
                                         <li>
-                                            <img src="{{ asset('web_assets/img/100x100.png') }}" alt="Author">
+                                            {{--<img src="{{ asset('web_assets/img/100x100.png') }}" alt="Author">--}}
+                                            <img src="{{ asset('web_assets/ics-images/home/team3.jpg') }}" alt="Author">
                                             <span>By </span>
                                             <a href="#">Paul Tun</a>
                                         </li>

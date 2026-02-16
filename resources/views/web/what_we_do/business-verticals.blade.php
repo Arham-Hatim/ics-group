@@ -4,194 +4,209 @@
 
 @section('content')
     <!-- Start Breadcrumb 
-        ============================================= -->
-    <div class="breadcrumb-area text-center shadow dark text-light bg-cover"
-        style="background-image: url({{ asset('web_assets/img/2440x1578.png') }});">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <h1>Our Services</h1>
-                    <ul class="breadcrumb">
-                        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-                        <li class="active">Services</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Breadcrumb -->
-
-    <!-- Star Services Area
-        ============================================= -->
-    <div class="thumb-services-area inc-thumbnail default-padding bottom-less">
-        <!-- Shape -->
-        <div class="right-shape">
-            <img src="{{ asset('web_assets/img/shape/9.png') }}" alt="Shape">
-        </div>
-        <!-- Shape -->
-        <div class="container">
-            <div class="services-items text-center">
+                            ============================================= -->
+    {{--<div class="breadcrumb-area text-center shadow dark text-light bg-cover"
+        style="background-image: url({{ asset('web_assets/img/2440x1578.png') }});">--}}
+        <div class="breadcrumb-area text-center shadow dark text-light bg-cover"
+            style="background-image: url({{ asset('web_assets/ics-images/vertical/banner.jpg') }});">
+            <div class="container">
                 <div class="row">
-                    <!-- Single Item -->
-                    <div class="col-lg-4 col-md-6 single-item">
-                        <div class="item" style="background-image: url({{ asset('web_assets/img/800x900.png') }});">
-                            <div class="info">
-                                <i class="flaticon-investment"></i>
-                                <h4>Financial Planning</h4>
-                                <p>
-                                    Prevailed always tolerably discourse and assurance more applauded more uncommonly. Him
-                                    everything.
-                                </p>
-                                <div class="bottom">
-                                    <a href="#"><i class="fas fa-arrow-right"></i> Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-lg-4 col-md-6 single-item">
-                        <div class="item" style="background-image: url({{ asset('web_assets/img/800x900.png') }});">
-                            <div class="info">
-                                <i class="flaticon-creativity"></i>
-                                <h4>Investment Planning</h4>
-                                <p>
-                                    Prevailed always tolerably discourse and assurance more applauded more uncommonly. Him
-                                    everything.
-                                </p>
-                                <div class="bottom">
-                                    <a href="#"><i class="fas fa-arrow-right"></i> Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-lg-4 col-md-6 single-item">
-                        <div class="item" style="background-image: url({{ asset('web_assets/img/800x900.png') }});">
-                            <div class="info">
-                                <i class="flaticon-money-1"></i>
-                                <h4>Saving & Investments</h4>
-                                <p>
-                                    Prevailed always tolerably discourse and assurance more applauded more uncommonly. Him
-                                    everything.
-                                </p>
-                                <div class="bottom">
-                                    <a href="#"><i class="fas fa-arrow-right"></i> Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Services Area -->
-
-
-    <!-- Star Partner Area
-        ============================================= -->
-    <div class="partner-area overflow-hidden text-light">
-        <div class="container">
-            <div class="item-box">
-                <div class="row align-center">
-                    <div class="col-lg-6 info">
-                        <h2>We're Trusted by <span>2500+</span> <br> Professional Customer</h2>
-                        <p>
-                            Seeing rather her you not esteem men settle genius excuse. Deal say over you age from.
-                            Comparison new ham melancholy son themselves.
-                        </p>
-                    </div>
-                    <div class="col-lg-6 clients">
-                        <div class="partner-carousel owl-carousel owl-theme text-center">
-                            <div class="single-item">
-                                <a href="#"><img src="{{ asset('web_assets/img/150x80.png') }}" alt="Clients"></a>
-                            </div>
-                            <div class="single-item">
-                                <a href="#"><img src="{{ asset('web_assets/img/150x80.png') }}" alt="Clients"></a>
-                            </div>
-                            <div class="single-item">
-                                <a href="#"><img src="{{ asset('web_assets/img/150x80.png') }}" alt="Clients"></a>
-                            </div>
-                            <div class="single-item">
-                                <a href="#"><img src="{{ asset('web_assets/img/150x80.png') }}" alt="Clients"></a>
-                            </div>
-                            <div class="single-item">
-                                <a href="#"><img src="{{ asset('web_assets/img/150x80.png') }}" alt="Clients"></a>
-                            </div>
-                        </div>
+                    <div class="col-lg-8 offset-lg-2">
+                        <h1>Our Services</h1>
+                        <ul class="breadcrumb">
+                            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                            <li class="active">Services</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End Partner Area -->
+        <!-- End Breadcrumb -->
 
-    <!-- Star testimonials Area
-        ============================================= -->
-    <div class="testimonials-area bg-gray default-padding">
-        <!-- Fixed Shape -->
-        <div class="fixed-shape" style="background-image: url({{ asset('web_assets/img/shape/10.png') }});"></div>
-        <!-- End Fixed Shape -->
-        <div class="container">
-            <div class="testimonial-items">
-                <div class="row align-center">
-                    <div class="col-lg-7 testimonials-content">
-                        <div class="testimonials-carousel owl-carousel owl-theme">
-                            <!-- Single Item -->
-                            <div class="item">
-                                <div class="info">
-                                    <p>
-                                        Otherwise concealed favourite frankness on be at dashwoods defective at. Sympathize
-                                        interested simplicity at do projecting increasing terminated. As edward settle
-                                        limits at in. Chamber reached do he nothing be.
-                                    </p>
-                                    <div class="provider">
-                                        <div class="thumb">
-                                            <img src="{{ asset('web_assets/img/100x100.png') }}" alt="Author">
-                                        </div>
-                                        <div class="content">
-                                            <h4>Ahel Natasha</h4>
-                                            <span> Managing Director</span>
-                                        </div>
+        <!-- Start About Area
+                        ============================================= -->
+        <div class="about-content-area default-padding">
+            <div class="container">
+                <div class="content-box">
+                    <div class="row">
+                        <div class="col-lg-6 thumb">
+                            <div class="thumb-box">
+                                {{--<img src="assets/img/800x900.png" alt="Thumb">--}}
+                                <img src="{{ asset('web_assets/ics-images/vertical/about1.jpg') }}" alt="Thumb">
+                                {{--<img src="assets/img/800x800.png" alt="Thumb">--}}
+                                <img src="{{ asset('web_assets/ics-images/vertical/about2.jpg') }}" alt="Thumb">
+                                <div class="shape" style="background-image: url(assets/img/shape/1.png);"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 info">
+                            <h2>We Combine Technology <br> with Business Ideas</h2>
+                            <ul>
+                                <li>
+                                    <div class="icon">
+                                        <i class="ti-bookmark-alt"></i>
+                                    </div>
+                                    <div class="info">
+                                        <h4>Certified Company</h4>
+                                        <p>
+                                            Common so wicket appear to sudden worthy on. Shade of offer ye whole stood
+                                            hoped.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <i class="ti-id-badge"></i>
+                                    </div>
+                                    <div class="info">
+                                        <h4>Experience Employee</h4>
+                                        <p>
+                                            Common so wicket appear to sudden worthy on. Shade of offer ye whole stood
+                                            hoped.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="call">
+                                <div class="icon">
+                                    <i class="flaticon-telephone"></i>
+                                </div>
+                                <div class="intro">
+                                    <h5>+123 456 7890</h5>
+                                    <span>Call to ask any question</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 center-info">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End About -->
+
+        <!-- Star Services Area
+                ============================================= -->
+        <div class="thumbs-services-area bg-dark text-light default-padding">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="site-heading text-center">
+                            <h4>Our Services</h4>
+                            <h2>What We Bring To You</h2>
+                            <div class="devider"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <!-- Start Services Items -->
+                <div class="services-content">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="thumb-services-carousel owl-carousel owl-theme">
+                                <!-- Single Item -->
+                                <div class="item">
+                                    {{--<img src="{{ asset('web_assets/img/800x600.png') }}" alt="Thumb">--}}
+                                    <img src="{{ asset('web_assets/ics-images/vertical/courasel1.jpg') }}" alt="Thumb">
+                                    <div class="info">
+                                        <h4><a href="#">Financial Planning</a></h4>
+                                        <p>
+                                            Prevailed tolerably main discourse asking estimable pure applauded save.
+                                        </p>
+                                        <a href="#" >Learn More <i class="fas fa-angle-right"></i></a>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- End Single Item -->
-                            <!-- Single Item -->
-                            <div class="item">
-                                <div class="info">
-                                    <p>
-                                        Otherwise concealed favourite frankness on be at dashwoods defective at. Sympathize
-                                        interested simplicity at do projecting increasing terminated. As edward settle
-                                        limits at in. Chamber reached do he nothing be.
-                                    </p>
-                                    <div class="provider">
-                                        <div class="thumb">
-                                            <img src="{{ asset('web_assets/img/100x100.png') }}" alt="Author">
-                                        </div>
-                                        <div class="content">
-                                            <h4>Ahel Natasha</h4>
-                                            <span> Managing Director</span>
-                                        </div>
+                                <!-- End Single Item -->
+                                <!-- Single Item -->
+                                <div class="item">
+                                    {{--<img src="{{ asset('web_assets/img/800x600.png') }}" alt="Thumb">--}}
+                                    <img src="{{ asset('web_assets/ics-images/vertical/courasel2.jpg') }}" alt="Thumb">
+                                    <div class="info">
+                                        <h4><a href="#">Investment Planning</a></h4>
+                                        <p>
+                                            Prevailed tolerably main discourse asking estimable pure applauded save.
+                                        </p>
+                                        <a href="#" >Learn More <i class="fas fa-angle-right"></i></a>
                                     </div>
                                 </div>
+                                <!-- End Single Item -->
+                                <!-- Single Item -->
+                                <div class="item">
+                                    {{--<img src="{{ asset('web_assets/img/800x600.png') }}" alt="Thumb">--}}
+                                    <img src="{{ asset('web_assets/ics-images/vertical/courasel3.jpg') }}" alt="Thumb">
+                                    <div class="info">
+                                        <h4><a href="#">Saving & Investments</a></h4>
+                                        <p>
+                                            Prevailed tolerably main discourse asking estimable pure applauded save.
+                                        </p>
+                                        <a href="#">Learn More <i class="fas fa-angle-right"></i></a>
+                                    </div>
+                                </div>
+                                <!-- End Single Item -->
+                                <!-- Single Item -->
+                                <div class="item">
+                                    {{--<img src="{{ asset('web_assets/img/800x600.png') }}" alt="Thumb">--}}
+                                    <img src="{{ asset('web_assets/ics-images/vertical/courasel4.jpg') }}" alt="Thumb">
+                                    <div class="info">
+                                        <h4><a href="#">Markets Research</a></h4>
+                                        <p>
+                                            Prevailed tolerably main discourse asking estimable pure applauded save.
+                                        </p>
+                                        <a href="#">Learn More <i class="fas fa-angle-right"></i></a>
+                                    </div>
+                                </div>
+                                <!-- End Single Item -->
                             </div>
-                            <!-- End Single Item -->
                         </div>
                     </div>
-                    <div class="col-lg-5 info">
-                        <h4>Testimonials</h4>
-                        <h2>Check what our satisfied clients said</h2>
-                        <p>
-                            Why I say old chap that is, spiffing off his nut color blimey and guvnords geeza bloke knees up
-                            bobby sloshed arse
-                        </p>
+                </div>
+                <!-- End Services Items -->
+            </div>
+        </div>
+        <!-- End Services Area -->
+
+        <!-- Start About 
+        ============================================= -->
+        <div id="about" class="about-style-seven-area default-padding bg-gray">
+            <div class="shape-left-top">
+                <img src="{{ asset('web_assets/img/shape/22.png') }}" alt="Shape">
+            </div>
+            <div class="container">
+                <div class="about-items">
+                    <div class="row align-center">
+                        <div class="col-lg-6 about-style-seven">
+                            <div class="thumb">
+                                <img src="{{ asset('web_assets/ics-images/vertical/video.jpg') }}" alt="Thumb">
+                                <img src="{{ asset('web_assets/img/shape/21.png') }}" alt="Thumb">
+                                <div href="https://www.youtube.com/watch?v=owhuBrGIOsE" class="popup-youtube video">
+                                    <a href="#"><i class="fas fa-play"></i> <span>Our History</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 about-style-seven">
+                            <h4>Easy Business Solutions</h4>
+                            <h2>We Combine Technology <br> with Business Ideas</h2>
+                            <p>
+                                Friendly bachelor entrance to on by. Extremity as if breakfast agreement. Off now mistress
+                                provided out horrible opinions. Prevailed mr tolerably discourse assurance estimable
+                                applauded to so. Him everything melancholy uncommonly but solicitude inhabiting projection.
+                            </p>
+                            <ul>
+                                <li>24/7 Call Services Available </li>
+                                <li>Great Skilled Consultant</li>
+                                <li>Expert Team Members</li>
+                                <li>How to improve business </li>
+                                <li>Business is the best plan</li>
+                                <li>Services we provide</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End testimonials Area -->
+        <!-- End About Area -->
 @endsection

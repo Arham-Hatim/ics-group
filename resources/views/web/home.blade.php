@@ -41,7 +41,7 @@
                                             <h2 data-animation="animated slideInRight">We Provide Business Planing
                                                 <span>Solution</span>
                                             </h2>
-                                            <a data-animation="animated zoomInUp" class="btn btn-theme effect btn-md"
+                                            <a data-animation="animated zoomInUp" class="btn btn-gradient effect btn-md"
                                                 href="#">Discover More</a>
                                         </div>
                                     </div>
@@ -61,7 +61,7 @@
                                             <h2 data-animation="animated slideInUp">Find Value And Build Some
                                                 <span>Confidence</span>
                                             </h2>
-                                            <a data-animation="animated zoomInUp" class="btn btn-theme effect btn-md"
+                                            <a data-animation="animated zoomInUp" class="btn btn-gradient effect btn-md"
                                                 href="#">Discover More</a>
                                         </div>
                                     </div>
@@ -232,7 +232,7 @@
                                 </p>
                             </li>
                         </ul>
-                        <a class="btn btn-light effect btn-md" href="#">Discover More</a>
+                        <a class="btn btn-gradient effect btn-md" href="#">Discover More</a>
                     </div>
 
                 </div>

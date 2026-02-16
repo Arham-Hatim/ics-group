@@ -32,11 +32,13 @@ class Handler extends ExceptionHandler
     public function render($request, Throwable $exception)
     {
         if ($exception instanceof NotFoundHttpException) {
-            // Return custom 404 view with 404 status
-            return response()->view('web.errors.404', [], 404)->with('innerHeader', true);
+            return response()->view(
+                'web.errors.404',
+                ['innerHeader' => true],
+                404
+            );
         }
 
-        // For all other exceptions, use the default behavior
         return parent::render($request, $exception);
     }
 

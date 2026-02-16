@@ -410,7 +410,7 @@ input {
 }
 
 .bg-gray {
-	background: linear-gradient(90deg, rgb(242, 242, 242) 0%, rgb(204, 204, 204) 100%);
+	background: linear-gradient(90deg, #f2f2f2 0%, rgb(204, 204, 204) 100%);
 }
 
 .bg-light {
@@ -624,12 +624,12 @@ a:active {
 	content: "";
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(to right, #ee2852, #d100df, #ee2852);
+	background-image: linear-gradient(to right, #ED1C24, #ab39a7, #ED1C24);
 	background-size: 220% 150%;
 	text-transform: uppercase;
 	display: inline-block;
 	color: #ffffff !important;
-	background-color: #ee2852;
+	background-color: #ED1C24;
 	z-index: -1;
 	transition: all 0.35s ease-in-out;
 }
@@ -1045,9 +1045,9 @@ button:focus {
 	text-transform: uppercase;
 	display: inline-block;
 	font-weight: 600;
-	color: #1273eb;
+	color: #ED1C24;
 	margin-top: -5px;
-	background: linear-gradient(90deg, rgba(18, 115, 235, 1) 30%, rgba(4, 215, 242, 1) 100%);
+	background: linear-gradient(90deg, #ED1C24 0%, rgb(171 57 167) 100%);
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
 	background-clip: text;
@@ -2708,7 +2708,7 @@ body,
 	display: inline-block;
 	font-size: 40px;
 	margin-right: 25px;
-	color: #1273eb;
+	color: #707070;
 }
 
 .about-content-area .content-box .info ul li h4 {
@@ -2732,7 +2732,7 @@ body,
 	height: 70px;
 	width: 70px;
 	line-height: 75px;
-	background: #1273eb;
+	background: #ED1C24;
 	text-align: center;
 	border-radius: 50%;
 	margin-right: 25px;
@@ -2751,7 +2751,7 @@ body,
 	content: "";
 	height: 120%;
 	width: 120%;
-	background: #1273eb;
+	background: #ED1C24;
 	z-index: -1;
 	border-radius: 50%;
 	opacity: 0.3;
@@ -3454,47 +3454,52 @@ body,
 	color: #cccccc;
 }
 
-.thumbs-services-area .item .info>a {
-	text-transform: uppercase;
-	font-size: 13px;
-	color: #cccccc;
-	display: inline-block;
-	margin-top: 15px;
-	border: 2px solid rgba(255, 255, 255, 0.1);
-	padding: 8px 25px;
-	border-radius: 7px;
-	overflow: hidden;
-	position: relative;
-	z-index: 1;
-	font-weight: 600;
+.thumbs-services-area .item .info > a {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #cccccc;
+    display: inline-block;
+    margin-top: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    padding: 8px 25px;
+    border-radius: 7px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    font-weight: 600;
+    transition: color 0.35s ease-in-out, border 0.35s ease-in-out;
 }
 
-.thumbs-services-area .item .info>a i {
-	margin-left: 3px;
-	position: relative;
-	top: 1px;
+/* SINGLE GRADIENT BACKGROUND */
+.thumbs-services-area .item .info > a::after {
+    content: "";
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #ED1C24, #ab39a7);
+    z-index: -1;
+    transition: all 0.35s ease-in-out;
 }
 
-.thumbs-services-area .item:hover .info>a {
-	color: #ffffff;
-	border: 2px solid #1273eb;
+/* Hover */
+.thumbs-services-area .item:hover .info > a {
+    color: #ffffff;
+    border-color: transparent;
 }
 
-.thumbs-services-area .item .info>a::after {
-	position: absolute;
-	left: 0;
-	top: 0;
-	content: "";
-	height: 100%;
-	width: 0;
-	background: #1273eb;
-	z-index: -1;
-	transition: all 0.35s ease-in-out;
+.thumbs-services-area .item:hover .info > a::after {
+    left: 0;
 }
 
-.thumbs-services-area .item:hover .info>a::after {
-	width: 100%;
+/* Icon spacing */
+.thumbs-services-area .item .info > a i {
+    margin-left: 3px;
+    position: relative;
+    top: 1px;
 }
+
 
 .thumbs-services-area .thumb-services-carousel.owl-carousel .owl-dots {
 	margin-top: 40px;
@@ -3526,7 +3531,7 @@ body,
 	-moz-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	-o-transform: translate(-50%, -50%);
-	background: #1273eb;
+	background: #ED1C24;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
@@ -3848,7 +3853,7 @@ body,
 	content: "";
 	height: 120px;
 	width: 100%;
-	background: linear-gradient(90deg, rgba(237, 245, 255, 1) 0%, rgba(204, 223, 247, 1) 100%);
+	background: linear-gradient(90deg, #f2f2f2 0%, rgb(204, 204, 204) 100%);
 	z-index: -1;
 }
 
@@ -3917,7 +3922,7 @@ body,
 }
 
 .torch-red .choose-us-area .info .award i {
-	color: #ee2852;
+	color: #ED1C24;
 	-webkit-background-clip: inherit;
 	-moz-background-clip: inherit;
 	background-clip: inherit;
@@ -3987,7 +3992,7 @@ body,
 }
 
 .torch-red .partner-area .item-box.red::after {
-	background: #707070;
+	background: #1b1b1b;
 }
 
 .partner-area .item-box::before {
@@ -6905,12 +6910,12 @@ ul.pagination {
 	content: "";
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(to right, #1273eb, #18ebeb, #1273eb);
+	background-image: linear-gradient(to right, #ED1C24, #ab39a7, #ED1C24);
 	background-size: 220% 150%;
 	text-transform: uppercase;
 	display: inline-block;
 	color: #ffffff !important;
-	background-color: #1273eb;
+	background-color: #ED1C24;
 	z-index: -1;
 	transition: all 0.35s ease-in-out;
 	border-radius: 5px;
@@ -7729,9 +7734,9 @@ nav.navbar.bootsnav {
 }
 
 .about-service-list {
-	background-color: #ee2852;
+	background-color: #707070;
 	padding: 50px;
-	background: linear-gradient(30deg, #1273eb 5%, #ee2852 90%);
+	/* background: linear-gradient(30deg, #1273eb 5%, #ee2852 90%); */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -8024,7 +8029,7 @@ nav.navbar.bootsnav {
 }
 
 .compnay-owner-carousel-carousel .item .company-owner-info .provider {
-	background: linear-gradient(30deg, #1273eb 5%, #ee2852 90%);
+	background: #707070;
 	padding: 15px 30px;
 }
 
@@ -8058,7 +8063,8 @@ nav.navbar.bootsnav {
 	text-align: center;
 	line-height: 45px;
 	border-radius: 50%;
-	background: #1273eb;
+	background: transparent;
+	color: #000000;
 }
 
 
@@ -8208,9 +8214,9 @@ nav.navbar.bootsnav {
 
 .heading-left .sub-title {
 	text-transform: uppercase;
-	color: #1273eb;
+	color: #ED1C24;
 	font-weight: 600;
-	background: linear-gradient(90deg, rgba(18, 115, 235, 1) 30%, rgba(4, 215, 242, 1) 100%);
+	background: linear-gradient(90deg, #ED1C24 0%, rgb(171 57 167) 100%);
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
 	background-clip: text;
@@ -8262,7 +8268,7 @@ nav.navbar.bootsnav {
 	height: 70%;
 	width: 100%;
 	transition: all 0.35s ease-in-out;
-	background: #1273eb;
+	background: #707070;
 	z-index: -1;
 	border-radius: 10px;
 	opacity: 0;
@@ -8273,7 +8279,7 @@ nav.navbar.bootsnav {
 	display: inline-block;
 	font-size: 50px;
 	min-width: 70px;
-	color: #1273eb;
+	color: #707070;
 }
 
 .services-style-seven .item p {
@@ -8325,7 +8331,7 @@ nav.navbar.bootsnav {
 	position: relative;
 	z-index: 1;
 	display: inline-block;
-	background: linear-gradient(90deg, rgba(18, 115, 235, 1) 30%, rgb(115 4 242) 100%);
+	background: linear-gradient(90deg, #ED1C24 0%, rgb(171 57 167) 100%);
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
 	background-clip: text;
@@ -8383,8 +8389,8 @@ nav.navbar.bootsnav {
 	width: 18px;
 	text-align: center;
 	line-height: 18px;
-	background: #1273eb;
-	color: #ffffff;
+	background: #ffffff;
+	color: #ED1C24;
 	font-size: 12px;
 	border-radius: 50%;
 	font-weight: 500;
@@ -8405,7 +8411,7 @@ nav.navbar.bootsnav {
 	display: inline-block;
 	height: 80px;
 	width: 80px;
-	background: #1273eb;
+	background: #ED1C24;
 	text-align: center;
 	line-height: 80px;
 	color: #ffffff;

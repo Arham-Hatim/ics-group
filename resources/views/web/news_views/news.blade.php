@@ -5,9 +5,11 @@
 @section('content')
 
     <!-- Start Breadcrumb 
-        ============================================= -->
-    <div class="breadcrumb-area shadow dark bg-cover text-center text-light"
-        style="background-image: url({{ asset('web_assets/img/2440x1578.png') }});">
+                    ============================================= -->
+    {{--<div class="breadcrumb-area shadow dark bg-cover text-center text-light"
+        style="background-image: url({{ asset('web_assets/img/2440x1578.png') }});">--}}
+        <div class="breadcrumb-area shadow dark bg-cover text-center text-light"
+            style="background-image: url({{ asset('web_assets/ics-images/news/banner.jpg') }});">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12">
@@ -23,7 +25,7 @@
     <!-- End Breadcrumb -->
 
     <!-- Start Blog
-        ============================================= -->
+                    ============================================= -->
     <div class="blog-area full-blog blog-standard full-blog grid-colum default-padding">
         <div class="container">
             <div class="blog-items content-less">
@@ -34,14 +36,18 @@
                             <div class="col-lg-4 col-md-6 single-item">
                                 <div class="item">
                                     <div class="thumb">
-                                        <a href="#"><img src="{{ asset('web_assets/img/800x600.png') }}" alt="Thumb"></a>
+                                        {{--<a href="#"><img src="{{ asset('web_assets/img/800x600.png') }}"
+                                                alt="Thumb"></a>--}}
+                                        <a href="#"><img src="{{ asset('web_assets/ics-images/news/new1.jpg') }}"
+                                                alt="Thumb"></a>
                                         <div class="date">January 25, 2021</div>
                                     </div>
                                     <div class="info">
                                         <div class="meta">
                                             <ul>
                                                 <li>
-                                                    <img src="{{ asset('web_assets/img/100x100.png') }}" alt="Author">
+                                                    {{--<img src="{{ asset('web_assets/img/100x100.png') }}" alt="Author">--}}
+                                                    <img src="{{ asset('web_assets/ics-images/news/team1.jpg') }}" alt="Author">
                                                     <span>By </span>
                                                     <a href="#">John Baus</a>
                                                 </li>
@@ -66,14 +72,16 @@
                             <div class="col-lg-4 col-md-6 single-item">
                                 <div class="item">
                                     <div class="thumb">
-                                        <a href="#"><img src="{{ asset('web_assets/img/800x600.png') }}" alt="Thumb"></a>
+                                        {{--<a href="#"><img src="{{ asset('web_assets/img/800x600.png') }}" alt="Thumb"></a>--}}
+                                        <a href="#"><img src="{{ asset('web_assets/ics-images/news/new2.jpg') }}" alt="Thumb"></a>
                                         <div class="date">February 18, 2021</div>
                                     </div>
                                     <div class="info">
                                         <div class="meta">
                                             <ul>
                                                 <li>
-                                                    <img src="{{ asset('web_assets/img/100x100.png') }}" alt="Author">
+                                                    {{--<img src="{{ asset('web_assets/img/100x100.png') }}" alt="Author">--}}
+                                                    <img src="{{ asset('web_assets/ics-images/news/team2.jpg') }}" alt="Author">
                                                     <span>By </span>
                                                     <a href="#">Paul Anu</a>
                                                 </li>
@@ -98,14 +106,16 @@
                             <div class="col-lg-4 col-md-6 single-item">
                                 <div class="item">
                                     <div class="thumb">
-                                        <a href="#"><img src="{{ asset('web_assets/img/800x600.png') }}" alt="Thumb"></a>
+                                        {{--<a href="#"><img src="{{ asset('web_assets/img/800x600.png') }}" alt="Thumb"></a>--}}
+                                        <a href="#"><img src="{{ asset('web_assets/ics-images/news/new3.jpg') }}" alt="Thumb"></a>
                                         <div class="date">March 24, 2021</div>
                                     </div>
                                     <div class="info">
                                         <div class="meta">
                                             <ul>
                                                 <li>
-                                                    <img src="{{ asset('web_assets/img/100x100.png') }}" alt="Author">
+                                                    {{--<img src="{{ asset('web_assets/img/100x100.png') }}" alt="Author">--}}
+                                                    <img src="{{ asset('web_assets/ics-images/news/team3.jpg') }}" alt="Author">
                                                     <span>By </span>
                                                     <a href="#">Mark Henri</a>
                                                 </li>
@@ -130,14 +140,16 @@
                             <div class="col-lg-4 col-md-6 single-item">
                                 <div class="item">
                                     <div class="thumb">
-                                        <a href="#"><img src="{{ asset('web_assets/img/800x600.png') }}" alt="Thumb"></a>
+                                        {{--<a href="#"><img src="{{ asset('web_assets/img/800x600.png') }}" alt="Thumb"></a>--}}
+                                        <a href="#"><img src="{{ asset('web_assets/ics-images/news/new4.jpg') }}" alt="Thumb"></a>
                                         <div class="date">April 18, 2021</div>
                                     </div>
                                     <div class="info">
                                         <div class="meta">
                                             <ul>
                                                 <li>
-                                                    <img src="{{ asset('web_assets/img/100x100.png') }}" alt="Author">
+                                                    {{--<img src="{{ asset('web_assets/img/100x100.png') }}" alt="Author">--}}
+                                                    <img src="{{ asset('web_assets/ics-images/news/team4.jpg') }}" alt="Author">
                                                     <span>By </span>
                                                     <a href="#">John Baus</a>
                                                 </li>
@@ -162,14 +174,16 @@
                             <div class="col-lg-4 col-md-6 single-item">
                                 <div class="item">
                                     <div class="thumb">
-                                        <a href="#"><img src="{{ asset('web_assets/img/800x600.png') }}" alt="Thumb"></a>
+                                        {{--<a href="#"><img src="{{ asset('web_assets/img/800x600.png') }}" alt="Thumb"></a>--}}
+                                        <a href="#"><img src="{{ asset('web_assets/ics-images/news/new5.jpg') }}" alt="Thumb"></a>
                                         <div class="date">June 25, 2021</div>
                                     </div>
                                     <div class="info">
                                         <div class="meta">
                                             <ul>
                                                 <li>
-                                                    <img src="{{ asset('web_assets/img/100x100.png') }}" alt="Author">
+                                                    {{--<img src="{{ asset('web_assets/img/100x100.png') }}" alt="Author">--}}
+                                                    <img src="{{ asset('web_assets/ics-images/news/team5.jpg') }}" alt="Author">
                                                     <span>By </span>
                                                     <a href="#">Dia Jack</a>
                                                 </li>
@@ -194,14 +208,16 @@
                             <div class="col-lg-4 col-md-6 single-item">
                                 <div class="item">
                                     <div class="thumb">
-                                        <a href="#"><img src="{{ asset('web_assets/img/800x600.png') }}" alt="Thumb"></a>
+                                        {{--<a href="#"><img src="{{ asset('web_assets/img/800x600.png') }}" alt="Thumb"></a>--}}
+                                        <a href="#"><img src="{{ asset('web_assets/ics-images/news/new6.jpg') }}" alt="Thumb"></a>
                                         <div class="date">Auguest 25, 2021</div>
                                     </div>
                                     <div class="info">
                                         <div class="meta">
                                             <ul>
                                                 <li>
-                                                    <img src="{{ asset('web_assets/img/100x100.png') }}" alt="Author">
+                                                    {{--<img src="{{ asset('web_assets/img/100x100.png') }}" alt="Author">--}}
+                                                    <img src="{{ asset('web_assets/ics-images/news/team6.jpg') }}" alt="Author">
                                                     <span>By </span>
                                                     <a href="#">John Baus</a>
                                                 </li>

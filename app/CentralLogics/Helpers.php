@@ -10,70 +10,67 @@ use PhpOffice\PhpSpreadsheet\Cell\Cell;
 class Helpers
 {
 
-    public static function upload($dir, $image = null, $oldImage = null, ?int $width = null, ?int $height = null, ?string $singleColor = null, bool $makeTransparent = false)
-    {
+    public static function upload(
+        string $dir,
+        $image = null,
+        ?string $oldImage = null,
+        ?int $width = null,
+        ?int $height = null
+    ): ?string {
+
         if (!$image || !$image->isValid()) {
             return null;
         }
 
-        // Delete old image if exists
+        $storagePath = public_path("storage/{$dir}");
+
+        if (!is_dir($storagePath)) {
+            mkdir($storagePath, 0755, true);
+        }
+
         if (!empty($oldImage)) {
-            $fileName = basename($oldImage);
-            $oldPath = public_path("storage/{$dir}/{$fileName}");
+            $oldPath = $storagePath . '/' . basename($oldImage);
             if (file_exists($oldPath)) {
                 @unlink($oldPath);
             }
 
-            // Also remove old WebP version if exists
             $webpPath = preg_replace('/\.[^.]+$/', '.webp', $oldPath);
             if (file_exists($webpPath)) {
                 @unlink($webpPath);
             }
         }
 
-        // Determine format
-        $format = $makeTransparent ? 'png' : 'webp';
+        $extension = strtolower($image->getClientOriginalExtension());
+        $format = ($extension === 'png') ? 'png' : 'webp';
 
-        // Generate new file name
         $imageName = Carbon::now()->format('YmdHis') . '-' . uniqid() . '.' . $format;
-        $path = public_path("storage/{$dir}");
-        if (!is_dir($path)) {
-            mkdir($path, 0755, true);
-        }
-
+        $fullPath = $storagePath . '/' . $imageName;
+        
         $manager = new ImageManager(new Driver());
         $img = $manager->read($image->getPathname());
 
-        // Resize if width & height provided
-        if ($width && $height) {
-            if ($img->width() != $width || $img->height() != $height) {
-                $img->cover($width, $height);
+        if ($width || $height) {
+
+            if ($width && $height) {
+                if ($img->width() !== $width || $img->height() !== $height) {
+                    $img->scale($width, $height);
+                }
+            }elseif ($width && !$height) {
+                if ($img->width() !== $width) {
+                    $img->resize($width, null);
+                }
+            }elseif ($height && !$width) {
+                if ($img->height() !== $height) {
+                    $img->resize(null, $height);
+                }
             }
         }
-
-        // Convert multi-color image to single color
-        if ($singleColor) {
-            $img->greyscale();
-            $img->contrast(60);
-            $overlay = $manager->create($img->width(), $img->height())->fill($singleColor);
-            $img->place($overlay, 'center', 0, 0, 100);
+        
+        if ($format === 'png') {
+            $img->toPng(9)->save($fullPath);
+        } else {
+            $img->toWebp(75)->save($fullPath);
         }
-
-        // Encode image (all formats quality 70)
-        switch ($format) {
-            case 'png':
-                $encoded = $img->toPng(70);
-                break;
-            case 'webp':
-                $encoded = $img->toWebp(70);
-                break;
-            default:
-                $encoded = $img->toWebp(70);
-                break;
-        }
-
-        // Save file
-        file_put_contents("{$path}/{$imageName}", $encoded->toString());
 
         return $imageName;
     }

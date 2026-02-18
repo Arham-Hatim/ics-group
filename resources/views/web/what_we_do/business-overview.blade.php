@@ -79,7 +79,7 @@
                             </div>
                             <div class="content">
                                 <h4>Sabrina Brooks</h4>
-                                <span>Founder & CEO of <strong>Earna</strong></span>
+                                <span>Founder & CEO of ICS Group</span>
                             </div>
                         </div>
                     </div>

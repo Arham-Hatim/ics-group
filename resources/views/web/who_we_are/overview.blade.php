@@ -54,7 +54,7 @@
                                 </div>
                                 <div class="intro">
                                     <h5>Spark Moun</h5>
-                                    <span>Chairman & Founder Earna</span>
+                                    <span>Chairman & Founder ICS Group</span>
                                 </div>
                             </div>
                         </div>

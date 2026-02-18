@@ -1,0 +1,532 @@
+/* Admin panel & auth shared styles – same fonts as web (Poppins, Open Sans) */
+
+body.admin-panel,
+body.admin-auth {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body.admin-panel h1,
+body.admin-panel h2,
+body.admin-panel h3,
+body.admin-panel h4,
+body.admin-panel h5,
+body.admin-panel h6,
+body.admin-auth h1,
+body.admin-auth h2,
+body.admin-auth h3,
+body.admin-auth h4,
+body.admin-auth h5,
+body.admin-auth h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+body.admin-panel {
+    background-color: #f5f6fa;
+}
+
+.admin-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+.admin-sidebar {
+    width: 250px;
+    background: #1f2933;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-sidebar .brand {
+    padding: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.admin-sidebar .brand img {
+    max-height: 32px;
+    margin-right: 8px;
+}
+
+.admin-sidebar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 15px 0;
+}
+
+.admin-sidebar nav ul li a {
+    display: block;
+    padding: 10px 22px;
+    color: #d1d5db;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.admin-sidebar nav ul li a:hover,
+.admin-sidebar nav ul li a.active {
+    background: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+}
+
+.admin-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-topbar {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.admin-topbar .user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.admin-content {
+    padding: 20px;
+}
+
+.admin-footer {
+    margin-top: auto;
+    padding: 12px 20px;
+    font-size: 13px;
+    color: #6b7280;
+    background: #ffffff;
+    border-top: 1px solid #e5e7eb;
+}
+
+/* Auth layout – animated background and card */
+
+@keyframes auth-gradient-shift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes auth-card-in {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+html,
+body.admin-auth {
+    height: 100%;
+}
+
+body.admin-auth {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-45deg, #0f172a, #1e293b, #334155, #475569, #1e293b);
+    background-size: 400% 400%;
+    animation: auth-gradient-shift 14s ease infinite;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background objects (circles, blobs, shapes) */
+.auth-bg-objects {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.auth-bg-circle,
+.auth-bg-blob,
+.auth-bg-square {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.04);
+    animation: auth-float 20s ease-in-out infinite;
+}
+
+.auth-bg-blob {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+
+.auth-bg-square {
+    border-radius: 12px;
+    background: rgba(237, 28, 36, 0.06);
+}
+
+.auth-bg-circle-1 {
+    width: 280px;
+    height: 280px;
+    top: -80px;
+    right: -60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.auth-bg-circle-2 {
+    width: 180px;
+    height: 180px;
+    bottom: 10%;
+    left: -50px;
+    animation-delay: -5s;
+    animation-duration: 22s;
+}
+
+.auth-bg-circle-3 {
+    width: 120px;
+    height: 120px;
+    top: 40%;
+    left: 15%;
+    animation-delay: -10s;
+    animation-duration: 16s;
+}
+
+.auth-bg-blob-1 {
+    width: 320px;
+    height: 320px;
+    bottom: -100px;
+    right: 10%;
+    background: rgba(237, 28, 36, 0.05);
+    animation-delay: -3s;
+    animation-duration: 24s;
+}
+
+.auth-bg-blob-2 {
+    width: 200px;
+    height: 200px;
+    top: 20%;
+    right: 25%;
+    animation-delay: -7s;
+    animation-duration: 19s;
+}
+
+.auth-bg-square-1 {
+    width: 100px;
+    height: 100px;
+    bottom: 25%;
+    right: 5%;
+    animation: auth-float-rotate 15s ease-in-out infinite;
+    animation-delay: -12s;
+}
+
+@keyframes auth-float {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    25% {
+        transform: translate(15px, -20px) scale(1.02);
+    }
+    50% {
+        transform: translate(-10px, 10px) scale(0.98);
+    }
+    75% {
+        transform: translate(-20px, -10px) scale(1.01);
+    }
+}
+
+@keyframes auth-float-rotate {
+    0%, 100% {
+        transform: translate(0, 0) rotate(25deg);
+    }
+    25% {
+        transform: translate(15px, -20px) rotate(35deg);
+    }
+    50% {
+        transform: translate(-10px, 10px) rotate(15deg);
+    }
+    75% {
+        transform: translate(-20px, -10px) rotate(30deg);
+    }
+}
+
+.admin-auth-wrapper {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 15px;
+}
+
+.admin-auth-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.2);
+    padding: 30px 30px 26px;
+    animation: auth-card-in 0.6s ease-out;
+}
+
+.admin-auth-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.admin-auth-header img {
+    display: block;
+    max-height: 38px;
+    margin-left: 33%;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.admin-auth-header h4 {
+    margin-bottom: 4px;
+}
+
+.admin-auth-footer {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+/* Simple utility classes (Bootstrap-like) used in admin views */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.col-lg-12,
+.col-lg-4 {
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+@media (min-width: 992px) {
+    .col-lg-12 {
+        width: 100%;
+    }
+
+    .col-lg-4 {
+        width: 33.3333%;
+    }
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+.mt-4 {
+    margin-top: 1.5rem;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #e5e7eb;
+}
+
+.card-body {
+    padding: 16px 18px;
+}
+
+.shadow {
+    box-shadow: 0 10px 20px rgba(15, 23, 42, 0.08);
+}
+
+.text-muted {
+    color: #6b7280;
+}
+
+/* Buttons – match web_assets (torch-red theme) */
+.btn,
+button.btn {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    padding: 17px 42px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+.btn-sm {
+    padding: 14px 40px;
+    font-size: 14px;
+}
+
+.btn-xs {
+    padding: 10px 24px;
+    font-size: 13px;
+}
+
+/* Gradient button – same as web .btn.btn-gradient (torch-red) */
+.btn.btn-gradient {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+}
+
+.btn.btn-gradient::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, #ED1C24, #ab39a7, #ED1C24);
+    background-size: 220% 150%;
+    background-color: #ED1C24;
+    z-index: -1;
+    transition: all 0.35s ease-in-out;
+}
+
+.btn.btn-gradient:hover::after,
+.btn.btn-gradient:active::after {
+    background-position: -70% 0;
+}
+
+.btn.btn-gradient:hover,
+.btn.btn-gradient:active {
+    color: #ffffff;
+}
+
+.btn.effect:hover {
+    box-shadow: 0 10px 30px rgba(237, 28, 36, 0.35);
+}
+
+/* Danger / logout – torch-red solid */
+.btn.btn-danger {
+    background: #ED1C24;
+    color: #ffffff;
+}
+
+.btn.btn-danger:hover {
+    background: #c91820;
+    color: #ffffff;
+}
+
+.alert {
+    padding: 10px 12px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.alert-danger {
+    background: #fee2e2;
+    color: #b91c1c;
+    border: 1px solid #fecaca;
+}
+
+.form-group {
+    margin-bottom: 0.75rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 4px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.2);
+}
+
+.is-invalid {
+    border-color: #dc2626;
+}
+
+.invalid-feedback {
+    display: block;
+    font-size: 13px;
+    color: #dc2626;
+    margin-top: 4px;
+}
+
+.list-unstyled {
+    list-style: none;
+    padding-left: 0;
+}
+
+.required {
+    color: #dc2626;
+}
+
+.checkbox-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: auto;
+    cursor: pointer;
+}
+
+.btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.checkbox label {
+    font-size: 14px;
+    color: #374151;
+}

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -82,3 +83,23 @@ Route::get('services/{id}', function ($id) {
 Route::get('sustainability', function () {
     return view('web.sustainability')->with('innerHeader', true);
 })->name('sustainability');
+
+// ================== Admin Auth & Panel ==================
+
+Route::prefix('admin')->name('admin.')->group(function () {
+    Route::middleware('guest:admin')->group(function () {
+        Route::get('login', function () {
+            return view('admin.auth.login');
+        })->name('login');
+
+        Route::post('login', [AuthController::class, 'login'])->name('login.submit');
+    });
+
+    Route::middleware('auth:admin')->group(function () {
+        Route::get('dashboard', function () {
+            return view('admin.dashboard');
+        })->name('dashboard');
+
+        Route::post('logout', [AuthController::class, 'logout'])->name('logout');
+    });
+});

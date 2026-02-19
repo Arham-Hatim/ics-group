@@ -25,9 +25,7 @@
     <div class="wrapper">
 
         @include('admin.layouts.partials.header')
-        
-        <aside class="sidebar-wrapper" data-simplebar="true">
-        </aside>
+        @include('admin.layouts.partials.sidebar')
 
         <main class="page-content">
             @yield('content')

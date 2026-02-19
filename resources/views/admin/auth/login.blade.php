@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="ICS Group admin panel login – Secure access to manage users, settings, and dashboards efficiently.">
+    <meta name="description"
+        content="ICS Group admin panel login – Secure access to manage users, settings, and dashboards efficiently.">
     <link rel="icon" href="{{ asset('admin_assets/images/logo-icon.png') }}" type="image/png" />
     <link href="{{ asset('admin_assets/css/bootstrap.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('admin_assets/css/bootstrap-extended.css') }}" rel="stylesheet" />
@@ -28,23 +29,20 @@
                                 <div class="position-absolute top-0 start-0 w-100 h-100"
                                     style="background: var(--ph-sunset); opacity: 0.85;"></div>
                                 <div class="animate-pulse position-relative z-index-1">
-                                    <img src="https://cdn-icons-png.flaticon.com/512/201/201623.png"
-                                        class="img-fluid mb-4" alt="PackHappy Mascot"
-                                        style="width: 120px; filter: brightness(0) invert(1);">
-                                    <h2 class="text-white fw-bold">PackHappy</h2>
-                                    <p class="text-white opacity-75">Travel Administration & Support</p>
+                                    <h2 class="text-white fw-bold">ICS Group</h2>
+                                    <p class="text-white opacity-75">Delivering Promisses</p>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="card-body p-4 p-sm-5">
                                     <div class="text-center mb-4 lg-none">
-                                        <img src="https://cdn-icons-png.flaticon.com/512/201/201623.png" width="60"
-                                            alt="" class="mb-3">
-                                        <h4 class="fw-bold">Staff Login</h4>
+                                        <img src="{{ asset('web_assets/img/logo-red.png') }}" width="120" alt=""
+                                            class="mb-3">
+                                        <h4 class="fw-bold">Admin Login</h4>
                                     </div>
                                     <h5 class="fw-bold mb-1 d-none d-lg-block">Welcome Back!</h5>
                                     <p class="small text-secondary mb-4 d-none d-lg-block">Access the command center for
-                                        PackHappy Travel.</p>
+                                        ICS Group.</p>
 
                                     @if (session('success'))
                                         <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -64,13 +62,13 @@
                                         @csrf
                                         <div class="row g-3">
                                             <div class="col-12">
-                                                <label class="form-label fw-bold small">Staff Email</label>
+                                                <label class="form-label fw-bold small">Email</label>
                                                 <div class="input-group">
                                                     <span class="input-group-text bg-transparent"><i
                                                             class="bi bi-person-fill text-primary"></i></span>
                                                     <input type="email" name="email"
                                                         class="form-control radius-10 border-start-0 @error('email') is-invalid @enderror"
-                                                        placeholder="admin@packhappy.com" value="{{ old('email') }}"
+                                                        placeholder="admin@icsgroup.com" value="{{ old('email') }}"
                                                         required autofocus>
                                                 </div>
                                                 @error('email')
@@ -78,7 +76,7 @@
                                                 @enderror
                                             </div>
                                             <div class="col-12">
-                                                <label class="form-label fw-bold small">Access Code</label>
+                                                <label class="form-label fw-bold small">Password</label>
                                                 <div class="input-group">
                                                     <span class="input-group-text bg-transparent"><i
                                                             class="bi bi-lock-fill text-primary"></i></span>
@@ -104,7 +102,7 @@
                                                         class="bi bi-shield-lock-fill me-2"></i>Enter Dashboard</button>
                                             </div>
                                             <div class="col-12 text-center mt-3">
-                                                <p class="x-small text-secondary mb-0">Powered by PackHappy Engine v2.0
+                                                <p class="x-small text-secondary mb-0">Powered by ICS Group Engine v2.0
                                                 </p>
                                             </div>
                                         </div>

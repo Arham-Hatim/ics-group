@@ -2,8 +2,7 @@
     <div class="sidebar-header">
         <div class="d-flex align-items-center gap-2">
             <img src="{{ asset('web_assets/img/logo-red.png') }}" class="logo-icon" alt="logo icon"
-                style="width: 45px; border-radius: 50%;">
-            <h4 class="logo-text mb-0">PackHappy</h4>
+                style="width: 130px;">
         </div>
         <div class="toggle-icon ms-auto"><i class="bi bi-list"></i></div>
     </div>

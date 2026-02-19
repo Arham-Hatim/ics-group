@@ -37,7 +37,7 @@
                                 <div class="card-body p-4 p-sm-5">
                                     <div class="text-center mb-4 lg-none">
                                         <img src="{{ asset('web_assets/img/logo-red.png') }}" width="120" alt=""
-                                            class="mb-3">
+                                            class="mb-3 me-4">
                                         <h4 class="fw-bold">Admin Login</h4>
                                     </div>
                                     <h5 class="fw-bold mb-1 d-none d-lg-block">Welcome Back!</h5>

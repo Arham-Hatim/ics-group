@@ -13,16 +13,11 @@
                 <div class="menu-title">Dashboard</div>
             </a>
         </li>
-        <li>
-            <a href="javascript:;" class="has-arrow">
-                <div class="parent-icon"><i class="bi bi-people-fill"></i></div>
-                <div class="menu-title">User Management</div>
+        <li class="{{ request()->routeIs('admin.contact') ? 'mm-active' : '' }}">
+            <a href="#">
+                <div class="parent-icon"><i class="bi bi-contact"></i></div>
+                <div class="menu-title">Contact</div>
             </a>
-            <ul>
-                <li class="{{ request()->routeIs('admin.users') ? 'mm-active' : '' }}">
-                    <a href="#"><i class="bi bi-circle"></i>Users</a>
-                </li>
-            </ul>
         </li>
         <li class="{{ request()->routeIs('admin.facilities.*') ? 'mm-active' : '' }}">
             <a href="#">

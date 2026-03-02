@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\ContactController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AuthController;
 
@@ -100,6 +101,11 @@ Route::prefix('admin')->name('admin.')->group(function () {
             return view('admin.dashboard');
         })->name('dashboard');
 
+        Route::controller(ContactController::class)->group(function () {
+            Route::get('contact', 'create')->name('admin.contact');
+        });
+
         Route::post('logout', [AuthController::class, 'logout'])->name('logout');
     });
 });
+ 

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
         content="ICS Group admin panel login – Secure access to manage users, settings, and dashboards efficiently.">
-    <link rel="icon" href="{{ asset('admin_assets/images/logo-icon.png') }}" type="image/png" />
+    <link rel="shortcut icon" href="{{ asset('web_assets/img/favicon.png') }}" type="image/x-icon">
     <link href="{{ asset('admin_assets/css/bootstrap.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('admin_assets/css/bootstrap-extended.css') }}" rel="stylesheet" />
     <link href="{{ asset('admin_assets/css/style.css') }}" rel="stylesheet" />

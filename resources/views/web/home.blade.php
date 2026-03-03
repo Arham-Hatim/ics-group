@@ -5,7 +5,7 @@
 @section('content')
 
     <!-- Start Banner 
-                                                                                                                            ============================================= -->
+                                                                                                                                                                                ============================================= -->
     {{-- <div class="banner-area inc-video video-bg-live bg-cover"
         style="background-image: url({{ asset('web_assets/img/2440x1578.png') }});"> --}}
         <div class="banner-area inc-video video-bg-live bg-cover"
@@ -80,7 +80,7 @@
         <!-- End Banner -->
 
         <!-- Star Services Area
-                                                                                                                            ============================================= -->
+                                                                                                                                                                                ============================================= -->
         <div class="default-services-area default-padding">
             <div class="container">
                 <div class="row">
@@ -98,10 +98,10 @@
                 </div>
             </div>
             <div class="container">
-                <div class="services-items text-center">
-                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
+                <div class="services-items">
+                    <div class="row">
 
-                        <div class="col">
+                        <div class="col-lg-4 col-md-6 single-item">
                             <div class="item">
                                 <div class="info">
                                     <i class="flaticon-logistics"></i>
@@ -112,7 +112,7 @@
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col-lg-4 col-md-6 single-item">
                             <div class="item">
                                 <div class="info">
                                     <i class="flaticon-pharma"></i>
@@ -134,7 +134,7 @@
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col-lg-4 col-md-6 single-item">
                             <div class="item">
                                 <div class="info">
                                     <i class="flaticon-security"></i>
@@ -145,13 +145,25 @@
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col-lg-4 col-md-6 single-item">
                             <div class="item">
                                 <div class="info">
-                                    <i class="flaticon-technology"></i>
-                                    <h4><a href="#">Technology</a></h4>
-                                    <p>We deliver innovative IT infrastructure, digital transformation, and scalable
-                                        technology solutions for modern efficiency.</p>
+                                    <i class="flaticon-trade"></i>
+                                    <h4><a href="#">Trading</a></h4>
+                                    <p>Bridging international markets through strategic procurement, market expertise, and
+                                        reliable global distribution networks.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 single-item">
+                            <div class="item">
+                                <div class="info">
+                                    <i class="flaticon-energy"></i>
+                                    <h4><a href="#">Renewable Energy</a></h4>
+                                    <p>Advancing global green transitions through innovative infrastructure and
+                                        high-efficiency sustainable energy systems.</p>
                                 </div>
                             </div>
                         </div>
@@ -163,7 +175,7 @@
         <!-- End Services Area -->
 
         <!-- Star About Area
-                                                                                                                            ============================================= -->
+                                                                                                                                                                                ============================================= -->
         <div class="about-area bg-dark overflow-hidden text-light relative">
             <!-- Fixed Shape -->
             <div class="fixed-shape" style="background-image: url({{ asset('web_assets/img/shape/8.png') }});"></div>
@@ -224,7 +236,7 @@
             <!-- End About Area -->
 
             <!-- Start Expertise Area
-                                                                                                                            ============================================= -->
+                                                                                                                                                                                ============================================= -->
             <div class="expertise-area default-padding">
                 <div class="container">
                     <!-- Item Heading -->
@@ -322,7 +334,7 @@
                 <!-- End Expertise Area -->
 
                 <!-- Star Partner Area
-                                                                                                                            ============================================= -->
+                                                                                                                                                                                ============================================= -->
                 <div class="partner-area overflow-hidden text-light">
                     <div class="container">
                         <div class="item-box red">
@@ -372,7 +384,7 @@
                 <!-- ("overflow-hidden-box overflow-hidden" helps you to ignore extra width for the circle shape)-->
                 <div class="overflow-hidden-box overflow-hidden">
                     <!-- Star Team Area
-                                                                                                                                ============================================= -->
+                                                                                                                                                                                    ============================================= -->
                     <div class="team-area bg-gray default-padding bottom-less">
                         <div class="container">
                             <div class="row">
@@ -485,7 +497,7 @@
                     <!-- End Team Area -->
 
                     <!-- Star testimonials Area
-                                                                                                                                ============================================= -->
+                                                                                                                                                                                    ============================================= -->
                     <div class="testimonials-area bg-gray default-padding-bottom">
                         <!-- Fixed Shape -->
                         <div class="fixed-shape"
@@ -565,7 +577,7 @@
                 <!-- End Overflow Hidden Box -->
 
                 <!-- Start Gallery Area
-                                                                                                                            ============================================= -->
+                                                                                                                                                                                ============================================= -->
                 <div class="gallery-area overflow-hidden default-padding">
                     <div class="container">
                         <div class="row">
@@ -746,7 +758,7 @@
                 <!-- End Projects Area -->
 
                 <!-- Start Blog 
-                                                                                                                            ============================================= -->
+                                                                                                                                                                                ============================================= -->
                 <div class="blog-area bg-gray default-padding bottom-less">
                     <div class="container">
                         <div class="row">

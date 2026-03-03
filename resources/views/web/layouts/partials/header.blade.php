@@ -83,9 +83,8 @@
             <div class="widget">
                 <img src="{{ asset('web_assets/img/logo-red.png') }}" alt="Logo">
                 <p>
-                    Arrived compass prepare an on as. Reasonable particular on my it in sympathize. Size now easy eat
-                    hand how. Unwilling he departure elsewhere dejection at. Heart large seems may purse means few
-                    blind.
+                    We are a diversified business conglomerate committed to delivering excellence across multiple
+                    sectors including pharmaceuticals, logistics, automobile, security, energy, and trading.
                 </p>
             </div>
             <div class="widget address">
@@ -94,19 +93,22 @@
                         <li>
                             <div class="content">
                                 <p>Address</p>
-                                <strong>California, TX 70240</strong>
+                                <strong>
+                                    1st Floor, Shafi Court, Merewether Road,
+                                    Civil Lines, Karachi-Pakistan
+                                </strong>
                             </div>
                         </li>
                         <li>
                             <div class="content">
                                 <p>Email</p>
-                                <strong>support@validtheme.com</strong>
+                                <strong>info@icsgroup.com.pk</strong>
                             </div>
                         </li>
                         <li>
                             <div class="content">
                                 <p>Contact</p>
-                                <strong>+44-20-7328-4499</strong>
+                                <strong>(+92)21 111 565 565</strong>
                             </div>
                         </li>
                     </ul>

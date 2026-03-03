@@ -6,10 +6,10 @@
             <div class="col-lg-6 info">
                 <ul>
                     <li>
-                        <i class="fas fa-map-marker-alt"></i> California, TX 70240
+                        <i class="fas fa-map-marker-alt"></i> 1st Floor, Shafi Court, Merewether Road
                     </li>
                     <li>
-                        <i class="fas fa-envelope-open"></i> Info@gmail.com
+                        <i class="fas fa-envelope-open"></i>  info@icsgroup.com.pk
                     </li>
                 </ul>
             </div>
@@ -17,7 +17,7 @@
                 <div class="info">
                     <ul>
                         <li>
-                            <i class="fas fa-clock"></i> Office Hours: 8:00 AM – 7:45 PM
+                            <i class="fas fa-clock"></i> Office Hours: 9:00 AM – 6:00 PM
                         </li>
                     </ul>
                 </div>
@@ -63,7 +63,7 @@
                     </div>
                     <div class="info">
                         <span>Have any question?</span>
-                        <h5>(012) 66795453677</h5>
+                        <h5>(+92)21 111 565 565</h5>
                     </div>
                 </div>
             </div>

@@ -6,8 +6,9 @@
                     <div class="f-item about">
                         <img src="{{ asset('web_assets/img/logo-light.png') }}" alt="Logo">
                         <p>
-                            Excellence decisively nay man yet impression for contrasted remarkably. There spoke
-                            happy for you are out. Fertile how old address did showing.
+                            We are a diversified business conglomerate committed to delivering excellence across
+                            multiple sectors including pharmaceuticals, logistics, automobile, security, energy, and
+                            trading.
                         </p>
                         <form action="#">
                             <input type="email" placeholder="Your Email" class="form-control" name="email">
@@ -76,7 +77,8 @@
                                     </div>
                                     <div class="content">
                                         <strong>Address:</strong>
-                                        5919 Trussville Crossings Pkwy, Birmingham
+                                        1st Floor, Shafi Court, Merewether Road,
+                                        Address: Civil Lines, Karachi-Pakistan
                                     </div>
                                 </li>
                                 <li>
@@ -85,7 +87,7 @@
                                     </div>
                                     <div class="content">
                                         <strong>Email:</strong>
-                                        <a href="mailto:info@validtheme.com">info@validtheme.com</a>
+                                        <a href="mailto:info@icsgroup.com.pk">info@icsgroup.com.pk</a>
                                     </div>
                                 </li>
                                 <li>
@@ -94,7 +96,7 @@
                                     </div>
                                     <div class="content">
                                         <strong>Phone:</strong>
-                                        <a href="tel:2151234567">+123 34598768</a>
+                                        <a href="tel:2151234567">(+92)21 111 565 565</a>
                                     </div>
                                 </li>
                             </ul>
@@ -110,7 +112,7 @@
             <div class="footer-bottom-box">
                 <div class="row">
                     <div class="col-lg-6">
-                        <p>&copy; Copyright 2021. All Rights Reserved by <a href="#">validthemes</a></p>
+                        <p>&copy; Copyright 2026. All Rights Reserved by <a href="#">ICS Group</a></p>
                     </div>
                     <div class="col-lg-6 text-right link">
                         <ul>

@@ -5,13 +5,13 @@
 @section('content')
 
     <!-- Start Banner 
-                                            ============================================= -->
+                                                                                                                            ============================================= -->
     {{-- <div class="banner-area inc-video video-bg-live bg-cover"
         style="background-image: url({{ asset('web_assets/img/2440x1578.png') }});"> --}}
         <div class="banner-area inc-video video-bg-live bg-cover"
             style="background-image: url({{ asset('web_assets/ics-images/home/heroBanner3.jpg') }});">
             <div class="player"
-                data-property="{videoURL:'gOqlwlQjVis',containment:'.video-bg-live', showControls:false, autoPlay:true, zoom:0, loop:true, mute:true, startAt:3, opacity:1, quality:'default'}">
+                data-property="{videoURL:'3JzJyhYmjKQ',containment:'.video-bg-live', showControls:false, autoPlay:true, zoom:0, loop:true, mute:true, startAt:0, opacity:1, quality:'default'}">
             </div>
 
             <div id="bootcarousel" class="carousel text-light slide animate_text" data-ride="carousel">
@@ -39,9 +39,9 @@
                                     <div class="row">
                                         <div class="col-lg-8 offset-lg-4">
                                             <div class="content">
-                                                <h4 data-animation="animated zoomInRight">Include more sales</h4>
-                                                <h2 data-animation="animated slideInRight">We Provide Business Planing
-                                                    <span>Solution</span>
+                                                <h4 data-animation="animated zoomInRight">A Diversified Business Group</h4>
+                                                <h2 data-animation="animated slideInRight">Leading Global Industry
+                                                    <span>Excellence</span>
                                                 </h2>
                                                 <a data-animation="animated zoomInUp" class="btn btn-gradient effect btn-md"
                                                     href="#">Discover More</a>
@@ -59,12 +59,12 @@
                                     <div class="row">
                                         <div class="col-lg-8 offset-lg-4">
                                             <div class="content">
-                                                <h4 data-animation="animated zoomInRight">More convenient</h4>
-                                                <h2 data-animation="animated slideInUp">Find Value And Build Some
-                                                    <span>Confidence</span>
+                                                <h4 data-animation="animated zoomInRight">Reliable Solutions Since 1994</h4>
+                                                <h2 data-animation="animated slideInUp">Empowering Growth Through
+                                                    <span>Innovation</span>
                                                 </h2>
                                                 <a data-animation="animated zoomInUp" class="btn btn-gradient effect btn-md"
-                                                    href="#">Discover More</a>
+                                                    href="#">Explore More</a>
                                             </div>
                                         </div>
                                     </div>
@@ -80,7 +80,7 @@
         <!-- End Banner -->
 
         <!-- Star Services Area
-                                            ============================================= -->
+                                                                                                                            ============================================= -->
         <div class="default-services-area default-padding">
             <div class="container">
                 <div class="row">
@@ -163,7 +163,7 @@
         <!-- End Services Area -->
 
         <!-- Star About Area
-                                            ============================================= -->
+                                                                                                                            ============================================= -->
         <div class="about-area bg-dark overflow-hidden text-light relative">
             <!-- Fixed Shape -->
             <div class="fixed-shape" style="background-image: url({{ asset('web_assets/img/shape/8.png') }});"></div>
@@ -174,7 +174,7 @@
                         {{--<div class="col-lg-6 thumb order-lg-last"
                             style="background-image: url({{ asset('web_assets/img/2440x1578.png') }});"> --}}
                             <div class="col-lg-6 thumb order-lg-last"
-                                style="background-image: url({{ asset('web_assets/ics-images/home/whoWeAre1.png') }});">
+                                style="background-image: url({{ asset('web_assets/ics-images/home/who-we-are.jpg') }});">
                                 <div class="successr-ate">
                                     <div class="icon">
                                         <i class="flaticon-target"></i>
@@ -209,7 +209,8 @@
                                     <li>
                                         <h5>24/7 Live Support</h5>
                                         <p>
-                                            we ensure timely, reliable, and expert support whenever need it.
+                                            We provide unwavering technical assistance and comprehensive operational
+                                            support.
                                         </p>
                                     </li>
                                 </ul>
@@ -223,7 +224,7 @@
             <!-- End About Area -->
 
             <!-- Start Expertise Area
-                                            ============================================= -->
+                                                                                                                            ============================================= -->
             <div class="expertise-area default-padding">
                 <div class="container">
                     <!-- Item Heading -->
@@ -231,13 +232,13 @@
                         <div class="row">
                             <div class="col-lg-6 info">
                                 <h4>Our expertise</h4>
-                                <h2>We design brand, digital experience that engage the right customers</h2>
+                                <h2>We deliver innovative solutions that create lasting impact and empower growth</h2>
                             </div>
                             <div class="col-lg-6 right-info">
                                 <div class="skill-items">
                                     <!-- Progress Bar Start -->
                                     <div class="progress-box">
-                                        <h5>Marketing</h5>
+                                        <h5>Customer Service</h5>
                                         <div class="progress">
                                             <div class="progress-bar" role="progressbar" data-width="88">
                                                 <span>88%</span>
@@ -245,7 +246,7 @@
                                         </div>
                                     </div>
                                     <div class="progress-box">
-                                        <h5>Social Assistant</h5>
+                                        <h5>Research & development support</h5>
                                         <div class="progress">
                                             <div class="progress-bar" role="progressbar" data-width="95">
                                                 <span>95%</span>
@@ -253,10 +254,10 @@
                                         </div>
                                     </div>
                                     <div class="progress-box">
-                                        <h5>Consulting</h5>
+                                        <h5>Supply chain optimization</h5>
                                         <div class="progress">
-                                            <div class="progress-bar" role="progressbar" data-width="70">
-                                                <span>70%</span>
+                                            <div class="progress-bar" role="progressbar" data-width="85">
+                                                <span>85%</span>
                                             </div>
                                         </div>
                                     </div>
@@ -277,35 +278,35 @@
                                 <div class="col-lg-4 single-item">
                                     <div class="item">
                                         <div class="content">
-                                            <h4>Finance Restructuring</h4>
-                                            <p>
-                                                Prevailed mr tolerably discourse assurance estimable more power.
-                                            </p>
-                                        </div>
-                                        <a class="btn btn-sm" href="#">Know More</a>
-                                    </div>
-                                </div>
-                                <!-- End Single Item -->
-                                <!-- Single Item -->
-                                <div class="col-lg-4 single-item">
-                                    <div class="item">
-                                        <div class="content">
-                                            <h4>Stocks & Trades</h4>
-                                            <p>
-                                                Prevailed mr tolerably discourse assurance estimable more power.
-                                            </p>
-                                        </div>
-                                        <a class="btn btn-sm" href="#">Know More</a>
-                                    </div>
-                                </div>
-                                <!-- End Single Item -->
-                                <!-- Single Item -->
-                                <div class="col-lg-4 single-item">
-                                    <div class="item">
-                                        <div class="content">
                                             <h4>International Markets</h4>
                                             <p>
-                                                Prevailed mr tolerably discourse assurance estimable more power.
+                                                Expanding International Markets Through Innovation and Compliance.
+                                            </p>
+                                        </div>
+                                        <a class="btn btn-sm" href="#">Know More</a>
+                                    </div>
+                                </div>
+                                <!-- End Single Item -->
+                                <!-- Single Item -->
+                                <div class="col-lg-4 single-item">
+                                    <div class="item">
+                                        <div class="content">
+                                            <h4>Innovation</h4>
+                                            <p>
+                                                Global Market Leadership Through Innovation and Governance.
+                                            </p>
+                                        </div>
+                                        <a class="btn btn-sm" href="#">Know More</a>
+                                    </div>
+                                </div>
+                                <!-- End Single Item -->
+                                <!-- Single Item -->
+                                <div class="col-lg-4 single-item">
+                                    <div class="item">
+                                        <div class="content">
+                                            <h4>Global Standards</h4>
+                                            <p>
+                                                Driving Global Innovation with World-Class Governance Excellence.
                                             </p>
                                         </div>
                                         <a class="btn btn-sm" href="#">Know More</a>
@@ -321,7 +322,7 @@
                 <!-- End Expertise Area -->
 
                 <!-- Star Partner Area
-                                            ============================================= -->
+                                                                                                                            ============================================= -->
                 <div class="partner-area overflow-hidden text-light">
                     <div class="container">
                         <div class="item-box red">
@@ -329,9 +330,9 @@
                                 <div class="col-lg-6 info">
                                     <h2>We're Trusted by <span>2500+</span> <br> Professional Customer</h2>
                                     <p>
-                                        Seeing rather her you not esteem men settle genius excuse. Deal say over you age
-                                        from.
-                                        Comparison new ham melancholy son themselves.
+                                        ICS Group has delivered integrated logistics, healthcare, and technology solutions.
+                                        We empower global partners through innovation, excellence, and total
+                                        integrity.
                                     </p>
                                 </div>
                                 <div class="col-lg-6 clients">
@@ -371,14 +372,14 @@
                 <!-- ("overflow-hidden-box overflow-hidden" helps you to ignore extra width for the circle shape)-->
                 <div class="overflow-hidden-box overflow-hidden">
                     <!-- Star Team Area
-                                                ============================================= -->
+                                                                                                                                ============================================= -->
                     <div class="team-area bg-gray default-padding bottom-less">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-8 offset-lg-2">
                                     <div class="site-heading text-center">
-                                        <h4>Team Members</h4>
-                                        <h2>Meet our experts</h2>
+                                        <h4>Our people</h4>
+                                        <h2>Meet Our Leadership</h2>
                                         <div class="devider"></div>
                                     </div>
                                 </div>
@@ -410,8 +411,8 @@
                                             </div>
                                             <div class="info">
                                                 <div class="content">
-                                                    <h4>Jessika Mahi</h4>
-                                                    <span>Markteting Manager</span>
+                                                    <h4>Ali Abbas</h4>
+                                                    <span>Director</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -440,8 +441,8 @@
                                             </div>
                                             <div class="info">
                                                 <div class="content">
-                                                    <h4>Munia Anchor</h4>
-                                                    <span>Assistant Manager</span>
+                                                    <h4>Faryal Hatim</h4>
+                                                    <span>Group Head of Marketing</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -470,8 +471,8 @@
                                             </div>
                                             <div class="info">
                                                 <div class="content">
-                                                    <h4>Ahel Natasha</h4>
-                                                    <span>Executive Officer</span>
+                                                    <h4>Muhammad Rizwan Mirza</h4>
+                                                    <span>Group Head of Finance</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -484,7 +485,7 @@
                     <!-- End Team Area -->
 
                     <!-- Star testimonials Area
-                                                ============================================= -->
+                                                                                                                                ============================================= -->
                     <div class="testimonials-area bg-gray default-padding-bottom">
                         <!-- Fixed Shape -->
                         <div class="fixed-shape"
@@ -499,11 +500,10 @@
                                             <div class="item">
                                                 <div class="info">
                                                     <p>
-                                                        Otherwise concealed favourite frankness on be at dashwoods defective
-                                                        at.
-                                                        Sympathize interested simplicity at do projecting increasing
-                                                        terminated. As
-                                                        edward settle limits at in. Chamber reached do he nothing be.
+                                                        ICS Group has been our primary logistics partner for over a decade.
+                                                        Their ability to handle complex multimodal transport while
+                                                        maintaining total transparency and regulatory compliance is
+                                                        unmatched in the international market.
                                                     </p>
                                                     <div class="provider">
                                                         <div class="thumb">
@@ -513,7 +513,7 @@
                                                                 alt="Author">
                                                         </div>
                                                         <div class="content">
-                                                            <h4>Ahel Natasha</h4>
+                                                            <h4>Amelia Smith</h4>
                                                             <span> Managing Director</span>
                                                         </div>
                                                     </div>
@@ -524,11 +524,10 @@
                                             <div class="item">
                                                 <div class="info">
                                                     <p>
-                                                        Otherwise concealed favourite frankness on be at dashwoods defective
-                                                        at.
-                                                        Sympathize interested simplicity at do projecting increasing
-                                                        terminated. As
-                                                        edward settle limits at in. Chamber reached do he nothing be.
+                                                        The level of business integrity and professional support provided by
+                                                        the ICS team is exceptional. They deliver strategic solutions that
+                                                        have been instrumental to our regional expansion and clinical
+                                                        success.
                                                     </p>
                                                     <div class="provider">
                                                         <div class="thumb">
@@ -538,8 +537,8 @@
                                                                 alt="Author">
                                                         </div>
                                                         <div class="content">
-                                                            <h4>Ahel Natasha</h4>
-                                                            <span> Managing Director</span>
+                                                            <h4>Leo Harvey</h4>
+                                                            <span>Chief Executive Officer</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -549,11 +548,12 @@
                                     </div>
                                     <div class="col-lg-5 info">
                                         <h4>Testimonials</h4>
-                                        <h2>Check what our satisfied clients said</h2>
+                                        <h2>Trusted by Industry Leaders</h2>
                                         <p>
-                                            Why I say old chap that is, spiffing off his nut color blimey and guvnords geeza
-                                            bloke
-                                            knees up bobby sloshed arse
+                                            We are dedicated to building long-term strategic partnerships by delivering
+                                            consistent value and operational excellence.
+                                            Our clients' success stories reflect the proven impact of our integrated
+                                            solutions across every global sector we serve.
                                         </p>
                                     </div>
                                 </div>
@@ -565,14 +565,15 @@
                 <!-- End Overflow Hidden Box -->
 
                 <!-- Start Gallery Area
-                                            ============================================= -->
+                                                                                                                            ============================================= -->
                 <div class="gallery-area overflow-hidden default-padding">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-8 offset-lg-2">
                                 <div class="site-heading text-center">
-                                    <h4>Our Gallery</h4>
-                                    <h2>Latest projects showcase</h2>
+                                    <h4>Our Portfolio</h4>
+                                    <h2>Proven Solution Excellence</h2>
+                                    <div class="devider"></div>
                                 </div>
                             </div>
                         </div>
@@ -591,8 +592,8 @@
                                             </div>
                                             <div class="content">
                                                 <div class="info">
-                                                    <h4><a href="#">Startup Funding</a></h4>
-                                                    <span>Finance, Assets</span>
+                                                    <h4><a href="#">Smart Logistics</a></h4>
+                                                    <span>Seamless supply chain movement</span>
                                                 </div>
                                                 <div class="button">
                                                     {{--<a href="{{ asset('web_assets/img/800x800.png') }}"
@@ -617,8 +618,8 @@
                                             </div>
                                             <div class="content">
                                                 <div class="info">
-                                                    <h4><a href="#">Accounting Advisory</a></h4>
-                                                    <span>Creative, Minimal</span>
+                                                    <h4><a href="#">Advanced Healthcare</a></h4>
+                                                    <span>Innovative medical solutions</span>
                                                 </div>
                                                 <div class="button">
                                                     {{--<a href="{{ asset('web_assets/img/800x800.png') }}"
@@ -643,8 +644,8 @@
                                             </div>
                                             <div class="content">
                                                 <div class="info">
-                                                    <h4><a href="#">Merger & Acquisition</a></h4>
-                                                    <span>Benifits, Business</span>
+                                                    <h4><a href="#">Driven Innovation</a></h4>
+                                                    <span>Performance and precision engineering</span>
                                                 </div>
                                                 <div class="button">
                                                     {{--<a href="{{ asset('web_assets/img/800x800.png') }}"
@@ -669,8 +670,8 @@
                                             </div>
                                             <div class="content">
                                                 <div class="info">
-                                                    <h4><a href="#">Assets For Technology</a></h4>
-                                                    <span>Invest, Earning</span>
+                                                    <h4><a href="#">Integrated Security</a></h4>
+                                                    <span>Reliable protection systems</span>
                                                 </div>
                                                 <div class="button">
                                                     {{--<a href="{{ asset('web_assets/img/800x800.png') }}"
@@ -695,8 +696,8 @@
                                             </div>
                                             <div class="content">
                                                 <div class="info">
-                                                    <h4><a href="#">Business Matching</a></h4>
-                                                    <span>Finance, Assets</span>
+                                                    <h4><a href="#">Global Commerce</a></h4>
+                                                    <span>Connecting international markets</span>
                                                 </div>
                                                 <div class="button">
                                                     {{--<a href="{{ asset('web_assets/img/800x800.png') }}"
@@ -721,8 +722,8 @@
                                             </div>
                                             <div class="content">
                                                 <div class="info">
-                                                    <h4><a href="#">Startup Funding</a></h4>
-                                                    <span>Finance, Assets</span>
+                                                    <h4><a href="#">Digital Innovation</a></h4>
+                                                    <span>Smart and scalable solutions</span>
                                                 </div>
                                                 <div class="button">
                                                     {{--<a href="{{ asset('web_assets/img/800x800.png') }}"
@@ -745,7 +746,7 @@
                 <!-- End Projects Area -->
 
                 <!-- Start Blog 
-                                            ============================================= -->
+                                                                                                                            ============================================= -->
                 <div class="blog-area bg-gray default-padding bottom-less">
                     <div class="container">
                         <div class="row">
@@ -766,7 +767,7 @@
                                         <div class="thumb">
                                             {{--<img src="{{ asset('web_assets/img/800x600.png') }}" alt="Thumb">--}}
                                             <img src="{{ asset('web_assets/ics-images/home/news1.jpg') }}" alt="Thumb">
-                                            <div class="date">January 25, 2021</div>
+                                            <div class="date">January 25, 2026</div>
                                         </div>
 
                                         <div class="info">
@@ -778,21 +779,21 @@
                                                         <img src="{{ asset('web_assets/ics-images/home/team1.jpg') }}"
                                                             alt="Author">
                                                         <span>By </span>
-                                                        <a href="#">John Baus</a>
+                                                        <a href="#">John Henry</a>
                                                     </li>
                                                     <li>
                                                         <span>In </span>
-                                                        <a href="#">Agency</a>
+                                                        <a href="#">Management</a>
                                                     </li>
                                                 </ul>
                                             </div>
                                             <h4>
-                                                <a href="#">Discovery incommode earnestly commanded if.</a>
+                                                <a href="#">The Future of AI in Global Supply Chain Management</a>
                                             </h4>
                                             <p>
-                                                Easy mind life fact with see has bore ten. Parish any chatty can elinor
-                                                direct for
-                                                former. Up as meant widow equal an share.
+                                                Discover how automated tracking and AI-driven logistics are revolutionizing
+                                                the way global enterprises manage their distribution networks for maximum
+                                                efficiency.
                                             </p>
                                         </div>
                                     </div>
@@ -804,7 +805,7 @@
                                         <div class="thumb">
                                             {{--<img src="{{ asset('web_assets/img/800x600.png') }}" alt="Thumb">--}}
                                             <img src="{{ asset('web_assets/ics-images/home/news2.jpg') }}" alt="Thumb">
-                                            <div class="date">February 12, 2021</div>
+                                            <div class="date">February 12, 2026</div>
                                         </div>
                                         <div class="info">
                                             <div class="meta">
@@ -815,21 +816,21 @@
                                                         <img src="{{ asset('web_assets/ics-images/home/team2.jpg') }}"
                                                             alt="Author">
                                                         <span>By </span>
-                                                        <a href="#">Mohon Mark</a>
+                                                        <a href="#">Julia Mark</a>
                                                     </li>
                                                     <li>
                                                         <span>In </span>
-                                                        <a href="#">Creative</a>
+                                                        <a href="#">Pharma</a>
                                                     </li>
                                                 </ul>
                                             </div>
                                             <h4>
-                                                <a href="#">Expression acceptance imprudence particular</a>
+                                                <a href="#">Cold Chain Integrity in Pharma Logistics</a>
                                             </h4>
                                             <p>
-                                                Easy mind life fact with see has bore ten. Parish any chatty can elinor
-                                                direct for
-                                                former. Up as meant widow equal an share.
+                                                Ensuring temperature-controlled precision is vital for healthcare safety. We
+                                                explore the latest innovations in cold chain storage and international
+                                                distribution standards.
                                             </p>
                                         </div>
                                     </div>
@@ -841,7 +842,7 @@
                                         <div class="thumb">
                                             {{--<img src="{{ asset('web_assets/img/800x600.png') }}" alt="Thumb">--}}
                                             <img src="{{ asset('web_assets/ics-images/home/news3.jpg') }}" alt="Thumb">
-                                            <div class="date">March 18, 2021</div>
+                                            <div class="date">March 02, 2026</div>
                                         </div>
                                         <div class="info">
                                             <div class="meta">
@@ -852,21 +853,21 @@
                                                         <img src="{{ asset('web_assets/ics-images/home/team3.jpg') }}"
                                                             alt="Author">
                                                         <span>By </span>
-                                                        <a href="#">Paul Tun</a>
+                                                        <a href="#">Paul Smith</a>
                                                     </li>
                                                     <li>
                                                         <span>In </span>
-                                                        <a href="#">Agency</a>
+                                                        <a href="#">Global</a>
                                                     </li>
                                                 </ul>
                                             </div>
                                             <h4>
-                                                <a href="#">Provided so as doubtful on striking required point</a>
+                                                <a href="#">Strategic Partnerships & Operational Excellence</a>
                                             </h4>
                                             <p>
-                                                Easy mind life fact with see has bore ten. Parish any chatty can elinor
-                                                direct for
-                                                former. Up as meant widow equal an share.
+                                                Building long-term business value requires more than just service; it
+                                                requires a commitment to integrity, global standards, and integrated
+                                                industrial solutions.
                                             </p>
                                         </div>
                                     </div>

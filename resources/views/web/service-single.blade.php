@@ -117,7 +117,7 @@
                                             We are here to help our customer any time. You can call on 24/7 To Answer Your
                                             Question.
                                         </p>
-                                        <h2>(012) 6679545</h2>
+                                        <h2>(+92)21 111 565 565</h2>
                                     </div>
                                 </div>
                                 <!-- Single Widget -->

@@ -71,7 +71,7 @@
                                     <i class="flaticon-telephone"></i>
                                 </div>
                                 <div class="intro">
-                                    <h5>+123 456 7890</h5>
+                                    <h5>(+92)21 111 565 565</h5>
                                     <span>Call to ask any question</span>
                                 </div>
                             </div>
@@ -182,7 +182,7 @@
                             <div class="thumb">
                                 <img src="{{ asset('web_assets/ics-images/vertical/video.jpg') }}" alt="Thumb">
                                 <img src="{{ asset('web_assets/img/shape/21.png') }}" alt="Thumb">
-                                <div href="https://www.youtube.com/watch?v=owhuBrGIOsE" class="popup-youtube video">
+                                <div href="https://www.youtube.com/watch?v=3JzJyhYmjKQ" class="popup-youtube video">
                                     <a href="#"><i class="fas fa-play"></i> <span>Our History</span></a>
                                 </div>
                             </div>

@@ -5,7 +5,7 @@
 @section('content')
 
     <!-- Start Breadcrumb 
-            ============================================= -->
+                        ============================================= -->
     {{--<div class="breadcrumb-area text-center shadow dark text-light bg-cover"
         style="background-image: url({{ asset('web_assets/img/2440x1578.png') }});">--}}
         <div class="breadcrumb-area text-center shadow dark text-light bg-cover"
@@ -25,7 +25,7 @@
         <!-- End Breadcrumb -->
 
         <!-- Start Contact Area 
-            ============================================= -->
+                        ============================================= -->
         <div class="contact-us-area default-padding">
             <div class="container">
                 <div class="row align-center">
@@ -45,7 +45,7 @@
                                     <div class="content">
                                         <h5>Address</h5>
                                         <p>
-                                            22 Baker Street, <br> London, United Kingdom, <br> W1U 3BW
+                                            1st Floor, Shafi Court, <br> Merewether Road, Civil Lines, <br> Karachi-Pakistan
                                         </p>
                                     </div>
                                 </li>
@@ -56,7 +56,7 @@
                                     <div class="content">
                                         <h5>Contact</h5>
                                         <p>
-                                            +44-20-7328-4499 <br> +99-34-8878-9989
+                                            (+92)21 111 565 565 <br> (+92)21 35671068
                                         </p>
                                     </div>
                                 </li>
@@ -119,7 +119,7 @@
         <!-- End Contact Area -->
 
         <!-- Star Google Maps
-            ============================================= -->
+                        ============================================= -->
         <div class="maps-area">
             <div class="google-maps">
                 <iframe

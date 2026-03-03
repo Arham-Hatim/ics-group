@@ -53,7 +53,7 @@
                                 </li>
                                 <li>
                                     <strong>Phone:</strong>
-                                    <a href="tel:123-456-7890">+44-20-7328-4499</a>
+                                    <a href="tel:123-456-7890">(+92)21 111 565 565</a>
                                 </li>
                             </ul>
                             <div class="social">

@@ -3812,7 +3812,7 @@ body,
 .business-groth-area .info::after {
 	position: absolute;
 	content: "";
-	background: url(/web_assets/img/shape/14.png);
+	background: url(https://pro-fixer.demoappprojects.com/ics-group/public/web_assets/img/shape/14.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	left: -200px;
@@ -3992,7 +3992,7 @@ body,
 	content: "";
 	height: 100%;
 	width: 500px;
-	background: url(/web_assets/img/shape/4.png);
+	background: url(https://pro-fixer.demoappprojects.com/ics-group/public/web_assets/img/shape/4.png);
 	opacity: 0.2;
 }
 
@@ -4066,7 +4066,7 @@ body,
 	content: "";
 	height: 150px;
 	width: 150px;
-	background: url(/web_assets/img/shape/3.png);
+	background: url(https://pro-fixer.demoappprojects.com/ics-group/public/web_assets/img/shape/3.png);
 	z-index: -1;
 }
 
@@ -5143,7 +5143,7 @@ body,
 	content: "";
 	height: 150px;
 	width: 150px;
-	background: url(/web_assets/img/shape/1.png);
+	background: url(https://pro-fixer.demoappprojects.com/ics-group/public/web_assets/img/shape/1.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	z-index: -1;
@@ -7160,7 +7160,7 @@ footer::after {
 	content: "";
 	height: 400px;
 	width: 400px;
-	background: url(/web_assets/img/map.svg);
+	background: url(https://pro-fixer.demoappprojects.com/ics-group/public/web_assets/img/map.svg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	z-index: -1;
@@ -8010,7 +8010,7 @@ nav.navbar.bootsnav {
 	content: "";
 	height: 80px;
 	width: 80px;
-	background: url(/web_assets/img/shape/quote.png);
+	background: url(https://pro-fixer.demoappprojects.com/ics-group/public/web_assets/img/shape/quote.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: left top;
@@ -8162,7 +8162,7 @@ nav.navbar.bootsnav {
 	content: "";
 	height: 200px;
 	width: 200px;
-	background: url(/web_assets/img/shape/17.png);
+	background: url(https://pro-fixer.demoappprojects.com/ics-group/public/web_assets/img/shape/17.png);
 	background-repeat: no-repeat;
 	background-position: top right;
 	background-size: contain;
@@ -8235,7 +8235,7 @@ nav.navbar.bootsnav {
 	bottom: -10px;
 	right: -50px;
 	content: "";
-	background: url(/web_assets/img/shape/20.png);
+	background: url(https://pro-fixer.demoappprojects.com/ics-group/public/web_assets/img/shape/20.png);
 	height: 60px;
 	width: 70px;
 	background-size: contain;

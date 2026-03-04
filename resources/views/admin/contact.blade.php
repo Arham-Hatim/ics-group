@@ -76,6 +76,16 @@
                                             class="char-count text-primary fw-bold"></span></small>
                                 </div>
                                 <div class="col-md-6">
+                                    <label class="form-label fw-bold">Fax Number <span class="text-danger">*</span></label>
+                                    <input type="text" name="fax"
+                                        class="form-control radius-10 char-field @error('fax') is-invalid @enderror"
+                                        data-max="30" placeholder="(+92)21 35671068"
+                                        value="{{ old('fax', $contact->fax ?? '') }}" required>
+                                    @error('fax')<div class="invalid-feedback">{{ $message }}</div>@enderror
+                                    <small class="text-muted">Character limit 30. <span
+                                            class="char-count text-primary fw-bold"></span></small>
+                                </div>
+                                <div class="col-md-6">
                                     <label class="form-label fw-bold">Office Hours <span
                                             class="text-danger">*</span></label>
                                     <div class="input-group">

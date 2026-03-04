@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
         content="ICS Group admin panel login – Secure access to manage users, settings, and dashboards efficiently.">
-    <link rel="shortcut icon" href="{{ asset('web_assets/img/favicon.ico') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ $contact->favicon ?? asset('web_assets/img/favicon.ico') }}" type="image/x-icon">
     <link href="{{ asset('admin_assets/css/bootstrap.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('admin_assets/css/bootstrap-extended.css') }}" rel="stylesheet" />
     <link href="{{ asset('admin_assets/css/style.css') }}" rel="stylesheet" />
@@ -36,8 +36,8 @@
                             <div class="col-lg-6">
                                 <div class="card-body p-4 p-sm-5">
                                     <div class="text-center mb-4 lg-none">
-                                        <img src="{{ asset('web_assets/img/logo-red.png') }}" width="120" alt=""
-                                            class="mb-3 me-4">
+                                        <img src="{{ $contact->logo ?? asset('web_assets/img/logo-red.png') }}"
+                                            width="120" alt="" class="mb-3 me-4">
                                         <h4 class="fw-bold">Admin Login</h4>
                                     </div>
                                     <h5 class="fw-bold mb-1 d-none d-lg-block">Welcome Back!</h5>

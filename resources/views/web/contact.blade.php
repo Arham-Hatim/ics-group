@@ -5,7 +5,7 @@
 @section('content')
 
     <!-- Start Breadcrumb 
-                        ============================================= -->
+                                                    ============================================= -->
     {{--<div class="breadcrumb-area text-center shadow dark text-light bg-cover"
         style="background-image: url({{ asset('web_assets/img/2440x1578.png') }});">--}}
         <div class="breadcrumb-area text-center shadow dark text-light bg-cover"
@@ -25,7 +25,7 @@
         <!-- End Breadcrumb -->
 
         <!-- Start Contact Area 
-                        ============================================= -->
+                                                    ============================================= -->
         <div class="contact-us-area default-padding">
             <div class="container">
                 <div class="row align-center">
@@ -45,7 +45,7 @@
                                     <div class="content">
                                         <h5>Address</h5>
                                         <p>
-                                            1st Floor, Shafi Court, <br> Merewether Road, Civil Lines, <br> Karachi-Pakistan
+                                            {!! nl2br(e($contact->address ?? '1st Floor, Shafi Court, Merewether Road, Civil Lines, Karachi-Pakistan')) !!}
                                         </p>
                                     </div>
                                 </li>
@@ -56,7 +56,8 @@
                                     <div class="content">
                                         <h5>Contact</h5>
                                         <p>
-                                            (+92)21 111 565 565 <br> (+92)21 35671068
+                                            {{ $contact->phone ?? '(+92)21 111 565 565' }} <br>
+                                            {{ $contact->fax ?? '(+92)21 35671068' }}
                                         </p>
                                     </div>
                                 </li>
@@ -119,11 +120,11 @@
         <!-- End Contact Area -->
 
         <!-- Star Google Maps
-                        ============================================= -->
+                                                    ============================================= -->
         <div class="maps-area">
             <div class="google-maps">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14767.262289338461!2d70.79414485000001!3d22.284975!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1424308883981"></iframe>
+                    src="https://maps.google.com/maps?q={{ urlencode(($contact->name ?? 'ICS Group') . ' ' . ($contact->address ?? 'Shafi Court, Merewether Road, Civil Lines, Karachi, Pakistan')) }}&t=&z=18&ie=UTF8&iwloc=B&output=embed"></iframe>
             </div>
         </div>
         <!-- End Google Maps -->

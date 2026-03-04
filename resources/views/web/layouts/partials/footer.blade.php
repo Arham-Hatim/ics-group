@@ -95,7 +95,7 @@
                                     <div class="content">
                                         <strong>Phone:</strong>
                                         <a
-                                            href="tel:{{ $contact->phone ?? '2151234567' }}">{{ $contact->phone ?? '(+92)21 111 565 565' }}</a>
+                                            href="tel:{{ $contact->phone ?? '(+92)21 111 565 565' }}">{{ $contact->phone ?? '(+92)21 111 565 565' }}</a>
                                     </div>
                                 </li>
                             </ul>
@@ -112,7 +112,8 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <p>&copy; Copyright {{ date('Y') }}.
-                            {{ $contact->copy_right ?? 'All Rights Reserved by ICS Group' }}</p>
+                            {{ $contact->copy_right ?? 'All Rights Reserved by ICS Group' }}
+                        </p>
                     </div>
                     <div class="col-lg-6 text-right link">
                         <ul>

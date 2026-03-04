@@ -6,10 +6,11 @@
             <div class="col-lg-6 info">
                 <ul>
                     <li>
-                        <i class="fas fa-map-marker-alt"></i> 1st Floor, Shafi Court, Merewether Road
+                        <i class="fas fa-map-marker-alt"></i>
+                        {{ \Illuminate\Support\Str::limit($contact->address ?? '1st Floor, Shafi Court, Merewether Road', 40) }}
                     </li>
                     <li>
-                        <i class="fas fa-envelope-open"></i>  info@icsgroup.com.pk
+                        <i class="fas fa-envelope-open"></i> {{ $contact->email ?? 'info@icsgroup.com.pk' }}
                     </li>
                 </ul>
             </div>
@@ -17,7 +18,8 @@
                 <div class="info">
                     <ul>
                         <li>
-                            <i class="fas fa-clock"></i> Office Hours: 9:00 AM – 6:00 PM
+                            <i class="fas fa-clock"></i> Office Hours:
+                            {{ $contact->office_hours ?? '9:00 AM – 6:00 PM' }}
                         </li>
                     </ul>
                 </div>
@@ -63,7 +65,7 @@
                     </div>
                     <div class="info">
                         <span>Have any question?</span>
-                        <h5>(+92)21 111 565 565</h5>
+                        <h5>{{ $contact->phone ?? '(+92)21 111 565 565' }}</h5>
                     </div>
                 </div>
             </div>
@@ -75,7 +77,7 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand" href="{{ route('home') }}">
-                    <img src="{{ asset('web_assets/img/logo-red.png') }}" class="logo" alt="Logo">
+                    <img src="{{ $contact->logo ?? asset('web_assets/img/logo-red.png') }}" class="logo" alt="Logo">
                 </a>
             </div>
             <!-- End Header Navigation -->

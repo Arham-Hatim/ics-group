@@ -22,6 +22,7 @@ class ContactController extends Controller
             'name' => ['required', 'max:255'],
             'email' => ['required', 'email', 'max:255'],
             'phone' => ['required', 'max:30'],
+            'fax' => ['required', 'max:30'],
             'address' => ['required', Helpers::max_without_spaces(120)],
             'description' => ['required', Helpers::max_without_spaces(220)],
             'copy_right' => ['required', Helpers::max_without_spaces(70)],

@@ -5,7 +5,7 @@
 @section('content')
 
     <!-- Start Breadcrumb 
-                    ============================================= -->
+                        ============================================= -->
     {{--<div class="breadcrumb-area text-center shadow dark text-light bg-cover"
         style="background-image: url({{ asset('web_assets/img/2440x1578.png') }});">--}}
         <div class="breadcrumb-area text-center shadow dark text-light bg-cover"
@@ -25,7 +25,7 @@
         <!-- End Breadcrumb -->
 
         <!-- Start Team Single Area
-                    ============================================= -->
+                        ============================================= -->
         <div class="team-single-area default-padding">
             <div class="container">
                 <div class="team-content-top">

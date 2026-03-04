@@ -71,7 +71,7 @@
                                     <i class="flaticon-telephone"></i>
                                 </div>
                                 <div class="intro">
-                                    <h5>(+92)21 111 565 565</h5>
+                                    <h5>{{ $contact->phone ?? '(+92)21 111 565 565' }}</h5>
                                     <span>Call to ask any question</span>
                                 </div>
                             </div>

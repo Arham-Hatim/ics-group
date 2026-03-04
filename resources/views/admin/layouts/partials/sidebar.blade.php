@@ -1,7 +1,7 @@
 <aside class="sidebar-wrapper" data-simplebar="true">
     <div class="sidebar-header">
         <div class="d-flex align-items-center gap-2">
-            <img src="{{ asset('web_assets/img/logo-red.png') }}" class="logo-icon" alt="logo icon"
+            <img src="{{ $contact->logo ?? asset('web_assets/img/logo-red.png') }}" class="logo-icon" alt="logo icon"
                 style="width: 130px;">
         </div>
         <div class="toggle-icon ms-auto"><i class="bi bi-list"></i></div>

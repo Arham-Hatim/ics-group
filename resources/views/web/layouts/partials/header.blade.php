@@ -83,10 +83,10 @@
         <div class="side">
             <a href="#" class="close-side"><i class="icon_close"></i></a>
             <div class="widget">
-                <img src="{{ asset('web_assets/img/logo-red.png') }}" alt="Logo">
+                <img src="{{ $contact->logo ?? asset('web_assets/img/logo-red.png') }}" alt="Logo">
                 <p>
-                    We are a diversified business conglomerate committed to delivering excellence across multiple
-                    sectors including pharmaceuticals, logistics, automobile, security, energy, and trading.
+                    {{ $contact->description ?? 'We are a diversified business conglomerate committed to delivering excellence across multiple
+                    sectors including pharmaceuticals, logistics, automobile, security, energy, and trading.' }}
                 </p>
             </div>
             <div class="widget address">
@@ -96,21 +96,20 @@
                             <div class="content">
                                 <p>Address</p>
                                 <strong>
-                                    1st Floor, Shafi Court, Merewether Road,
-                                    Civil Lines, Karachi-Pakistan
+                                    {{ $contact->address ?? '1st Floor, Shafi Court, Merewether Road, Civil Lines, Karachi-Pakistan' }}
                                 </strong>
                             </div>
                         </li>
                         <li>
                             <div class="content">
                                 <p>Email</p>
-                                <strong>info@icsgroup.com.pk</strong>
+                                <strong>{{ $contact->email ?? 'info@icsgroup.com.pk' }}</strong>
                             </div>
                         </li>
                         <li>
                             <div class="content">
                                 <p>Contact</p>
-                                <strong>(+92)21 111 565 565</strong>
+                                <strong>{{ $contact->phone ?? '(+92)21 111 565 565' }}</strong>
                             </div>
                         </li>
                     </ul>

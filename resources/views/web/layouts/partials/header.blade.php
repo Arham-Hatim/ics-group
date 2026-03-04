@@ -130,10 +130,13 @@
             </div>
             <div class="widget social">
                 <ul class="link">
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                    <li><a href="{{ $contact->social_links['facebook'] ?? '#' }}"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li><a href="{{ $contact->social_links['twitter'] ?? '#' }}"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="{{ $contact->social_links['linkedin'] ?? '#' }}"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                    <li><a href="{{ $contact->social_links['instagram'] ?? '#' }}"><i class="fab fa-instagram"></i></a>
+                    </li>
                 </ul>
             </div>
         </div>

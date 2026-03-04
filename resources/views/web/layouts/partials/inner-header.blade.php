@@ -26,18 +26,23 @@
                 <div class="social">
                     <ul>
                         <li>
-                            <a href="#">
+                            <a href="{{ $contact->social_links['facebook'] ?? '#' }}">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="{{ $contact->social_links['twitter'] ?? '#' }}">
                                 <i class="fab fa-twitter"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="{{ $contact->social_links['linkedin'] ?? '#' }}">
                                 <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ $contact->social_links['instagram'] ?? '#' }}">
+                                <i class="fab fa-instagram"></i>
                             </a>
                         </li>
                     </ul>

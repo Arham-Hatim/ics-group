@@ -5,7 +5,7 @@
 @section('content')
 
     <!-- Start Banner 
-                                                                                                                                                                        ============================================= -->
+                                                                                                                                                                                ============================================= -->
     {{-- <div class="banner-area inc-video video-bg-live bg-cover"
         style="background-image: url({{ asset('web_assets/img/2440x1578.png') }});"> --}}
         <div class="banner-area inc-video video-bg-live bg-cover"
@@ -80,7 +80,7 @@
         <!-- End Banner -->
 
         <!-- Star Services Area
-                                                                                                                                                                        ============================================= -->
+                                                                                                                                                                                ============================================= -->
         <div class="default-services-area default-padding">
             <div class="container">
                 <div class="row">
@@ -175,7 +175,7 @@
         <!-- End Services Area -->
 
         <!-- Star About Area
-                                                                                                                                                                        ============================================= -->
+                                                                                                                                                                                ============================================= -->
         <div class="about-area bg-dark overflow-hidden text-light relative">
             <!-- Fixed Shape -->
             <div class="fixed-shape" style="background-image: url({{ asset('web_assets/img/shape/8.png') }});"></div>
@@ -236,7 +236,7 @@
             <!-- End About Area -->
 
             <!-- Start Expertise Area
-                                                                                                                                                                        ============================================= -->
+                                                                                                                                                                                ============================================= -->
             <div class="expertise-area default-padding">
                 <div class="container">
                     <!-- Item Heading -->
@@ -334,7 +334,7 @@
                 <!-- End Expertise Area -->
 
                 <!-- Star Partner Area
-                                                                                                                                                                        ============================================= -->
+                                                                                                                                                                                ============================================= -->
                 <div class="partner-area overflow-hidden text-light">
                     <div class="container">
                         <div class="item-box red">
@@ -384,7 +384,7 @@
                 <!-- ("overflow-hidden-box overflow-hidden" helps you to ignore extra width for the circle shape)-->
                 <div class="overflow-hidden-box overflow-hidden">
                     <!-- Star Team Area
-                                                                                                                                                                            ============================================= -->
+                                                                                                                                                                                    ============================================= -->
                     <div class="team-area bg-gray default-padding bottom-less">
                         <div class="container">
                             <div class="row">
@@ -497,7 +497,7 @@
                     <!-- End Team Area -->
 
                     <!-- Star testimonials Area
-                                                                                                                                                                            ============================================= -->
+                                                                                                                                                                                    ============================================= -->
                     <div class="testimonials-area bg-gray default-padding-bottom">
                         <!-- Fixed Shape -->
                         <div class="fixed-shape"
@@ -577,7 +577,7 @@
                 <!-- End Overflow Hidden Box -->
 
                 <!-- Start Gallery Area
-                                                                                                                                                                        ============================================= -->
+                                                                                                                                                                                ============================================= -->
                 <div class="gallery-area overflow-hidden default-padding">
                     <div class="container">
                         <div class="row">
@@ -758,7 +758,7 @@
                 <!-- End Projects Area -->
 
                 <!-- Start Blog 
-                                                                                                                                                                        ============================================= -->
+                                                                                                                                                                                ============================================= -->
                 <div class="blog-area bg-gray default-padding bottom-less">
                     <div class="container">
                         <div class="row">

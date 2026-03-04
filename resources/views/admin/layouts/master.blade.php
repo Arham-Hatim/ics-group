@@ -12,7 +12,7 @@
     <title>@yield('title', 'ICS Group')</title>
 
     <!-- ========== Favicon Icon ========== -->
-    <link rel="shortcut icon" href="{{ asset('web_assets/img/favicon.ico') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ $contact->favicon ?? asset('web_assets/img/favicon.ico') }}" type="image/x-icon">
 
     <!-- ========== Start Stylesheet ========== -->
     @include('admin.layouts.partials.style')

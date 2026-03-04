@@ -38,8 +38,10 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand" href="{{ route('home') }}">
-                    <img src="{{ asset('web_assets/img/logo-light.png') }}" class="logo logo-display" alt="Logo">
-                    <img src="{{ asset('web_assets/img/logo-red.png') }}" class="logo logo-scrolled" alt="Logo">
+                    <img src="{{ $contact->white_logo ?? asset('web_assets/img/logo-light.png') }}"
+                        class="logo logo-display" alt="Logo">
+                    <img src="{{ $contact->logo ?? asset('web_assets/img/logo-red.png') }}" class="logo logo-scrolled"
+                        alt="Logo">
                 </a>
             </div>
             <!-- End Header Navigation -->

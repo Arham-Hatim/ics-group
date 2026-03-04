@@ -102,10 +102,11 @@ Route::prefix('admin')->name('admin.')->group(function () {
         })->name('dashboard');
 
         Route::controller(ContactController::class)->group(function () {
-            Route::get('contact', 'create')->name('admin.contact');
+            Route::get('contact', 'create')->name('contact');
+            Route::post('contact/update', 'updateDetails')->name('contact.update');
+            Route::post('contact/logos', 'updateLogos')->name('contact.logos');
         });
 
         Route::post('logout', [AuthController::class, 'logout'])->name('logout');
     });
 });
- 

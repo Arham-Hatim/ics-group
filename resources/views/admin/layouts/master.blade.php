@@ -27,9 +27,7 @@
         @include('admin.layouts.partials.header')
         @include('admin.layouts.partials.sidebar')
 
-        <main class="page-content">
-            @yield('content')
-        </main>
+        @yield('content')
 
         <div class="overlay nav-toggle-icon"></div>
         <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>

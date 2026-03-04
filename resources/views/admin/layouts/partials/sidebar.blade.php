@@ -14,8 +14,8 @@
             </a>
         </li>
         <li class="{{ request()->routeIs('admin.contact') ? 'mm-active' : '' }}">
-            <a href="#">
-                <div class="parent-icon"><i class="bi bi-contact"></i></div>
+            <a href="{{ route('admin.contact') }}">
+                <div class="parent-icon"><i class="bi bi-chat-dots-fill"></i></div>
                 <div class="menu-title">Contact</div>
             </a>
         </li>

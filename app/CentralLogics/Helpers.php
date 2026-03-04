@@ -9,6 +9,15 @@ use PhpOffice\PhpSpreadsheet\Cell\Cell;
 
 class Helpers
 {
+    public static function max_without_spaces($max)
+    {
+        return function ($attribute, $value, $fail) use ($max) {
+            $cleanValue = preg_replace('/\s+/u', '', $value);
+            if (mb_strlen($cleanValue) > $max) {
+                $fail("The $attribute may not be greater than $max characters (excluding spaces).");
+            }
+        };
+    }
 
     public static function upload(
         string $dir,
@@ -34,46 +43,59 @@ class Helpers
                 @unlink($oldPath);
             }
 
+            // Cleanup potential previous formats
             $webpPath = preg_replace('/\.[^.]+$/', '.webp', $oldPath);
-            if (file_exists($webpPath)) {
+            if (file_exists($webpPath))
                 @unlink($webpPath);
-            }
+            $pngPath = preg_replace('/\.[^.]+$/', '.png', $oldPath);
+            if (file_exists($pngPath))
+                @unlink($pngPath);
+            $icoPath = preg_replace('/\.[^.]+$/', '.ico', $oldPath);
+            if (file_exists($icoPath))
+                @unlink($icoPath);
         }
 
         $extension = strtolower($image->getClientOriginalExtension());
-        $format = ($extension === 'png') ? 'png' : 'webp';
 
+        // Handle ICO files separately to preserve format
+        if ($extension === 'ico') {
+            $imageName = Carbon::now()->format('YmdHis') . '-' . uniqid() . '.ico';
+            $image->move($storagePath, $imageName);
+            return $imageName;
+        }
+
+        $format = ($extension === 'png') ? 'png' : 'webp';
         $imageName = Carbon::now()->format('YmdHis') . '-' . uniqid() . '.' . $format;
         $fullPath = $storagePath . '/' . $imageName;
-        
+
         $manager = new ImageManager(new Driver());
         $img = $manager->read($image->getPathname());
 
         if ($width || $height) {
-
             if ($width && $height) {
                 if ($img->width() !== $width || $img->height() !== $height) {
                     $img->scale($width, $height);
                 }
-            }elseif ($width && !$height) {
+            } elseif ($width && !$height) {
                 if ($img->width() !== $width) {
                     $img->resize($width, null);
                 }
-            }elseif ($height && !$width) {
+            } elseif ($height && !$width) {
                 if ($img->height() !== $height) {
                     $img->resize(null, $height);
                 }
             }
         }
-        
+
         if ($format === 'png') {
-            $img->toPng(9)->save($fullPath);
+            $img->toPng()->save($fullPath);
         } else {
             $img->toWebp(75)->save($fullPath);
         }
 
         return $imageName;
     }
+
 
     public static function extractYouTubeId($input)
     {

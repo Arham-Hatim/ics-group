@@ -19,9 +19,10 @@ return new class extends Migration {
             $table->text('description');
             $table->text('copy_right');
             $table->string('office_hours');
-            $table->text('social_links');
-            $table->string('logo');
-            $table->string('white_logo');
+            $table->text('social_links')->nullable();
+            $table->string('logo')->nullable();
+            $table->string('white_logo')->nullable();
+            $table->string('favicon')->nullable();
             $table->timestamps();
         });
     }

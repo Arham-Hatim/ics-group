@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\Admin\ContactController;
+use App\Http\Controllers\Admin\ContactPageController;
+use App\Http\Controllers\Admin\SettingController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AuthController;
 
@@ -101,10 +103,15 @@ Route::prefix('admin')->name('admin.')->group(function () {
             return view('admin.dashboard');
         })->name('dashboard');
 
-        Route::controller(ContactController::class)->group(function () {
+        Route::controller(SettingController::class)->group(function () {
+            Route::get('setting', 'create')->name('setting');
+            Route::post('setting/update', 'updateDetails')->name('setting.update');
+            Route::post('setting/logos', 'updateLogos')->name('setting.logos');
+        });
+
+        Route::controller(ContactPageController::class)->group(function () {
             Route::get('contact', 'create')->name('contact');
-            Route::post('contact/update', 'updateDetails')->name('contact.update');
-            Route::post('contact/logos', 'updateLogos')->name('contact.logos');
+            Route::post('contact/update', 'update')->name('contact.update');
         });
 
         Route::post('logout', [AuthController::class, 'logout'])->name('logout');

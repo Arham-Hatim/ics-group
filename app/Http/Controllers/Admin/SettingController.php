@@ -2,15 +2,18 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\CentralLogics\Helpers;
 use App\Http\Controllers\Controller;
+use App\Models\Setting;
 use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
 
 class SettingController extends Controller
 {
     public function create()
     {
-        $contact = Contact::first();
-        return view('admin.contact', compact('contact'));
+        $setting = Setting::first();
+        return view('admin.setting', compact('setting'));
     }
 
     public function updateDetails(Request $request)
@@ -31,19 +34,19 @@ class SettingController extends Controller
 
 
 
-        $contact = Contact::firstOrNew();
-        $contact->fill($request->except(['social_links', 'office_start', 'office_end']));
-        $contact->social_links = $request->social_links;
+        $setting = Setting::firstOrNew();
+        $setting->fill($request->except(['social_links', 'office_start', 'office_end']));
+        $setting->social_links = $request->social_links;
 
         if ($request->office_start && $request->office_end) {
             $start = Carbon::createFromFormat('H:i', $request->office_start)->format('h:i A');
             $end = Carbon::createFromFormat('H:i', $request->office_end)->format('h:i A');
-            $contact->office_hours = $start . ' - ' . $end;
+            $setting->office_hours = $start . ' - ' . $end;
         }
 
-        $contact->save();
+        $setting->save();
 
-        return back()->with('success', 'Contact details updated successfully!');
+        return back()->with('success', 'Settings updated successfully!');
     }
 
 
@@ -52,27 +55,27 @@ class SettingController extends Controller
         $request->validate([
             'logo' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:5000',
             'white_logo' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:5000',
-            'favicon' => 'nullable|mimes:jpeg,png,jpg,gif,svg,ico,cur|max:1024',
+            'favicon' => 'nullable|mimes:jpeg,png,jpg,gif,svg,ico,cur|max:2048',
         ]);
 
-        $contact = Contact::firstOrNew();
+        $setting = Setting::firstOrNew();
 
         if ($request->hasFile('logo')) {
-            $imageName = Helpers::upload('logo', $request->logo, $contact->logo, 175, 68);
-            $contact->logo = $imageName;
+            $imageName = Helpers::upload('logo', $request->logo, $setting->logo, 175, 68);
+            $setting->logo = $imageName;
         }
 
         if ($request->hasFile('white_logo')) {
-            $imageName = Helpers::upload('logo', $request->white_logo, $contact->white_logo, 175, 68);
-            $contact->white_logo = $imageName;
+            $imageName = Helpers::upload('logo', $request->white_logo, $setting->white_logo, 175, 68);
+            $setting->white_logo = $imageName;
         }
 
         if ($request->hasFile('favicon')) {
-            $imageName = Helpers::upload('logo', $request->favicon, $contact->favicon, 32, 32);
-            $contact->favicon = $imageName;
+            $imageName = Helpers::upload('logo', $request->favicon, $setting->favicon, 32, 32);
+            $setting->favicon = $imageName;
         }
 
-        $contact->save();
+        $setting->save();
 
         return back()->with('success', 'Logos and Favicon updated successfully!');
     }

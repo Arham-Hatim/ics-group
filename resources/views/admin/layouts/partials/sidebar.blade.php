@@ -1,7 +1,7 @@
 <aside class="sidebar-wrapper" data-simplebar="true">
     <div class="sidebar-header">
         <div class="d-flex align-items-center gap-2">
-            <img src="{{ $contact->logo ?? asset('web_assets/img/logo-red.png') }}" class="logo-icon" alt="logo icon"
+            <img src="{{ $setting->logo ?? asset('web_assets/img/logo-red.png') }}" class="logo-icon" alt="logo icon"
                 style="width: 130px;">
         </div>
         <div class="toggle-icon ms-auto"><i class="bi bi-list"></i></div>
@@ -13,8 +13,8 @@
                 <div class="menu-title">Dashboard</div>
             </a>
         </li>
-        <li class="{{ request()->routeIs('admin.contact') ? 'mm-active' : '' }}">
-            <a href="{{ route('admin.contact') }}">
+        <li class="{{ request()->routeIs('admin.setting') ? 'mm-active' : '' }}">
+            <a href="{{ route('admin.setting') }}">
                 <div class="parent-icon"><i class="bi bi-chat-dots-fill"></i></div>
                 <div class="menu-title">Settings</div>
             </a>

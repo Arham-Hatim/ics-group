@@ -38,9 +38,9 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand" href="{{ route('home') }}">
-                    <img src="{{ $contact->white_logo ?? asset('web_assets/img/logo-light.png') }}"
+                    <img src="{{ $setting->white_logo ?? asset('web_assets/img/logo-light.png') }}"
                         class="logo logo-display" alt="Logo">
-                    <img src="{{ $contact->logo ?? asset('web_assets/img/logo-red.png') }}" class="logo logo-scrolled"
+                    <img src="{{ $setting->logo ?? asset('web_assets/img/logo-red.png') }}" class="logo logo-scrolled"
                         alt="Logo">
                 </a>
             </div>
@@ -83,9 +83,9 @@
         <div class="side">
             <a href="#" class="close-side"><i class="icon_close"></i></a>
             <div class="widget">
-                <img src="{{ $contact->logo ?? asset('web_assets/img/logo-red.png') }}" alt="Logo">
+                <img src="{{ $setting->logo ?? asset('web_assets/img/logo-red.png') }}" alt="Logo">
                 <p>
-                    {{ $contact->description ?? 'We are a diversified business conglomerate committed to delivering excellence across multiple
+                    {{ $setting->description ?? 'We are a diversified business conglomerate committed to delivering excellence across multiple
                     sectors including pharmaceuticals, logistics, automobile, security, energy, and trading.' }}
                 </p>
             </div>
@@ -96,20 +96,20 @@
                             <div class="content">
                                 <p>Address</p>
                                 <strong>
-                                    {{ $contact->address ?? '1st Floor, Shafi Court, Merewether Road, Civil Lines, Karachi-Pakistan' }}
+                                    {{ $setting->address ?? '1st Floor, Shafi Court, Merewether Road, Civil Lines, Karachi-Pakistan' }}
                                 </strong>
                             </div>
                         </li>
                         <li>
                             <div class="content">
                                 <p>Email</p>
-                                <strong>{{ $contact->email ?? 'info@icsgroup.com.pk' }}</strong>
+                                <strong>{{ $setting->email ?? 'info@icsgroup.com.pk' }}</strong>
                             </div>
                         </li>
                         <li>
                             <div class="content">
                                 <p>Contact</p>
-                                <strong>{{ $contact->phone ?? '(+92)21 111 565 565' }}</strong>
+                                <strong>{{ $setting->phone ?? '(+92)21 111 565 565' }}</strong>
                             </div>
                         </li>
                     </ul>
@@ -130,12 +130,12 @@
             </div>
             <div class="widget social">
                 <ul class="link">
-                    <li><a href="{{ $contact->social_links['facebook'] ?? '#' }}"><i class="fab fa-facebook-f"></i></a>
+                    <li><a href="{{ $setting->social_links['facebook'] ?? '#' }}"><i class="fab fa-facebook-f"></i></a>
                     </li>
-                    <li><a href="{{ $contact->social_links['twitter'] ?? '#' }}"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="{{ $contact->social_links['linkedin'] ?? '#' }}"><i class="fab fa-linkedin-in"></i></a>
+                    <li><a href="{{ $setting->social_links['twitter'] ?? '#' }}"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="{{ $setting->social_links['linkedin'] ?? '#' }}"><i class="fab fa-linkedin-in"></i></a>
                     </li>
-                    <li><a href="{{ $contact->social_links['instagram'] ?? '#' }}"><i class="fab fa-instagram"></i></a>
+                    <li><a href="{{ $setting->social_links['instagram'] ?? '#' }}"><i class="fab fa-instagram"></i></a>
                     </li>
                 </ul>
             </div>

@@ -7,10 +7,10 @@
                 <ul>
                     <li>
                         <i class="fas fa-map-marker-alt"></i>
-                        {{ \Illuminate\Support\Str::limit($contact->address ?? '1st Floor, Shafi Court, Merewether Road', 41) }}
+                        {{ \Illuminate\Support\Str::limit($setting->address ?? '1st Floor, Shafi Court, Merewether Road', 41) }}
                     </li>
                     <li>
-                        <i class="fas fa-envelope-open"></i> {{ $contact->email ?? 'info@icsgroup.com.pk' }}
+                        <i class="fas fa-envelope-open"></i> {{ $setting->email ?? 'info@icsgroup.com.pk' }}
                     </li>
                 </ul>
             </div>
@@ -19,29 +19,29 @@
                     <ul>
                         <li>
                             <i class="fas fa-clock"></i> Office Hours:
-                            {{ $contact->office_hours ?? '9:00 AM – 6:00 PM' }}
+                            {{ $setting->office_hours ?? '9:00 AM – 6:00 PM' }}
                         </li>
                     </ul>
                 </div>
                 <div class="social">
                     <ul>
                         <li>
-                            <a href="{{ $contact->social_links['facebook'] ?? '#' }}">
+                            <a href="{{ $setting->social_links['facebook'] ?? '#' }}">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="{{ $contact->social_links['twitter'] ?? '#' }}">
+                            <a href="{{ $setting->social_links['twitter'] ?? '#' }}">
                                 <i class="fab fa-twitter"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="{{ $contact->social_links['linkedin'] ?? '#' }}">
+                            <a href="{{ $setting->social_links['linkedin'] ?? '#' }}">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="{{ $contact->social_links['instagram'] ?? '#' }}">
+                            <a href="{{ $setting->social_links['instagram'] ?? '#' }}">
                                 <i class="fab fa-instagram"></i>
                             </a>
                         </li>
@@ -69,8 +69,8 @@
                         <i class="fas fa-phone"></i>
                     </div>
                     <div class="info">
-                        <span>{{ $contact->phone_question ?? 'Have any question?' }}</span>
-                        <h5>{{ $contact->phone ?? '(+92)21 111 565 565' }}</h5>
+                        <span>{{ $setting->phone_question ?? 'Have any question?' }}</span>
+                        <h5>{{ $setting->phone ?? '(+92)21 111 565 565' }}</h5>
                     </div>
                 </div>
             </div>
@@ -82,7 +82,7 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand" href="{{ route('home') }}">
-                    <img src="{{ $contact->logo ?? asset('web_assets/img/logo-red.png') }}" class="logo" alt="Logo">
+                    <img src="{{ $setting->logo ?? asset('web_assets/img/logo-red.png') }}" class="logo" alt="Logo">
                 </a>
             </div>
             <!-- End Header Navigation -->

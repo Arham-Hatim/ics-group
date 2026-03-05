@@ -5,18 +5,18 @@
 @section('content')
 
     <!-- Start Breadcrumb 
-                                                    ============================================= -->
+                                                        ============================================= -->
     {{--<div class="breadcrumb-area text-center shadow dark text-light bg-cover"
         style="background-image: url({{ asset('web_assets/img/2440x1578.png') }});">--}}
         <div class="breadcrumb-area text-center shadow dark text-light bg-cover"
-            style="background-image: url({{ asset('web_assets/ics-images/contact/banner.jpg') }});">
+            style="background-image: url({{ $contact->banner ?? asset('web_assets/ics-images/contact/banner.jpg') }});">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2">
-                        <h1>Contact Us</h1>
+                        <h1>{{ $contact->banner_heading ?? 'Contact Us' }}</h1>
                         <ul class="breadcrumb">
-                            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-                            <li class="active">Contact</li>
+                            <li><a href="{{ route('home') }}"><i class="fas fa-home"></i> Home</a></li>
+                            <li class="active">{{ $contact->banner_sub_heading ?? 'Contact' }}</li>
                         </ul>
                     </div>
                 </div>
@@ -25,17 +25,15 @@
         <!-- End Breadcrumb -->
 
         <!-- Start Contact Area 
-                                                    ============================================= -->
+                                                        ============================================= -->
         <div class="contact-us-area default-padding">
             <div class="container">
                 <div class="row align-center">
                     <div class="col-lg-5 info">
                         <div class="content">
-                            <h2>Let's talk?</h2>
+                            <h2>{{ $contact->contact_page_heading ?? "Let's talk?" }}</h2>
                             <p>
-                                It's all about the humans behind a brand and those experiencing it, we're right there. In
-                                the
-                                middle performance quick.
+                                {{ $contact->contact_page_message ?? "It's all about the humans behind a brand and those experiencing it, we're right there. In the middle performance quick." }}
                             </p>
                             <ul>
                                 <li>
@@ -45,7 +43,7 @@
                                     <div class="content">
                                         <h5>Address</h5>
                                         <p>
-                                            {!! nl2br(e($contact->address ?? '1st Floor, Shafi Court, Merewether Road, Civil Lines, Karachi-Pakistan')) !!}
+                                            {!! nl2br(e($setting->address ?? '1st Floor, Shafi Court, Merewether Road, Civil Lines, Karachi-Pakistan')) !!}
                                         </p>
                                     </div>
                                 </li>
@@ -56,8 +54,8 @@
                                     <div class="content">
                                         <h5>Contact</h5>
                                         <p>
-                                            {{ $contact->phone ?? '(+92)21 111 565 565' }} <br>
-                                            {{ $contact->fax ?? '(+92)21 35671068' }}
+                                            {{ $setting->phone ?? '(+92)21 111 565 565' }} <br>
+                                            {{ $setting->fax ?? '(+92)21 35671068' }}
                                         </p>
                                     </div>
                                 </li>
@@ -120,11 +118,11 @@
         <!-- End Contact Area -->
 
         <!-- Star Google Maps
-                                                    ============================================= -->
+                                                        ============================================= -->
         <div class="maps-area">
             <div class="google-maps">
                 <iframe
-                    src="https://maps.google.com/maps?q={{ urlencode(($contact->name ?? 'ICS Group') . ' ' . ($contact->address ?? 'Shafi Court, Merewether Road, Civil Lines, Karachi, Pakistan')) }}&t=&z=18&ie=UTF8&iwloc=B&output=embed"></iframe>
+                    src="https://maps.google.com/maps?q={{ urlencode(($setting->name ?? 'ICS Group') . ' ' . ($setting->address ?? 'Shafi Court, Merewether Road, Civil Lines, Karachi, Pakistan')) }}&t=&z=18&ie=UTF8&iwloc=B&output=embed"></iframe>
             </div>
         </div>
         <!-- End Google Maps -->

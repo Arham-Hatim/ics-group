@@ -5,7 +5,7 @@
 @section('content')
 
     <!-- Start Breadcrumb 
-                ============================================= -->
+                    ============================================= -->
     {{--<div class="breadcrumb-area text-center shadow dark text-light bg-cover"
         style="background-image: url({{ asset('web_assets/img/2440x1578.png') }});">--}}
         <div class="breadcrumb-area text-center shadow dark text-light bg-cover"
@@ -25,7 +25,7 @@
         <!-- End Breadcrumb -->
 
         <!-- Star Services Details Area
-                ============================================= -->
+                    ============================================= -->
         <div class="services-details-area default-padding">
             <div class="container">
                 <div class="services-details-items">
@@ -109,15 +109,14 @@
                             {{--<div class="single-widget quick-contact text-light"
                                 style="background-image: url({{ asset('web_assets/img/800x800.png') }});">--}}
                                 <div class="single-widget quick-contact text-light"
-                                    style="background-image: url({{ asset('web_assets/ics-images/service/side.jpg') }});">
+                                    style="background-image: url({{ $contact->support_image ?? asset('web_assets/ics-images/service/side.jpg') }});">
                                     <div class="content">
                                         <i class="fas fa-phone"></i>
-                                        <h4>Need any help?</h4>
+                                        <h4>{{ $contact->support_heading ?? 'Need any help?' }}</h4>
                                         <p>
-                                            We are here to help our customer any time. You can call on 24/7 To Answer Your
-                                            Question.
+                                            {{ $contact->support_text ?? 'We are here to help our customer any time. You can call on 24/7 To Answer Your Question.' }}
                                         </p>
-                                        <h2>(+92)21 111 565 565</h2>
+                                        <h2>{{ $setting->phone ?? '(+92)21 111 565 565' }}</h2>
                                     </div>
                                 </div>
                                 <!-- Single Widget -->

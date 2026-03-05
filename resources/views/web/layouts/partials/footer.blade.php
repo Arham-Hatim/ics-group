@@ -4,9 +4,9 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6 item">
                     <div class="f-item about">
-                        <img src="{{ $contact->white_logo ?? asset('web_assets/img/logo-light.png') }}" alt="Logo">
+                        <img src="{{ $setting->white_logo ?? asset('web_assets/img/logo-light.png') }}" alt="Logo">
                         <p>
-                            {{ $contact->description ?? 'We are a diversified business conglomerate committed to delivering excellence across multiple sectors including pharmaceuticals, logistics, automobile, security, energy, and trading.' }}
+                            {{ $setting->description ?? 'We are a diversified business conglomerate committed to delivering excellence across multiple sectors including pharmaceuticals, logistics, automobile, security, energy, and trading.' }}
                         </p>
                         <form action="#">
                             <input type="email" placeholder="Your Email" class="form-control" name="email">
@@ -75,7 +75,7 @@
                                     </div>
                                     <div class="content">
                                         <strong>Address:</strong>
-                                        {{ $contact->address ?? '1st Floor, Shafi Court, Merewether Road, Civil Lines, Karachi-Pakistan' }}
+                                        {{ $setting->address ?? '1st Floor, Shafi Court, Merewether Road, Civil Lines, Karachi-Pakistan' }}
                                     </div>
                                 </li>
                                 <li>
@@ -84,8 +84,8 @@
                                     </div>
                                     <div class="content">
                                         <strong>Email:</strong>
-                                        <a href="mailto:{{ $contact->email ?? 'info@icsgroup.com.pk' }}">{{
-                                            $contact->email ?? 'info@icsgroup.com.pk' }}</a>
+                                        <a href="mailto:{{ $setting->email ?? 'info@icsgroup.com.pk' }}">{{
+                                            $setting->email ?? 'info@icsgroup.com.pk' }}</a>
                                     </div>
                                 </li>
                                 <li>
@@ -95,7 +95,7 @@
                                     <div class="content">
                                         <strong>Phone:</strong>
                                         <a
-                                            href="tel:{{ $contact->phone ?? '(+92)21 111 565 565' }}">{{ $contact->phone ?? '(+92)21 111 565 565' }}</a>
+                                            href="tel:{{ $setting->phone ?? '(+92)21 111 565 565' }}">{{ $setting->phone ?? '(+92)21 111 565 565' }}</a>
                                     </div>
                                 </li>
                             </ul>
@@ -112,7 +112,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <p>&copy; Copyright {{ date('Y') }}.
-                            {{ $contact->copy_right ?? 'All Rights Reserved by ICS Group' }}
+                            {{ $setting->copy_right ?? 'All Rights Reserved by ICS Group' }}
                         </p>
                     </div>
                     <div class="col-lg-6 text-right link">

@@ -7,7 +7,7 @@
                 <ul>
                     <li>
                         <i class="fas fa-map-marker-alt"></i>
-                        {{ \Illuminate\Support\Str::limit($contact->address ?? '1st Floor, Shafi Court, Merewether Road', 40) }}
+                        {{ \Illuminate\Support\Str::limit($contact->address ?? '1st Floor, Shafi Court, Merewether Road', 41) }}
                     </li>
                     <li>
                         <i class="fas fa-envelope-open"></i> {{ $contact->email ?? 'info@icsgroup.com.pk' }}

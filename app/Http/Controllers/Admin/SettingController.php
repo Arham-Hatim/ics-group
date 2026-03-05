@@ -3,12 +3,9 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\CentralLogics\Helpers;
-use App\Models\Contact;
 use Illuminate\Http\Request;
-use Illuminate\Support\Carbon;
 
-class ContactController extends Controller
+class SettingController extends Controller
 {
     public function create()
     {
@@ -22,6 +19,7 @@ class ContactController extends Controller
             'name' => ['required', 'max:255'],
             'email' => ['required', 'email', 'max:255'],
             'phone' => ['required', 'max:30'],
+            'phone_question' => ['required', Helpers::max_without_spaces(40)],
             'fax' => ['required', 'max:30'],
             'address' => ['required', Helpers::max_without_spaces(120)],
             'description' => ['required', Helpers::max_without_spaces(220)],
@@ -80,5 +78,3 @@ class ContactController extends Controller
     }
 
 }
-
-

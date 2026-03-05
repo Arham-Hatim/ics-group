@@ -76,6 +76,17 @@
                                             class="char-count text-primary fw-bold"></span></small>
                                 </div>
                                 <div class="col-md-6">
+                                    <label class="form-label fw-bold">Phone Question <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" name="phone_question"
+                                        class="form-control radius-10 char-field @error('phone_question') is-invalid @enderror"
+                                        data-max="40" placeholder="Have any question?"
+                                        value="{{ old('phone_question', $contact->phone_question ?? '') }}" required>
+                                    @error('phone_question')<div class="invalid-feedback">{{ $message }}</div>@enderror
+                                    <small class="text-muted">Character limit 40, Recommended 10-30 characters <span
+                                            class="char-count text-primary fw-bold"></span></small>
+                                </div>
+                                <div class="col-md-6">
                                     <label class="form-label fw-bold">Fax Number <span class="text-danger">*</span></label>
                                     <input type="text" name="fax"
                                         class="form-control radius-10 char-field @error('fax') is-invalid @enderror"

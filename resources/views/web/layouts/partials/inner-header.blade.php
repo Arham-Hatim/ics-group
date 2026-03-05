@@ -69,7 +69,7 @@
                         <i class="fas fa-phone"></i>
                     </div>
                     <div class="info">
-                        <span>Have any question?</span>
+                        <span>{{ $contact->phone_question ?? 'Have any question?' }}</span>
                         <h5>{{ $contact->phone ?? '(+92)21 111 565 565' }}</h5>
                     </div>
                 </div>

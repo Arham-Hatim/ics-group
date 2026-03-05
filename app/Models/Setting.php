@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Contact extends Model
+class Setting extends Model
 {
     use HasFactory;
     protected $guarded = [];
@@ -35,5 +35,5 @@ class Contact extends Model
             get: fn($value) => $value ? asset('storage/logo/' . $value) : null
         );
     }
-}
 
+}

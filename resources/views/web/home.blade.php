@@ -5,7 +5,7 @@
 @section('content')
 
     <!-- Start Banner 
-                                                                                                                                                                        ============================================= -->
+                                                                                                                                                                                                                    ============================================= -->
     {{-- <div class="banner-area inc-video video-bg-live bg-cover"
         style="background-image: url({{ asset('web_assets/img/2440x1578.png') }});"> --}}
         <div class="banner-area inc-video video-bg-live bg-cover"
@@ -80,7 +80,7 @@
         <!-- End Banner -->
 
         <!-- Star Services Area
-                                                                                                                                                                        ============================================= -->
+                                                                                                                                                                                                                    ============================================= -->
         <div class="default-services-area default-padding">
             <div class="container">
                 <div class="row">
@@ -175,7 +175,7 @@
         <!-- End Services Area -->
 
         <!-- Star About Area
-                                                                                                                                                                        ============================================= -->
+                                                                                                                                                                                                                    ============================================= -->
         <div class="about-area bg-dark overflow-hidden text-light relative">
             <!-- Fixed Shape -->
             <div class="fixed-shape" style="background-image: url({{ asset('web_assets/img/shape/8.png') }});"></div>
@@ -186,7 +186,7 @@
                         {{--<div class="col-lg-6 thumb order-lg-last"
                             style="background-image: url({{ asset('web_assets/img/2440x1578.png') }});"> --}}
                             <div class="col-lg-6 thumb order-lg-last"
-                                style="background-image: url({{ asset('web_assets/ics-images/home/who-we-are.jpg') }});">
+                                style="background-image: url({{ asset('web_assets/ics-images/home/who-we-are3.jpg') }});">
                                 <div class="successr-ate">
                                     <div class="icon">
                                         <i class="flaticon-target"></i>
@@ -236,7 +236,7 @@
             <!-- End About Area -->
 
             <!-- Start Expertise Area
-                                                                                                                                                                        ============================================= -->
+                                                                                                                                                                                                                    ============================================= -->
             <div class="expertise-area default-padding">
                 <div class="container">
                     <!-- Item Heading -->
@@ -284,7 +284,7 @@
                     {{-- <div class="expertise-content text-light"
                         style="background-image: url({{ asset('web_assets/img/2440x1578.png') }});"> --}}
                         <div class="expertise-content text-light"
-                            style="background-image: url({{ asset('web_assets/ics-images/home/our-expertise.jpg') }});">
+                            style="background-image: url({{ asset('web_assets/ics-images/home/our-expertise2.jpg') }});">
                             <div class="row">
                                 <!-- Single Item -->
                                 <div class="col-lg-4 single-item">
@@ -334,7 +334,7 @@
                 <!-- End Expertise Area -->
 
                 <!-- Star Partner Area
-                                                                                                                                                                        ============================================= -->
+                                                                                                                                                                                                                    ============================================= -->
                 <div class="partner-area overflow-hidden text-light">
                     <div class="container">
                         <div class="item-box red">
@@ -384,7 +384,7 @@
                 <!-- ("overflow-hidden-box overflow-hidden" helps you to ignore extra width for the circle shape)-->
                 <div class="overflow-hidden-box overflow-hidden">
                     <!-- Star Team Area
-                                                                                                                                                                            ============================================= -->
+                                                                                                                                                                                                                        ============================================= -->
                     <div class="team-area bg-gray default-padding bottom-less">
                         <div class="container">
                             <div class="row">
@@ -405,7 +405,7 @@
                                         <div class="item">
                                             <div class="thumb">
                                                 {{--<img src="{{ asset('web_assets/img/800x900.png') }}" alt="Thumb">--}}
-                                                <img src="{{ asset('web_assets/ics-images/home/team1.jpg') }}" alt="Thumb">
+                                                <img src="{{ asset('web_assets/ics-images/home/team1a.png') }}" alt="Thumb">
                                                 <div class="social">
                                                     <a href="#" class="share-icon facebook">
                                                         <i class="fab fa-facebook-f"></i>
@@ -435,7 +435,7 @@
                                         <div class="item">
                                             <div class="thumb">
                                                 {{--<img src="{{ asset('web_assets/img/800x900.png') }}" alt="Thumb">--}}
-                                                <img src="{{ asset('web_assets/ics-images/home/team2.jpg') }}" alt="Thumb">
+                                                <img src="{{ asset('web_assets/ics-images/home/team2a.png') }}" alt="Thumb">
                                                 <div class="social">
                                                     <a href="#" class="share-icon facebook">
                                                         <i class="fab fa-facebook-f"></i>
@@ -453,8 +453,8 @@
                                             </div>
                                             <div class="info">
                                                 <div class="content">
-                                                    <h4>Faryal Hatim</h4>
-                                                    <span>Group Head of Marketing</span>
+                                                    <h4>Furqan Sattar</h4>
+                                                    <span>Head of Finanace</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -465,7 +465,7 @@
                                         <div class="item">
                                             <div class="thumb">
                                                 {{--<img src="{{ asset('web_assets/img/800x900.png') }}" alt="Thumb">--}}
-                                                <img src="{{ asset('web_assets/ics-images/home/team3.jpg') }}" alt="Thumb">
+                                                <img src="{{ asset('web_assets/ics-images/home/team3a.jpg') }}" alt="Thumb">
                                                 <div class="social">
                                                     <a href="#" class="share-icon facebook">
                                                         <i class="fab fa-facebook-f"></i>
@@ -497,7 +497,7 @@
                     <!-- End Team Area -->
 
                     <!-- Star testimonials Area
-                                                                                                                                                                            ============================================= -->
+                                                                                                                                                                                                                        ============================================= -->
                     <div class="testimonials-area bg-gray default-padding-bottom">
                         <!-- Fixed Shape -->
                         <div class="fixed-shape"
@@ -577,7 +577,7 @@
                 <!-- End Overflow Hidden Box -->
 
                 <!-- Start Gallery Area
-                                                                                                                                                                        ============================================= -->
+                                                                                                                                                                                                                    ============================================= -->
                 <div class="gallery-area overflow-hidden default-padding">
                     <div class="container">
                         <div class="row">
@@ -599,7 +599,7 @@
                                         <div class="item">
                                             <div class="thumb">
                                                 {{--<img src="{{ asset('web_assets/img/800x600.png') }}" alt="Thumb">--}}
-                                                <img src="{{ asset('web_assets/ics-images/home/gallery1.jpg') }}"
+                                                <img src="{{ asset('web_assets/ics-images/home/gallery1a.jpg') }}"
                                                     alt="Thumb">
                                             </div>
                                             <div class="content">
@@ -610,7 +610,7 @@
                                                 <div class="button">
                                                     {{--<a href="{{ asset('web_assets/img/800x800.png') }}"
                                                         class="item popup-gallery">--}}
-                                                        <a href="{{ asset('web_assets/ics-images/home/gallery1.jpg') }}"
+                                                        <a href="{{ asset('web_assets/ics-images/home/gallery1a.jpg') }}"
                                                             class="item popup-gallery">
                                                             <i class="fas fa-plus"></i>
                                                         </a>
@@ -625,7 +625,7 @@
                                         <div class="item">
                                             <div class="thumb">
                                                 {{--<img src="{{ asset('web_assets/img/800x800.png') }}" alt="Thumb">--}}
-                                                <img src="{{ asset('web_assets/ics-images/home/gallery2.jpg') }}"
+                                                <img src="{{ asset('web_assets/ics-images/home/gallery2a.jpg') }}"
                                                     alt="Thumb">
                                             </div>
                                             <div class="content">
@@ -636,7 +636,7 @@
                                                 <div class="button">
                                                     {{--<a href="{{ asset('web_assets/img/800x800.png') }}"
                                                         class="item popup-gallery">--}}
-                                                        <a href="{{ asset('web_assets/ics-images/home/gallery2.jpg') }}"
+                                                        <a href="{{ asset('web_assets/ics-images/home/gallery2a.jpg') }}"
                                                             class="item popup-gallery">
                                                             <i class="fas fa-plus"></i>
                                                         </a>
@@ -651,18 +651,18 @@
                                         <div class="item">
                                             <div class="thumb">
                                                 {{--<img src="{{ asset('web_assets/img/800x800.png') }}" alt="Thumb">--}}
-                                                <img src="{{ asset('web_assets/ics-images/home/gallery3.jpg') }}"
+                                                <img src="{{ asset('web_assets/ics-images/home/gallery3a.jpg') }}"
                                                     alt="Thumb">
                                             </div>
                                             <div class="content">
                                                 <div class="info">
-                                                    <h4><a href="#">Driven Innovation</a></h4>
+                                                    <h4><a href="#">Renewable Energy</a></h4>
                                                     <span>Performance and precision engineering</span>
                                                 </div>
                                                 <div class="button">
                                                     {{--<a href="{{ asset('web_assets/img/800x800.png') }}"
                                                         class="item popup-gallery">--}}
-                                                        <a href="{{ asset('web_assets/ics-images/home/gallery3.jpg') }}"
+                                                        <a href="{{ asset('web_assets/ics-images/home/gallery3a.jpg') }}"
                                                             class="item popup-gallery">
                                                             <i class="fas fa-plus"></i>
                                                         </a>
@@ -677,7 +677,7 @@
                                         <div class="item">
                                             <div class="thumb">
                                                 {{--<img src="{{ asset('web_assets/img/800x800.png') }}" alt="Thumb">--}}
-                                                <img src="{{ asset('web_assets/ics-images/home/gallery4.jpg') }}"
+                                                <img src="{{ asset('web_assets/ics-images/home/gallery4a.jpg') }}"
                                                     alt="Thumb">
                                             </div>
                                             <div class="content">
@@ -688,7 +688,7 @@
                                                 <div class="button">
                                                     {{--<a href="{{ asset('web_assets/img/800x800.png') }}"
                                                         class="item popup-gallery">--}}
-                                                        <a href="{{ asset('web_assets/ics-images/home/gallery4.jpg') }}"
+                                                        <a href="{{ asset('web_assets/ics-images/home/gallery4a.jpg') }}"
                                                             class="item popup-gallery">
                                                             <i class="fas fa-plus"></i>
                                                         </a>
@@ -703,18 +703,18 @@
                                         <div class="item">
                                             <div class="thumb">
                                                 {{--<img src="{{ asset('web_assets/img/800x600.png') }}" alt="Thumb">--}}
-                                                <img src="{{ asset('web_assets/ics-images/home/gallery5.jpg') }}"
+                                                <img src="{{ asset('web_assets/ics-images/home/gallery5a.png') }}"
                                                     alt="Thumb">
                                             </div>
                                             <div class="content">
                                                 <div class="info">
-                                                    <h4><a href="#">Global Commerce</a></h4>
+                                                    <h4><a href="#">Global Trade</a></h4>
                                                     <span>Connecting international markets</span>
                                                 </div>
                                                 <div class="button">
                                                     {{--<a href="{{ asset('web_assets/img/800x800.png') }}"
                                                         class="item popup-gallery">--}}
-                                                        <a href="{{ asset('web_assets/ics-images/home/gallery5.jpg') }}"
+                                                        <a href="{{ asset('web_assets/ics-images/home/gallery5a.png') }}"
                                                             class="item popup-gallery">
                                                             <i class="fas fa-plus"></i>
                                                         </a>
@@ -758,7 +758,7 @@
                 <!-- End Projects Area -->
 
                 <!-- Start Blog 
-                                                                                                                                                                        ============================================= -->
+                                                                                                                                                                                                                    ============================================= -->
                 <div class="blog-area bg-gray default-padding bottom-less">
                     <div class="container">
                         <div class="row">
@@ -778,7 +778,7 @@
                                     <div class="item">
                                         <div class="thumb">
                                             {{--<img src="{{ asset('web_assets/img/800x600.png') }}" alt="Thumb">--}}
-                                            <img src="{{ asset('web_assets/ics-images/home/news1.jpg') }}" alt="Thumb">
+                                            <img src="{{ asset('web_assets/ics-images/home/news1a.jpg') }}" alt="Thumb">
                                             <div class="date">January 25, 2026</div>
                                         </div>
 
@@ -800,13 +800,11 @@
                                                 </ul>
                                             </div>
                                             <h4>
-                                                <a href="#">The Future of AI in Global Supply Chain Management</a>
+                                                <a href="#">Committed To Safe Pharmaceutical Excellence</a>
                                             </h4>
                                             <p>
-                                                Discover how automated tracking and AI-driven logistics are revolutionizing
-                                                the way global enterprises manage their distribution networks for maximum
-                                                efficiency.
-                                            </p>
+                                                We proudly introduce our latest pharmaceutical product, carefully developed
+                                                to deliver effective treatment and enhance patient care.
                                         </div>
                                     </div>
                                 </div>
@@ -816,7 +814,7 @@
                                     <div class="item">
                                         <div class="thumb">
                                             {{--<img src="{{ asset('web_assets/img/800x600.png') }}" alt="Thumb">--}}
-                                            <img src="{{ asset('web_assets/ics-images/home/news2.jpg') }}" alt="Thumb">
+                                            <img src="{{ asset('web_assets/ics-images/home/news2a.jpg') }}" alt="Thumb">
                                             <div class="date">February 12, 2026</div>
                                         </div>
                                         <div class="info">
@@ -837,12 +835,12 @@
                                                 </ul>
                                             </div>
                                             <h4>
-                                                <a href="#">Cold Chain Integrity in Pharma Logistics</a>
+                                                <a href="#">Sales Growth Planning Strategy Session</a>
                                             </h4>
                                             <p>
-                                                Ensuring temperature-controlled precision is vital for healthcare safety. We
-                                                explore the latest innovations in cold chain storage and international
-                                                distribution standards.
+                                                Our sales meeting brings the team together to review performance, share
+                                                strategies, and explore new opportunities to drive business growth and
+                                                customer success.
                                             </p>
                                         </div>
                                     </div>
@@ -853,7 +851,7 @@
                                     <div class="item">
                                         <div class="thumb">
                                             {{--<img src="{{ asset('web_assets/img/800x600.png') }}" alt="Thumb">--}}
-                                            <img src="{{ asset('web_assets/ics-images/home/news3.jpg') }}" alt="Thumb">
+                                            <img src="{{ asset('web_assets/ics-images/home/news3a.jpg') }}" alt="Thumb">
                                             <div class="date">March 02, 2026</div>
                                         </div>
                                         <div class="info">
@@ -874,12 +872,11 @@
                                                 </ul>
                                             </div>
                                             <h4>
-                                                <a href="#">Strategic Partnerships & Operational Excellence</a>
+                                                <a href="#">Advancing Innovation in Healthcare Research</a>
                                             </h4>
                                             <p>
-                                                Building long-term business value requires more than just service; it
-                                                requires a commitment to integrity, global standards, and integrated
-                                                industrial solutions.
+                                                Our symposium unites healthcare professionals to share research, explore
+                                                treatments, and foster collaboration in modern healthcare.
                                             </p>
                                         </div>
                                     </div>

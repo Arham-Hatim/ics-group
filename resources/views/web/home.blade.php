@@ -729,18 +729,18 @@
                                         <div class="item">
                                             <div class="thumb">
                                                 {{--<img src="{{ asset('web_assets/img/800x600.png') }}" alt="Thumb">--}}
-                                                <img src="{{ asset('web_assets/ics-images/home/gallery6.jpg') }}"
+                                                <img src="{{ asset('web_assets/ics-images/home/gallery6a.png') }}"
                                                     alt="Thumb">
                                             </div>
                                             <div class="content">
                                                 <div class="info">
-                                                    <h4><a href="#">Digital Innovation</a></h4>
-                                                    <span>Smart and scalable solutions</span>
+                                                    <h4><a href="#">Automobile Innovations</a></h4>
+                                                    <span>Driving Future Automotive Solutions</span>
                                                 </div>
                                                 <div class="button">
                                                     {{--<a href="{{ asset('web_assets/img/800x800.png') }}"
                                                         class="item popup-gallery">--}}
-                                                        <a href="{{ asset('web_assets/ics-images/home/gallery6.jpg') }}"
+                                                        <a href="{{ asset('web_assets/ics-images/home/gallery6a.png') }}"
                                                             class="item popup-gallery">
                                                             <i class="fas fa-plus"></i>
                                                         </a>

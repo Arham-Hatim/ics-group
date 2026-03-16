@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\Admin\BusinessVerticalController;
 use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\ContactPageController;
 use App\Http\Controllers\Admin\SettingController;
+use App\Models\BusinessVertical;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AuthController;
 
@@ -68,7 +70,8 @@ Route::get('gallery/{id}', function ($id) {
 })->name('gallery.single');
 
 Route::get('business/verticals', function () {
-    return view('web.what_we_do.business-verticals')->with('innerHeader', true);
+    $bv = BusinessVertical::first();
+    return view('web.what_we_do.business-verticals', compact('bv'))->with('innerHeader', true);
 })->name('business-verticals');
 
 Route::get('business/overview', function () {
@@ -89,7 +92,7 @@ Route::get('sustainability', function () {
 
 // ================== Admin Auth & Panel ==================
 
-Route::prefix('admin')->name('admin.')->group(function () {
+Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
     Route::middleware('guest:admin')->group(function () {
         Route::get('login', function () {
             return view('admin.auth.login');
@@ -112,6 +115,11 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::controller(ContactPageController::class)->group(function () {
             Route::get('contact', 'create')->name('contact');
             Route::post('contact/update', 'update')->name('contact.update');
+        });
+
+        Route::controller(BusinessVerticalController::class)->group(function () {
+            Route::get('business-vertical', 'create')->name('business-vertical');
+            Route::post('business-vertical/update', 'update')->name('business-vertical.update');
         });
 
         Route::post('logout', [AuthController::class, 'logout'])->name('logout');

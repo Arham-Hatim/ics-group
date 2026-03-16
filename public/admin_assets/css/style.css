@@ -847,12 +847,12 @@ a {
 }
 
 .icon-box {
-    width: 60px;
-    height: 60px;
+    /* width: 80%; */
+    /* height: 60px; */
     background-color: #ffffff;
     border-radius: 50%;
     border: 1px solid #c7c8cb;
-    font-size: 26px;
+    /* font-size: 26px; */
     display: flex;
     align-items: center;
     justify-content: center;

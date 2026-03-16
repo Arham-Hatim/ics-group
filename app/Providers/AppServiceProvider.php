@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Models\BusinessVertical;
 use App\Models\Setting;
 use App\Models\ContactPage;
 use Illuminate\Support\Facades\Schema;
@@ -32,6 +33,11 @@ class AppServiceProvider extends ServiceProvider
             if (Schema::hasTable('contact_pages')) {
                 $contact = ContactPage::first();
                 View::share('contact', $contact);
+            }
+
+            if (Schema::hasTable('business_verticals')) {
+                $bv = BusinessVertical::first();
+                View::share('bv', $bv);
             }
         } catch (\Exception $e) {
             // Silently fail if DB is not ready

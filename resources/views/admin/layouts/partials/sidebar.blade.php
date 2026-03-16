@@ -25,6 +25,12 @@
                 <div class="menu-title">Contact</div>
             </a>
         </li>
+        <li class="{{ request()->routeIs('admin.business-vertical') ? 'mm-active' : '' }}">
+            <a href="{{ route('admin.business-vertical') }}">
+                <div class="parent-icon"><i class="bi bi-grid-3x3-gap-fill"></i></div>
+                <div class="menu-title">Business Verticals</div>
+            </a>
+        </li>
         <li class="{{ request()->routeIs('admin.facilities.*') ? 'mm-active' : '' }}">
             <a href="#">
                 <div class="parent-icon"><i class="bi bi-building"></i></div>

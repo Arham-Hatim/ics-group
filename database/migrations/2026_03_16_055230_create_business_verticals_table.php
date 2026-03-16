@@ -4,8 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
-{
+return new class extends Migration {
     /**
      * Run the migrations.
      * Stores all content for the Business Verticals listing page.
@@ -47,7 +46,7 @@ return new class extends Migration
             $table->string('bottom_tag');           // small tag e.g. "Easy Business Solutions"
             $table->string('bottom_heading');       // e.g. "We Combine Technology with Business Ideas"
             $table->text('bottom_description');     // longer paragraph
-            $table->json('bottom_bullets');         // JSON array of bullet point strings
+            $table->json('bottom_bullets')->nullable();         // JSON array of bullet point strings
 
             $table->timestamps();
         });

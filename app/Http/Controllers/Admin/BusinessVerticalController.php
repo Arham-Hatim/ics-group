@@ -45,7 +45,7 @@ class BusinessVerticalController extends Controller
             'bottom_tag' => ['required', Helpers::max_without_spaces(50)],
             'bottom_heading' => ['required', Helpers::max_without_spaces(80)],
             'bottom_description' => ['required', Helpers::max_without_spaces(500)],
-            'bottom_bullets' => ['required', 'array', 'min:6'],
+            'bottom_bullets' => ['sometimes', 'array'],
             'bottom_bullets.*' => ['required', Helpers::max_without_spaces(60)],
         ]);
 

@@ -551,7 +551,7 @@
             const btn = e.target.closest('.remove-bullet');
             if (btn) {
                 const rows = this.querySelectorAll('.bullet-row');
-                if (rows.length > 6) btn.closest('.bullet-row').remove();
+                if (rows.length > 0) btn.closest('.bullet-row').remove();
             }
         });
     </script>
